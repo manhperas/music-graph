@@ -213,6 +213,130 @@ class NetworkVisualizer:
         except Exception as e:
             logger.error(f"Error plotting PageRank: {e}")
     
+    def plot_communities(self, graph: nx.Graph, communities: List[set], 
+                        title: str = "Community Structure", 
+                        output_filename: str = "communities.png"):
+        """Plot network with communities colored"""
+        try:
+            # Create a color map for communities
+            node_colors = {}
+            colors = plt.cm.tab20(range(len(communities)))
+            
+            for idx, community in enumerate(communities):
+                color = colors[idx]
+                for node in community:
+                    node_colors[node] = color
+            
+            # Get artist nodes only
+            artist_nodes = [n for n, d in graph.nodes(data=True) 
+                          if d.get('node_type') == 'Artist']
+            
+            # Filter to nodes in communities
+            nodes_in_communities = set()
+            for c in communities:
+                nodes_in_communities.update(c)
+            
+            filtered_nodes = [n for n in artist_nodes if n in nodes_in_communities]
+            
+            # Sample if too large
+            if len(filtered_nodes) > 200:
+                degrees = [(n, graph.degree(n)) for n in filtered_nodes]
+                degrees.sort(key=lambda x: x[1], reverse=True)
+                filtered_nodes = [n for n, d in degrees[:200]]
+            
+            # Create subgraph
+            subgraph = graph.subgraph(filtered_nodes)
+            
+            # Get colors for subgraph nodes
+            subgraph_colors = [node_colors.get(n, 'lightgray') for n in subgraph.nodes()]
+            
+            # Plot
+            plt.figure(figsize=(16, 12))
+            
+            # Calculate layout
+            pos = nx.spring_layout(subgraph, k=1, iterations=50, seed=42)
+            
+            # Draw nodes with community colors
+            nx.draw_networkx_nodes(
+                subgraph, pos,
+                node_color=subgraph_colors,
+                node_size=300,
+                alpha=0.8
+            )
+            
+            # Draw edges
+            nx.draw_networkx_edges(
+                subgraph, pos,
+                alpha=0.2,
+                width=0.5
+            )
+            
+            # Draw labels for high-degree nodes
+            high_degree_nodes = [n for n in subgraph.nodes() if subgraph.degree(n) > 5]
+            labels = {n: subgraph.nodes[n].get('name', '')[:15] for n in high_degree_nodes}
+            nx.draw_networkx_labels(
+                subgraph, pos,
+                labels=labels,
+                font_size=7
+            )
+            
+            plt.title(title, fontsize=16, fontweight='bold')
+            plt.axis('off')
+            
+            output_path = os.path.join(self.output_dir, output_filename)
+            plt.savefig(output_path, dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            logger.info(f"Saved community visualization to {output_path}")
+            
+        except Exception as e:
+            logger.error(f"Error plotting communities: {e}")
+    
+    def plot_community_sizes(self, communities: List[set], 
+                            output_filename: str = "community_sizes.png"):
+        """Plot community size distribution"""
+        try:
+            sizes = [len(c) for c in communities]
+            
+            plt.figure(figsize=(12, 8))
+            plt.hist(sizes, bins=30, edgecolor='black', alpha=0.7, color='steelblue')
+            plt.xlabel('Community Size', fontsize=12)
+            plt.ylabel('Number of Communities', fontsize=12)
+            plt.title('Community Size Distribution', fontsize=14, fontweight='bold')
+            plt.grid(True, alpha=0.3)
+            
+            output_path = os.path.join(self.output_dir, output_filename)
+            plt.savefig(output_path, dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            logger.info(f"Saved community size distribution to {output_path}")
+            
+        except Exception as e:
+            logger.error(f"Error plotting community sizes: {e}")
+    
+    def plot_clustering_coefficient_distribution(self, graph: nx.Graph):
+        """Plot distribution of clustering coefficients"""
+        try:
+            undirected_graph = graph.to_undirected()
+            clustering_dict = nx.clustering(undirected_graph)
+            clustering_values = list(clustering_dict.values())
+            
+            plt.figure(figsize=(10, 6))
+            plt.hist(clustering_values, bins=50, edgecolor='black', alpha=0.7, color='mediumseagreen')
+            plt.xlabel('Clustering Coefficient', fontsize=12)
+            plt.ylabel('Frequency', fontsize=12)
+            plt.title('Clustering Coefficient Distribution', fontsize=14, fontweight='bold')
+            plt.grid(True, alpha=0.3)
+            
+            output_path = os.path.join(self.output_dir, 'clustering_coefficient_distribution.png')
+            plt.savefig(output_path, dpi=300, bbox_inches='tight')
+            plt.close()
+            
+            logger.info(f"Saved clustering coefficient distribution to {output_path}")
+            
+        except Exception as e:
+            logger.error(f"Error plotting clustering coefficient distribution: {e}")
+    
     def create_all_visualizations(self, graph_path: str, stats_path: str):
         """Create all visualizations"""
         logger.info("Creating visualizations...")
@@ -235,6 +359,42 @@ class NetworkVisualizer:
             self.plot_pagerank(stats)
         
         logger.info(f"All visualizations saved to {self.output_dir}")
+    
+    def create_community_visualizations(self, graph_path: str, 
+                                       community_analysis_path: str):
+        """Create community detection visualizations"""
+        logger.info("Creating community visualizations...")
+        
+        # Load data
+        graph = self.load_graph(graph_path)
+        
+        try:
+            with open(community_analysis_path, 'r', encoding='utf-8') as f:
+                community_data = json.load(f)
+        except Exception as e:
+            logger.error(f"Error loading community analysis: {e}")
+            return
+        
+        if graph.number_of_nodes() == 0:
+            logger.error("Empty graph, cannot create visualizations")
+            return
+        
+        # Plot Louvain communities
+        if 'louvain' in community_data:
+            louvain_communities = community_data['louvain']['communities']
+            communities = [set(c) for c in louvain_communities]
+            self.plot_communities(
+                graph, 
+                communities, 
+                title=f"Louvain Communities (Modularity: {community_data['louvain']['modularity']:.3f})",
+                output_filename="louvain_communities.png"
+            )
+            self.plot_community_sizes(communities, "louvain_community_sizes.png")
+        
+        # Plot clustering coefficient distribution
+        self.plot_clustering_coefficient_distribution(graph)
+        
+        logger.info(f"Community visualizations saved to {self.output_dir}")
 
 
 def create_visualizations(graph_path: str = "data/processed/network.graphml",
@@ -243,6 +403,14 @@ def create_visualizations(graph_path: str = "data/processed/network.graphml",
     """Main function to create visualizations"""
     visualizer = NetworkVisualizer(output_dir)
     visualizer.create_all_visualizations(graph_path, stats_path)
+
+
+def create_community_visualizations(graph_path: str = "data/processed/network.graphml",
+                                   community_analysis_path: str = "data/processed/community_analysis.json",
+                                   output_dir: str = "data/processed/figures"):
+    """Main function to create community visualizations"""
+    visualizer = NetworkVisualizer(output_dir)
+    visualizer.create_community_visualizations(graph_path, community_analysis_path)
 
 
 if __name__ == "__main__":

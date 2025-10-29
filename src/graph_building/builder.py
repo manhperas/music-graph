@@ -123,7 +123,14 @@ class GraphBuilder:
             artist1 = self.graph.nodes[artist1_id]
             genres1_str = artist1.get('genres', '')
             
-            if not genres1_str:
+            # Handle NaN and None values
+            if pd.isna(genres1_str) or not genres1_str:
+                continue
+            
+            # Ensure it's a string
+            genres1_str = str(genres1_str)
+            
+            if not genres1_str.strip():
                 continue
             
             # Parse genres
@@ -137,7 +144,14 @@ class GraphBuilder:
                 artist2 = self.graph.nodes[artist2_id]
                 genres2_str = artist2.get('genres', '')
                 
-                if not genres2_str:
+                # Handle NaN and None values
+                if pd.isna(genres2_str) or not genres2_str:
+                    continue
+                
+                # Ensure it's a string
+                genres2_str = str(genres2_str)
+                
+                if not genres2_str.strip():
                     continue
                 
                 genres2 = set(g.lower().strip() for g in genres2_str.split(';') if g.strip())

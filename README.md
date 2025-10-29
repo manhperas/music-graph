@@ -2,6 +2,15 @@
 
 A comprehensive graph network analysis project that scrapes Wikipedia Vietnamese pages for US-UK pop musicians and singers, builds a collaboration network, imports it to Neo4j, and performs statistical analysis and visualization.
 
+## 🔗 Repository
+
+**GitHub**: https://github.com/[username]/music-network-pop-us-uk
+
+```bash
+git clone https://github.com/[username]/music-network-pop-us-uk.git
+cd music-network-pop-us-uk
+```
+
 ## 🎯 Project Overview
 
 This project collects data about pop music artists from the United States and United Kingdom using Vietnamese Wikipedia pages. It extracts artist information including genres, instruments, active years, and album/song data, then builds a graph network where:
@@ -35,50 +44,72 @@ The network is imported into Neo4j for graph database analysis and visualized us
 
 ```
 music-network-pop-us-uk/
-├── README.md                  # This file
-├── requirements.txt           # Python dependencies
-├── setup.sh                   # Setup script (install deps, start Neo4j)
-├── run.sh                     # Run pipeline stages
-├── docker-compose.yml         # Neo4j Docker configuration
-├── .env                       # Environment variables (create from .env.example)
-├── .gitignore                 # Git ignore rules
+├── README.md                              # This file
+├── TEAM_CONTRIBUTION_TEMPLATE.md          # Team contribution and work allocation
+├── LIMITATIONS_AND_FUTURE_WORK.md         # Project limitations and future work
+├── requirements.txt                       # Python dependencies
+├── setup.sh                               # Setup script (install deps, start Neo4j)
+├── run.sh                                 # Run pipeline stages
+├── docker-compose.yml                     # Neo4j Docker configuration
+├── .env                                   # Environment variables (create from .env.example)
+├── .gitignore                             # Git ignore rules
 │
 ├── config/
-│   ├── wikipedia_config.json  # Wikipedia scraping configuration
-│   └── neo4j_config.json      # Neo4j connection settings
+│   ├── wikipedia_config.json              # Wikipedia scraping configuration
+│   └── neo4j_config.json                  # Neo4j connection settings
+│
+├── docs/                                  # Documentation (organized by category)
+│   ├── README.md                          # Documentation index
+│   ├── guides/                            # User guides and instructions
+│   ├── analysis/                          # Analysis reports
+│   ├── implementation/                    # Implementation details
+│   └── technical/                         # Technical documentation
 │
 ├── src/
-│   ├── main.py                # Main entry point with CLI
-│   ├── data_collection/       # Wikipedia scraping modules
-│   │   ├── scraper.py         # Article and infobox scraper
-│   │   └── utils.py           # Logging and rate limiting
-│   ├── data_processing/       # Data parsing and cleaning
-│   │   ├── parser.py          # Infobox parser
-│   │   └── cleaner.py         # Data cleaning and filtering
-│   ├── graph_building/        # Graph construction and import
-│   │   ├── builder.py         # NetworkX graph builder
-│   │   └── importer.py        # Neo4j importer
-│   └── analysis/              # Analysis and visualization
-│       ├── stats.py           # Network statistics
-│       └── viz.py             # Visualization generation
+│   ├── main.py                            # Main entry point with CLI
+│   ├── data_collection/                   # Wikipedia scraping modules
+│   │   ├── scraper.py                     # Article and infobox scraper
+│   │   └── utils.py                       # Logging and rate limiting
+│   ├── data_processing/                   # Data parsing and cleaning
+│   │   ├── parser.py                      # Infobox parser
+│   │   └── cleaner.py                     # Data cleaning and filtering
+│   ├── graph_building/                    # Graph construction and import
+│   │   ├── builder.py                     # NetworkX graph builder
+│   │   └── importer.py                    # Neo4j importer
+│   └── analysis/                          # Analysis and visualization
+│       ├── stats.py                       # Network statistics
+│       ├── communities.py                 # Community detection
+│       ├── paths.py                       # Path analysis
+│       └── viz.py                         # Visualization generation
 │
-└── data/                      # Data directory (gitignored)
-    ├── raw/                   # Raw scraped data
+└── data/                                  # Data directory (gitignored)
+    ├── raw/                               # Raw scraped data
     │   └── artists.json
-    └── processed/             # Processed data and outputs
+    └── processed/                         # Processed data and outputs
         ├── nodes.csv
         ├── edges.csv
         ├── albums.csv
         ├── artists.csv
         ├── network.graphml
         ├── stats.json
-        └── figures/           # Generated visualizations
+        └── figures/                       # Generated visualizations
             ├── degree_distribution.png
             ├── network_sample.png
             ├── genre_distribution.png
             ├── top_artists.png
             └── pagerank.png
 ```
+
+## 📚 Documentation
+
+All project documentation is organized in the `docs/` directory:
+
+- **User Guides** (`docs/guides/`): How to run the project, quick start guides
+- **Analysis** (`docs/analysis/`): Community detection and network analysis reports
+- **Implementation** (`docs/implementation/`): Implementation details and improvements
+- **Technical** (`docs/technical/`): Graph relationships, queries, and technical details
+
+See [docs/README.md](docs/README.md) for complete documentation index.
 
 ## 🚀 Quick Start
 
@@ -115,6 +146,8 @@ This will:
 - Create a Python virtual environment
 - Install all dependencies
 - Start Neo4j in Docker (accessible at http://localhost:7474)
+
+For detailed instructions, see [docs/guides/QUICKSTART.md](docs/guides/QUICKSTART.md) or [docs/guides/HOW_TO_RUN.md](docs/guides/HOW_TO_RUN.md).
 
 ### Running the Pipeline
 

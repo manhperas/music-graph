@@ -98,6 +98,40 @@ class InfoboxParser:
         infobox_text = artist_data.get('infobox', '')
         parsed_infobox = self.parse_infobox(infobox_text)
         
+        # Get albums from raw data if available, otherwise from infobox
+        raw_albums = artist_data.get('albums', [])
+        infobox_albums = parsed_infobox.get('albums', [])
+        
+        # Combine albums from both sources
+        all_albums = []
+        album_titles = set()
+        
+        # Add albums from raw data (already extracted by scraper)
+        for album in raw_albums:
+            if isinstance(album, str):
+                album_title = album.strip()
+            elif isinstance(album, dict):
+                album_title = album.get('title', '').strip()
+            else:
+                continue
+                
+            if album_title and album_title.lower() not in album_titles:
+                album_titles.add(album_title.lower())
+                all_albums.append({'title': album_title})
+        
+        # Add albums from infobox
+        for album in infobox_albums:
+            if isinstance(album, dict):
+                album_title = album.get('title', '').strip()
+            elif isinstance(album, str):
+                album_title = album.strip()
+            else:
+                continue
+                
+            if album_title and album_title.lower() not in album_titles:
+                album_titles.add(album_title.lower())
+                all_albums.append({'title': album_title})
+        
         return {
             'name': artist_data.get('title', ''),
             'url': artist_data.get('url', ''),
@@ -105,7 +139,7 @@ class InfoboxParser:
             'genres': parsed_infobox.get('genres', []),
             'instruments': parsed_infobox.get('instruments', []),
             'active_years': parsed_infobox.get('active_years', ''),
-            'albums': parsed_infobox.get('albums', [])
+            'albums': all_albums
         }
     
     def parse_all(self, input_path: str = "data/raw/artists.json") -> List[Dict]:

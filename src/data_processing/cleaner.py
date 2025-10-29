@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 from typing import List, Dict
 import pandas as pd
 from unidecode import unidecode
@@ -29,7 +30,7 @@ class DataCleaner:
             return pd.DataFrame()
     
     def normalize_name(self, name: str) -> str:
-        """Normalize artist name"""
+        """Normalize artist name for display"""
         if not name:
             return ""
         
@@ -40,6 +41,57 @@ class DataCleaner:
         name = " ".join(name.split())
         
         return name
+    
+    def create_similarity_key(self, name: str) -> str:
+        """Create a normalized key for duplicate detection"""
+        if not name:
+            return ""
+        
+        # Remove accents and special characters
+        normalized = unidecode(name.lower())
+        
+        # Remove common suffixes that don't affect uniqueness
+        suffixes = [
+            r'\s*\(band\)', r'\s*\(singer\)', r'\s*\(artist\)',
+            r'\s*\(musician\)', r'\s*\(group\)', r'\s*\(solo\)',
+            r'\s*\(vocalist\)', r'\s*\(vocal\)'
+        ]
+        for suffix in suffixes:
+            normalized = re.sub(suffix, '', normalized)
+        
+        # Remove special characters except spaces
+        normalized = re.sub(r'[^\w\s]', '', normalized)
+        
+        # Normalize whitespace
+        normalized = " ".join(normalized.split())
+        
+        return normalized
+    
+    def is_artist_name(self, name: str) -> bool:
+        """Check if name is actually an artist (not a song/album)"""
+        if not name:
+            return False
+        
+        # Filter out songs and albums with patterns like:
+        # - "(album của ...)"
+        # - "(bài hát của ...)"
+        # - "(song của ...)"
+        # - "(single của ...)"
+        false_patterns = [
+            '(album của',
+            '(bài hát của',
+            '(song của',
+            '(single của',
+            '(song by',
+            '(album by',
+            '(single by'
+        ]
+        
+        for pattern in false_patterns:
+            if pattern in name.lower():
+                return False
+        
+        return True
     
     def is_pop_related(self, genres: List[str]) -> bool:
         """Check if artist is pop-related based on genres"""
@@ -55,15 +107,32 @@ class DataCleaner:
         
         initial_count = len(df)
         
-        # Remove duplicates based on name
-        df = df.drop_duplicates(subset=['name'], keep='first')
-        logger.info(f"Removed {initial_count - len(df)} duplicates")
-        
-        # Normalize names
+        # Normalize names first
         df['name'] = df['name'].apply(self.normalize_name)
+        
+        # Create similarity key for advanced duplicate detection
+        df['similarity_key'] = df['name'].apply(self.create_similarity_key)
+        
+        # Remove duplicates based on exact name
+        exact_dupes = len(df) - len(df.drop_duplicates(subset=['name'], keep='first'))
+        df = df.drop_duplicates(subset=['name'], keep='first')
+        logger.info(f"Removed {exact_dupes} exact duplicates")
+        
+        # Advanced duplicate detection using similarity key
+        before_similarity = len(df)
+        df = df.drop_duplicates(subset=['similarity_key'], keep='first')
+        similarity_dupes = before_similarity - len(df)
+        if similarity_dupes > 0:
+            logger.info(f"Removed {similarity_dupes} similarity-based duplicates")
         
         # Filter out empty names
         df = df[df['name'].str.len() > 0]
+        
+        # Filter out songs/albums that are not actual artists
+        before_filter = len(df)
+        df['is_artist'] = df['name'].apply(self.is_artist_name)
+        df = df[df['is_artist'] == True]
+        logger.info(f"Removed {before_filter - len(df)} non-artist entries (songs/albums)")
         
         # Add normalized name for matching
         df['name_normalized'] = df['name'].apply(lambda x: unidecode(x).lower())
@@ -80,11 +149,15 @@ class DataCleaner:
         
         df = df[df['is_pop'] == True]
         
+        # Drop similarity_key column (no longer needed)
+        df = df.drop(columns=['similarity_key'], errors='ignore')
+        
         # Convert list fields to strings for CSV export
         df['genres_str'] = df['genres'].apply(lambda x: "; ".join(x) if isinstance(x, list) else "")
         df['instruments_str'] = df['instruments'].apply(lambda x: "; ".join(x) if isinstance(x, list) else "")
         
         logger.info(f"Cleaned data: {len(df)} artists remaining")
+        logger.info(f"Total duplicates removed: {initial_count - len(df)}")
         return df
     
     def create_nodes_csv(self, df: pd.DataFrame, output_path: str):

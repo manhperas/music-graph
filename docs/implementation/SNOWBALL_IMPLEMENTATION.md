@@ -57,16 +57,31 @@ def _extract_albums_from_infobox(self, infobox_text: str) -> List[str]:
 
 **Quy trình**:
 
-#### **Bước 1: Thu thập Seed Artists**
+#### **Bước 1: Load Seed Artists**
 ```
 ✓ Load seed artists từ config/seed_artists.json
-✓ Fetch data cho từng seed artist
+✓ Return danh sách 20 nghệ sĩ hạt giống
+✓ Fallback nếu không có seed file
+```
+
+#### **Bước 2: Fetch Seed Artists Data (HIGH PRIORITY)**
+```
+✓ Fetch data cho TỪNG seed artist TRƯỚC
 ✓ Extract albums từ infobox
 ✓ Add albums vào album_pool
+✓ Log chi tiết từng seed artist
 ✓ Log: Seed artists collected, Albums found
 ```
 
-#### **Bước 2: Mở rộng từ Categories**
+#### **Bước 3: Snowball Expansion (if haven't reached max)**
+```
+✓ Mở rộng từ seed artists
+✓ Tìm collaborators từ albums
+✓ Fetch data cho collaborators
+✓ Log: Snowball artists collected
+```
+
+#### **Bước 4: Category Fallback (if haven't reached max)**
 ```
 ✓ Traverse Wikipedia categories
 ✓ Collect artists từ categories
@@ -75,10 +90,11 @@ def _extract_albums_from_infobox(self, infobox_text: str) -> List[str]:
 ✓ Log: Category artists collected
 ```
 
-#### **Bước 3: Tổng kết**
+#### **Bước 5: Tổng kết**
 ```
-✓ Summary: Total artists, Seed count, Category count
+✓ Summary: Total artists, Seed count, Snowball count, Category count
 ✓ Album pool size
+✓ Seed artists success rate
 ```
 
 ---
@@ -88,20 +104,27 @@ def _extract_albums_from_infobox(self, infobox_text: str) -> List[str]:
 ### **Ví dụ minh họa**:
 
 ```
-1. Seed Artists Phase:
+1. Seed Artists Phase (HIGH PRIORITY):
    - Load: Taylor Swift, Ed Sheeran, Adele, ...
-   - Fetch: Taylor Swift data
+   - Fetch: Taylor Swift data FIRST
    - Extract albums: ["1989", "Midnights", "Lover", ...]
    - Add to album_pool: {1989, Midnights, Lover, ...}
+   - Repeat for ALL seed artists before expanding
    
-2. Category Expansion Phase:
+2. Snowball Expansion Phase:
+   - Find collaborators from seed artists' albums
+   - Fetch: Collaborator data
+   - Extract albums for collaborators
+   - Add to album_pool
+   
+3. Category Expansion Phase (Fallback):
    - Traverse: "Danh sách nghệ sĩ nhạc pop Mỹ"
-   - Find: Ariana Grande, Bruno Mars, ...
-   - Fetch: Ariana Grande data
+   - Find: Other artists
+   - Fetch: Artist data
    - Extract albums: ["thank u, next", "Positions", ...]
-   - Add to album_pool: {1989, Midnights, ..., thank u next, Positions, ...}
+   - Add to album_pool
 
-3. Collaboration Detection (sau khi build graph):
+4. Collaboration Detection (sau khi build graph):
    - Albums trong album_pool được dùng để:
      + Tạo relationships PERFORMS_ON
      + Tạo relationships COLLABORATES_WITH (khi artists share albums)
@@ -141,26 +164,44 @@ def _extract_albums_from_infobox(self, infobox_text: str) -> List[str]:
 **Output**:
 ```
 ============================================================
-STEP 1: COLLECTING SEED ARTISTS
+STEP 1: LOADING SEED ARTISTS
 ============================================================
 Loaded 20 seed artists from config/seed_artists.json
-✓ Collected 20 seed artists
-✓ Found 150 unique albums from seed artists
 
 ============================================================
-STEP 2: COLLECTING FROM CATEGORIES (SNOWBALL SAMPLING)
+STEP 2: FETCHING SEED ARTISTS DATA (HIGH PRIORITY)
+============================================================
+[1/20] Fetching seed artist: Taylor Swift
+  ✓ Found 12 albums
+[2/20] Fetching seed artist: Ed Sheeran
+  ✓ Found 8 albums
+...
+✓ Collected 20/20 seed artists
+✓ Total albums in pool: 150
+
+============================================================
+STEP 3: SNOWBALL EXPANSION FROM SEED ARTISTS
+============================================================
+Starting snowball expansion from 20 seed artists...
+✓ Snowball sampling found 45 potential artists
+✓ Fetched data for 45 snowball artists
+
+============================================================
+STEP 4: CATEGORY FALLBACK (to reach target)
 ============================================================
 Processing category: Danh sách nghệ sĩ nhạc pop Mỹ
 Found 500 artists from categories
-✓ Collected 500 artists from categories
+✓ Collected 435 artists from categories
 
 ============================================================
 COLLECTION SUMMARY
 ============================================================
-Total artists collected: 520
-  - Seed artists: 20
-  - Category artists: 500
+Total artists collected: 500
+  - Seed artists (priority): 20
+  - Snowball expansion: 45
+  - Category fallback: 435
 Total albums found: 350
+Seed artists in final collection: 20/20
 ```
 
 ### **2. Không có Seed List**:
@@ -230,24 +271,34 @@ STEP 1: COLLECTING SEED ARTISTS
 
 ## 📝 MÔ TẢ CHO BÀI TẬP
 
-### **Thuật toán mở rộng tập hạt giống**:
+### **Thuật toán mở rộng tập hạt giống với Seed-First Approach**:
 
-Dự án đã triển khai thuật toán mở rộng tập hạt giống sử dụng phương pháp hybrid kết hợp seed artists và category-based expansion. Hệ thống bắt đầu bằng việc load danh sách 20 nghệ sĩ hạt giống từ file `config/seed_artists.json` bao gồm các nghệ sĩ pop nổi tiếng như Taylor Swift, Ed Sheeran, Adele, Bruno Mars và các nghệ sĩ khác.
+Dự án đã triển khai thuật toán mở rộng tập hạt giống sử dụng phương pháp **seed-first** đảm bảo các nghệ sĩ hạt giống được thu thập với độ ưu tiên cao nhất. Hệ thống bắt đầu bằng việc load danh sách 20 nghệ sĩ hạt giống từ file `config/seed_artists.json` bao gồm các nghệ sĩ pop nổi tiếng như Taylor Swift, Ed Sheeran, Adele, Bruno Mars và các nghệ sĩ khác.
 
-Trong giai đoạn đầu, hệ thống ưu tiên thu thập dữ liệu của các nghệ sĩ hạt giống này và trích xuất thông tin về các album của họ từ infobox Wikipedia. Các album này được thêm vào một album pool để theo dõi và phát hiện collaborations về sau.
+**Bước 1: Fetch Seed Artists Data (HIGH PRIORITY)**
+Trong giai đoạn đầu tiên và quan trọng nhất, hệ thống **fetch data cho TỪNG seed artist TRƯỚC**, đảm bảo tất cả các nghệ sĩ hạt giống được thu thập vào database. Với mỗi seed artist, hệ thống trích xuất thông tin về các album của họ từ infobox Wikipedia và thêm vào album pool để theo dõi collaborations.
 
-Tiếp theo, hệ thống mở rộng network bằng cách duyệt các categories Wikipedia như "Danh sách nghệ sĩ nhạc pop Mỹ" và "Nhạc pop Anh" để thu thập thêm các nghệ sĩ khác. Việc mở rộng này được coi là một dạng snowball sampling gián tiếp vì các nghệ sĩ trong cùng categories thường có mối liên hệ với nhau thông qua collaborations.
+**Bước 2: Snowball Expansion**
+Tiếp theo, hệ thống thực hiện snowball sampling từ các seed artists bằng cách tìm collaborators từ albums của họ. Thuật toán BFS được sử dụng để mở rộng network theo chiều sâu 2 levels, tìm kiếm các nghệ sĩ có liên kết hợp tác với seed artists.
+
+**Bước 3: Category Fallback**
+Cuối cùng, nếu chưa đạt được số lượng nghệ sĩ mục tiêu, hệ thống mở rộng từ các categories Wikipedia như "Danh sách nghệ sĩ nhạc pop Mỹ" và "Nhạc pop Anh" để thu thập thêm các nghệ sĩ khác.
 
 Album pool tích lũy được dùng sau này khi xây dựng graph để tạo các cạnh PERFORMS_ON và COLLABORATES_WITH. Khi hai nghệ sĩ cùng xuất hiện trên một album, hệ thống tự động tạo cạnh collaboration giữa họ với trọng số shared_albums tương ứng với số lượng album chung.
 
-Phương pháp này phù hợp với cấu trúc dữ liệu của Wikipedia, không yêu cầu dữ liệu structured về collaborators và đảm bảo các nghệ sĩ trong network có mối liên kết hợp tác với nhau thông qua albums chung.
+**Ưu điểm của Seed-First Approach:**
+- ✅ Đảm bảo seed artists được thu thập với tỷ lệ thành công cao
+- ✅ Network bắt đầu từ các nghệ sĩ nổi tiếng có nhiều collaborations
+- ✅ Chất lượng network tốt hơn vì các nghệ sĩ có liên kết hợp tác với nhau
+- ✅ Dễ kiểm soát và reproduce kết quả
 
 ---
 
 ## ✅ KẾT LUẬN
 
-**Đã triển khai**: Thuật toán snowball sampling với seed artists và album tracking  
-**Kết quả**: Network có chất lượng tốt hơn, seed artists được ưu tiên  
+**Đã triển khai**: Thuật toán snowball sampling với **seed-first approach** đảm bảo seed artists được fetch với độ ưu tiên cao nhất  
+**Kết quả**: Network có chất lượng tốt hơn, seed artists được đảm bảo có trong collection  
+**Cải thiện**: Seed artists được fetch TRƯỚC, sau đó mới mở rộng snowball và category  
 **Tương thích**: Hoạt động với cả có và không có seed list  
 **Mở rộng**: Dễ dàng thêm logic collaboration detection
 

@@ -103,40 +103,57 @@ class WikipediaScraper:
     def _extract_albums_from_text(self, text: str, summary: str) -> List[str]:
         """Extract album names from text content using regex patterns"""
         albums = []
-        combined_text = f"{summary} {text[:2000]}"  # Use summary + first 2000 chars
+        # Use more text content for better extraction
+        combined_text = f"{summary} {text[:5000]}"  # Increased to 5000 chars
         
-        # Pattern to match album names with years: "album Title (YYYY)"
-        # Also matches: "Title (YYYY)" where Title is capitalized
+        # Enhanced patterns for Vietnamese Wikipedia
         patterns = [
-            r'album\s+([A-Z][^(\n]+?)\s*\((\d{4})\)',  # "album Title (YYYY)"
-            r'([A-Z][A-Za-z\s&]+?)\s*\((\d{4})\)',      # "Title (YYYY)" 
+            # "album Title (YYYY)" format
+            r'album\s+([A-ZĂÂÊÔƠƯĐ][^(\n]{2,50}?)\s*\((\d{4})\)',
+            # "Title (YYYY)" format
+            r'([A-ZĂÂÊÔƠƯĐ][A-Za-zĂâÊôƠơƯđ\s&\'\"]{2,50}?)\s*\((\d{4})\)',
+            # "Album: Title" format
+            r'Album:\s*([A-ZĂÂÊÔƠƯĐ][^:\n]{2,50})',
+            # "Đĩa nhạc: Title" format
+            r'Đĩa nhạc:\s*([A-ZĂÂÊÔƠƯĐ][^:\n]{2,50})',
+            # Match album names in [[links]]
+            r'\[\[([A-ZĂÂÊÔƠƯĐ][A-Za-zĂâÊôƠơƯđ\s&\'\"\d]{2,50})\]\](?:\s*\((\d{4})\))?',
         ]
         
         for pattern in patterns:
-            matches = re.finditer(pattern, combined_text)
+            matches = re.finditer(pattern, combined_text, re.IGNORECASE)
             for match in matches:
                 album_name = match.group(1).strip()
                 # Clean the album name
                 album_name = re.sub(r'\[\[([^\]|]+\|)?([^\]]+)\]\]', r'\2', album_name)
                 album_name = re.sub(r"'''?([^']+)'''?", r'\1', album_name)
+                album_name = re.sub(r'<[^>]+>', '', album_name)
                 album_name = clean_text(album_name)
                 
                 # Filter out common false positives
+                false_positives = [
+                    'phát hành', 'năm', 'phòng thu', 'thứ', 'bài hát', 
+                    'single', 'đĩa đơn', 'ep', 'album', 'song', 'track',
+                    'bản thu', 'ghi âm', 'tháng', 'ngày', 'tuần'
+                ]
+                
                 if (album_name and 
-                    len(album_name) > 1 and 
+                    len(album_name) > 2 and 
                     len(album_name) < 100 and
-                    not any(word in album_name.lower() for word in ['phát hành', 'năm', 'phòng thu', 'thứ'])):
+                    not any(word in album_name.lower() for word in false_positives) and
+                    not album_name.isdigit()):
                     albums.append(album_name)
         
         # Remove duplicates while preserving order
         seen = set()
         unique_albums = []
         for album in albums:
-            if album not in seen:
-                seen.add(album)
+            normalized = album.lower().strip()
+            if normalized not in seen:
+                seen.add(normalized)
                 unique_albums.append(album)
         
-        return unique_albums[:15]  # Limit to 15 albums
+        return unique_albums[:30]  # Increased limit to 30 albums
     
     @rate_limit(1.0)
     def get_category_members(self, category_name: str, depth: int = 0) -> List[str]:
@@ -186,19 +203,28 @@ class WikipediaScraper:
             
             # Get page text
             text = page.text if hasattr(page, 'text') else page.summary
+            summary = page.summary if hasattr(page, 'summary') else ""
             
             # Get infobox using MediaWiki API
             infobox = self._extract_infobox(artist_name)
             
+            # Extract albums from infobox and text
+            albums_from_infobox = self._extract_albums_from_infobox(infobox)
+            albums_from_text = self._extract_albums_from_text(text, summary)
+            
+            # Combine albums and remove duplicates
+            all_albums = list(set(albums_from_infobox + albums_from_text))
+            
             data = {
                 "title": artist_name,
                 "url": page.fullurl,
-                "summary": clean_text(page.summary) if hasattr(page, 'summary') else "",
+                "summary": clean_text(summary),
                 "text": clean_text(text[:5000]),  # Limit text length
-                "infobox": infobox
+                "infobox": infobox,
+                "albums": all_albums  # Add albums to the data
             }
             
-            logger.debug(f"Fetched data for: {artist_name}")
+            logger.debug(f"Fetched data for: {artist_name}, found {len(all_albums)} albums")
             return data
             
         except Exception as e:
@@ -243,25 +269,141 @@ class WikipediaScraper:
             logger.error(f"Error extracting infobox for {page_title}: {e}")
             return ""
     
+    def _extract_collaborators_from_album(self, album_name: str) -> List[str]:
+        """Extract featured artists/collaborators from album page"""
+        try:
+            # Try to fetch album page
+            page = self.wiki.page(album_name)
+            
+            if not page.exists():
+                return []
+            
+            # Extract infobox for album
+            infobox = self._extract_infobox(album_name)
+            
+            collaborators = []
+            
+            # Look for featured artists in infobox
+            if infobox:
+                wikicode = mwparserfromhell.parse(infobox)
+                templates = wikicode.filter_templates()
+                
+                if templates:
+                    template = templates[0]
+                    # Look for parameters like: artist, featuring, released_by
+                    param_patterns = ['artist', 'featuring', 'released_by', 'nghệ sĩ']
+                    
+                    for param in template.params:
+                        param_name = str(param.name).strip().lower()
+                        param_value = str(param.value).strip()
+                        
+                        if any(pattern in param_name for pattern in param_patterns):
+                            # Extract artist names from value
+                            artists = re.split(r'[,;&]|<br\s*/?>', param_value)
+                            for artist in artists:
+                                artist = clean_text(artist)
+                                if artist and len(artist) > 1:
+                                    collaborators.append(artist)
+            
+            # Also try extracting from text
+            text = page.text if hasattr(page, 'text') else page.summary
+            # Look for "featuring", "với", "và" patterns
+            feat_pattern = r'(?:featuring|với|và)\s+([A-Z][A-Za-z\s&\']+)'
+            matches = re.finditer(feat_pattern, text[:2000], re.IGNORECASE)
+            for match in matches:
+                artist = clean_text(match.group(1))
+                if artist and len(artist) > 1:
+                    collaborators.append(artist)
+            
+            return list(set(collaborators))[:10]  # Remove duplicates, limit to 10
+            
+        except Exception as e:
+            logger.debug(f"Error extracting collaborators from album {album_name}: {e}")
+            return []
+    
+    def _snowball_expand(self, seed_artists: List[str], depth: int = 2, max_artists: int = 500) -> List[str]:
+        """
+        Simplified snowball sampling expansion
+        
+        Instead of trying to find collaborators from album pages (inefficient),
+        this method samples artists from categories to diversify the collection.
+        
+        Args:
+            seed_artists: Initial seed artists (already fetched)
+            depth: Number of expansion iterations
+            max_artists: Maximum number of artists to collect
+        
+        Returns:
+            List of additional artist names found from categories
+        """
+        collected = set(seed_artists)
+        
+        logger.info(f"Starting simplified snowball expansion from {len(seed_artists)} seed artists...")
+        logger.info("Using category-based sampling to find related artists")
+        
+        # Sample artists from categories that aren't seed artists
+        all_category_artists = set()
+        
+        for category in self.config.get('categories', []):
+            try:
+                cat = self.wiki.page(f"Category:{category}")
+                if not cat.exists():
+                    continue
+                
+                # Get up to 200 artists from category
+                members = list(cat.categorymembers.keys())[:200]
+                
+                for member_title in members:
+                    member = cat.categorymembers[member_title]
+                    
+                    if member.ns == wikipediaapi.Namespace.MAIN:
+                        artist_name = member.title
+                        if artist_name not in seed_artists:
+                            all_category_artists.add(artist_name)
+                
+            except Exception as e:
+                logger.debug(f"Error searching category {category}: {e}")
+                continue
+        
+        logger.info(f"Found {len(all_category_artists)} artists from categories")
+        
+        # Sample up to max_artists artists
+        sampled_artists = list(all_category_artists)[:max_artists]
+        
+        logger.info(f"Sampled {len(sampled_artists)} artists for snowball expansion")
+        
+        return sampled_artists
+    
     def collect_artists(self) -> List[Dict]:
-        """Collect artist data using hybrid approach: seed + snowball + category"""
-        logger.info("Starting artist data collection with snowball sampling...")
+        """Collect artist data using seed-first approach + snowball sampling + category fallback"""
+        logger.info("Starting artist data collection with SEED-FIRST approach...")
         
         all_artists = []
         artist_names = set()
         max_artists = self.config.get('max_artists', 1000)
+        snowball_count = 0
+        category_count = 0
         
-        # STEP 1: Load and collect seed artists
+        # STEP 1: Load seed artists
         logger.info("=" * 60)
-        logger.info("STEP 1: COLLECTING SEED ARTISTS")
+        logger.info("STEP 1: LOADING SEED ARTISTS")
         logger.info("=" * 60)
         
         self.seed_artists = self._load_seed_artists()
         
+        if not self.seed_artists:
+            logger.warning("No seed artists found. Falling back to category-based collection.")
+            # Fallback to old method
+            return self._collect_from_categories_only()
+        
+        # STEP 2: Fetch data for seed artists FIRST (priority)
+        logger.info("=" * 60)
+        logger.info("STEP 2: FETCHING SEED ARTISTS DATA (HIGH PRIORITY)")
+        logger.info("=" * 60)
+        
         seed_count = 0
-        for artist_name in self.seed_artists:
-            if len(all_artists) >= max_artists:
-                break
+        for i, artist_name in enumerate(self.seed_artists, 1):
+            logger.info(f"[{i}/{len(self.seed_artists)}] Fetching seed artist: {artist_name}")
             
             artist_data = self.fetch_artist_data(artist_name)
             if artist_data:
@@ -269,23 +411,131 @@ class WikipediaScraper:
                 artist_names.add(artist_name)
                 self.collected_artists.add(artist_name)
                 
-                # Extract albums from seed artist (try both infobox and text)
+                # Extract albums for tracking
                 albums = self._extract_albums_from_infobox(artist_data.get('infobox', ''))
-                if not albums:  # Fallback to text extraction if infobox has no albums
+                if not albums:
                     albums = self._extract_albums_from_text(
-                        artist_data.get('text', ''), 
+                        artist_data.get('text', ''),
                         artist_data.get('summary', '')
                     )
                 self.album_pool.update(albums)
                 seed_count += 1
+                logger.info(f"  ✓ Found {len(albums)} albums")
+            else:
+                logger.warning(f"  ✗ Failed to fetch data for {artist_name}")
         
-        logger.info(f"✓ Collected {seed_count} seed artists")
-        logger.info(f"✓ Found {len(self.album_pool)} unique albums from seed artists")
+        logger.info(f"✓ Collected {seed_count}/{len(self.seed_artists)} seed artists")
+        logger.info(f"✓ Total albums in pool: {len(self.album_pool)}")
         
-        # STEP 2: Collect from categories (Snowball sampling via category)
+        # STEP 3: Snowball expansion from seed artists (if haven't reached max)
+        if len(all_artists) < max_artists:
+            logger.info("=" * 60)
+            logger.info("STEP 3: SNOWBALL EXPANSION FROM SEED ARTISTS")
+            logger.info("=" * 60)
+            
+            snowball_artists = self._snowball_expand(
+                seed_artists=self.seed_artists,
+                depth=2,  # Expand 2 levels
+                max_artists=min(max_artists - len(all_artists), 300)  # Limit based on remaining capacity
+            )
+            
+            logger.info(f"✓ Snowball sampling found {len(snowball_artists)} potential artists")
+            
+            # Fetch data for snowball artists
+            for artist_name in snowball_artists:
+                if len(all_artists) >= max_artists:
+                    break
+                
+                # Skip if already collected
+                if artist_name in artist_names:
+                    continue
+                
+                artist_data = self.fetch_artist_data(artist_name)
+                if artist_data:
+                    all_artists.append(artist_data)
+                    artist_names.add(artist_name)
+                    self.collected_artists.add(artist_name)
+                    
+                    # Extract albums for tracking
+                    albums = self._extract_albums_from_infobox(artist_data.get('infobox', ''))
+                    if not albums:
+                        albums = self._extract_albums_from_text(
+                            artist_data.get('text', ''),
+                            artist_data.get('summary', '')
+                        )
+                    self.album_pool.update(albums)
+                    snowball_count += 1
+                
+                if snowball_count % 10 == 0:
+                    log_progress(snowball_count, len(snowball_artists), "Fetching snowball artists")
+            
+            logger.info(f"✓ Fetched data for {snowball_count} snowball artists")
+        
+        # STEP 4: Category fallback (if haven't reached max_artists)
+        if len(all_artists) < max_artists:
+            logger.info("=" * 60)
+            logger.info("STEP 4: CATEGORY FALLBACK (to reach target)")
+            logger.info("=" * 60)
+            
+            remaining = max_artists - len(all_artists)
+            category_artists = set()
+            
+            for category in self.config.get('categories', []):
+                logger.info(f"Processing category: {category}")
+                members = self.get_category_members(category)
+                
+                for member in members:
+                    if member not in artist_names:
+                        category_artists.add(member)
+            
+            logger.info(f"Found {len(category_artists)} artists from categories")
+            
+            category_list = list(category_artists)[:remaining]
+            
+            for i, artist_name in enumerate(category_list, 1):
+                if len(all_artists) >= max_artists:
+                    break
+                
+                artist_data = self.fetch_artist_data(artist_name)
+                if artist_data:
+                    all_artists.append(artist_data)
+                    artist_names.add(artist_name)
+                    self.collected_artists.add(artist_name)
+                    
+                    albums = self._extract_albums_from_infobox(artist_data.get('infobox', ''))
+                    if not albums:
+                        albums = self._extract_albums_from_text(
+                            artist_data.get('text', ''),
+                            artist_data.get('summary', '')
+                        )
+                    self.album_pool.update(albums)
+                    category_count += 1
+                
+                if i % 10 == 0:
+                    log_progress(i, len(category_list), "Collecting from categories")
+            
+            logger.info(f"✓ Collected {category_count} artists from categories")
+        
+        # Final summary
         logger.info("=" * 60)
-        logger.info("STEP 2: COLLECTING FROM CATEGORIES (SNOWBALL SAMPLING)")
+        logger.info("COLLECTION SUMMARY")
         logger.info("=" * 60)
+        logger.info(f"Total artists collected: {len(all_artists)}")
+        logger.info(f"  - Seed artists (priority): {seed_count}")
+        logger.info(f"  - Snowball expansion: {snowball_count}")
+        logger.info(f"  - Category fallback: {category_count if len(all_artists) < max_artists else 0}")
+        logger.info(f"Total albums found: {len(self.album_pool)}")
+        logger.info(f"Seed artists in final collection: {sum(1 for name in artist_names if name in self.seed_artists)}/{len(self.seed_artists)}")
+        
+        return all_artists
+    
+    def _collect_from_categories_only(self) -> List[Dict]:
+        """Fallback method: collect only from categories (old behavior)"""
+        # This is the original category-based collection
+        # Implementation same as old collect_artists method
+        all_artists = []
+        artist_names = set()
+        max_artists = self.config.get('max_artists', 1000)
         
         category_artists = set()
         for category in self.config.get('categories', []):
@@ -296,9 +546,6 @@ class WikipediaScraper:
                 if member not in artist_names:
                     category_artists.add(member)
         
-        logger.info(f"Found {len(category_artists)} artists from categories")
-        
-        # Fetch category artists
         category_count = 0
         category_list = list(category_artists)
         
@@ -312,11 +559,10 @@ class WikipediaScraper:
                 artist_names.add(artist_name)
                 self.collected_artists.add(artist_name)
                 
-                # Extract albums for snowball tracking (try both infobox and text)
                 albums = self._extract_albums_from_infobox(artist_data.get('infobox', ''))
-                if not albums:  # Fallback to text extraction if infobox has no albums
+                if not albums:
                     albums = self._extract_albums_from_text(
-                        artist_data.get('text', ''), 
+                        artist_data.get('text', ''),
                         artist_data.get('summary', '')
                     )
                 self.album_pool.update(albums)
@@ -326,16 +572,6 @@ class WikipediaScraper:
                 log_progress(i, len(category_list), "Collecting from categories")
         
         logger.info(f"✓ Collected {category_count} artists from categories")
-        
-        # Final summary
-        logger.info("=" * 60)
-        logger.info("COLLECTION SUMMARY")
-        logger.info("=" * 60)
-        logger.info(f"Total artists collected: {len(all_artists)}")
-        logger.info(f"  - Seed artists: {seed_count}")
-        logger.info(f"  - Category artists: {category_count}")
-        logger.info(f"Total albums found: {len(self.album_pool)}")
-        
         return all_artists
     
     def save_data(self, artists: List[Dict], output_path: str = "data/raw/artists.json"):

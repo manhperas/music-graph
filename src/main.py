@@ -79,10 +79,43 @@ def build_network(args):
     logger.info("=" * 60)
     
     try:
+        # Check if genre files exist
+        genres_path = "data/migrations/genres.csv" if os.path.exists("data/migrations/genres.csv") else None
+        has_genre_path = "data/migrations/has_genre_relationships.csv" if os.path.exists("data/migrations/has_genre_relationships.csv") else None
+        
+        # Check if band classifications exist
+        band_classifications_path = "data/processed/band_classifications.json" if os.path.exists("data/processed/band_classifications.json") else None
+        
+        # Check if songs file exists
+        songs_path = "data/processed/songs.csv" if os.path.exists("data/processed/songs.csv") else None
+        
+        # Check if awards files exist
+        awards_csv_path = "data/processed/awards.csv" if os.path.exists("data/processed/awards.csv") else None
+        awards_json_path = "data/processed/awards.json" if os.path.exists("data/processed/awards.json") else None
+        
+        if genres_path:
+            logger.info(f"✓ Found genres file: {genres_path}")
+        if has_genre_path:
+            logger.info(f"✓ Found HAS_GENRE relationships: {has_genre_path}")
+        if band_classifications_path:
+            logger.info(f"✓ Found band classifications: {band_classifications_path}")
+        if songs_path:
+            logger.info(f"✓ Found songs file: {songs_path}")
+        if awards_csv_path:
+            logger.info(f"✓ Found awards CSV: {awards_csv_path}")
+        if awards_json_path:
+            logger.info(f"✓ Found awards JSON: {awards_json_path}")
+        
         node_count = build_graph(
             nodes_path="data/processed/nodes.csv",
             albums_path="data/processed/albums.json",
-            output_dir="data/processed"
+            output_dir="data/processed",
+            genres_path=genres_path,
+            has_genre_path=has_genre_path,
+            band_classifications_path=band_classifications_path,
+            songs_path=songs_path,
+            awards_csv_path=awards_csv_path,
+            awards_json_path=awards_json_path
         )
         logger.info(f"✓ Built graph with {node_count} nodes")
         return True

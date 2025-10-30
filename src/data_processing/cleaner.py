@@ -42,6 +42,30 @@ class DataCleaner:
         
         return name
     
+    def normalize_label(self, label: str) -> str:
+        """Normalize record label name"""
+        if not label:
+            return ""
+        
+        # Clean and normalize label name
+        label = label.strip()
+        
+        # Remove extra whitespace
+        label = " ".join(label.split())
+        
+        # Remove common suffixes that don't affect uniqueness
+        suffixes = [
+            r'\s*\(record label\)', r'\s*\(label\)', r'\s*\(company\)',
+            r'\s*\(music\)', r'\s*\(records\)', r'\s*\(record company\)'
+        ]
+        for suffix in suffixes:
+            label = re.sub(suffix, '', label, flags=re.IGNORECASE)
+        
+        # Remove leading/trailing special characters
+        label = label.strip('.,;:()[]{}')
+        
+        return label
+    
     def create_similarity_key(self, name: str) -> str:
         """Create a normalized key for duplicate detection"""
         if not name:
@@ -156,14 +180,29 @@ class DataCleaner:
         df['genres_str'] = df['genres'].apply(lambda x: "; ".join(x) if isinstance(x, list) else "")
         df['instruments_str'] = df['instruments'].apply(lambda x: "; ".join(x) if isinstance(x, list) else "")
         
+        # Ensure labels column exists (if missing, create with empty lists)
+        if 'labels' not in df.columns:
+            df['labels'] = df.apply(lambda x: [], axis=1)
+        
+        # Normalize and convert labels to string format
+        def normalize_labels(labels):
+            if not labels or not isinstance(labels, list):
+                return ""
+            normalized_labels = [self.normalize_label(label) for label in labels if label]
+            # Filter out empty labels after normalization
+            normalized_labels = [label for label in normalized_labels if label]
+            return "; ".join(normalized_labels)
+        
+        df['labels_str'] = df['labels'].apply(normalize_labels)
+        
         logger.info(f"Cleaned data: {len(df)} artists remaining")
         logger.info(f"Total duplicates removed: {initial_count - len(df)}")
         return df
     
     def create_nodes_csv(self, df: pd.DataFrame, output_path: str):
         """Create nodes CSV for graph import"""
-        nodes_df = df[['name', 'genres_str', 'instruments_str', 'active_years', 'url']].copy()
-        nodes_df.columns = ['name', 'genres', 'instruments', 'active_years', 'url']
+        nodes_df = df[['name', 'genres_str', 'instruments_str', 'labels_str', 'active_years', 'url']].copy()
+        nodes_df.columns = ['name', 'genres', 'instruments', 'labels', 'active_years', 'url']
         
         # Add unique ID
         nodes_df.insert(0, 'id', range(len(nodes_df)))
@@ -173,10 +212,41 @@ class DataCleaner:
         
         logger.info(f"Saved {len(nodes_df)} nodes to {output_path}")
     
+    def _validate_album_name(self, album_name: str) -> bool:
+        """Validate album name to filter out parsing artifacts"""
+        if not album_name:
+            return False
+        
+        album_name = album_name.strip()
+        
+        # Basic length checks
+        if len(album_name) < 4:
+            return False
+        
+        # Filter out names starting with single lowercase letter + space (parsing artifacts)
+        # Examples: "n trên Pop Chronicles", "u tay Hybrid Theory", "c Sweetener"
+        if re.match(r'^[a-z]\s+', album_name):
+            return False
+        
+        # Filter out names starting with Vietnamese incomplete words
+        # Examples: "nh ", "ng ", "của ", "trên "
+        vietnamese_incomplete = [r'^nh\s+', r'^ng\s+', r'^của\s+', r'^trên\s+', 
+                                r'^c\s+', r'^y\s+', r'^p\s+', r'^a\s+[A-Z]', r'^u\s+tay\s+']
+        for pattern in vietnamese_incomplete:
+            if re.match(pattern, album_name, re.IGNORECASE):
+                return False
+        
+        # Filter out names that are too short after cleaning
+        if len(album_name) < 4:
+            return False
+        
+        return True
+    
     def extract_albums(self, df: pd.DataFrame) -> Dict:
         """Extract album information and create artist-album relationships"""
         album_map = {}  # album_name -> [artist_ids]
         artist_id_map = {row['name']: idx for idx, row in df.iterrows()}
+        skipped_count = 0
         
         for idx, row in df.iterrows():
             albums = row.get('albums', [])
@@ -190,15 +260,22 @@ class DataCleaner:
                     else:
                         album_title = str(album)
                     
-                    if album_title and len(album_title) > 1:
+                    if album_title:
                         # Normalize album title
                         album_title = album_title.strip()
+                        
+                        # Validate album name
+                        if not self._validate_album_name(album_title):
+                            skipped_count += 1
+                            continue
                         
                         if album_title not in album_map:
                             album_map[album_title] = []
                         album_map[album_title].append(artist_id)
         
         logger.info(f"Extracted {len(album_map)} unique albums")
+        if skipped_count > 0:
+            logger.info(f"Skipped {skipped_count} invalid album names (parsing artifacts)")
         return album_map
     
     def save_albums_json(self, album_map: Dict, output_path: str):

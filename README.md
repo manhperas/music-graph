@@ -4,10 +4,10 @@ A comprehensive graph network analysis project that scrapes Wikipedia Vietnamese
 
 ## 🔗 Repository
 
-**GitHub**: https://github.com/[username]/music-network-pop-us-uk
+**GitHub**: https://github.com/manhperas/music-network-pop-us-uk
 
 ```bash
-git clone https://github.com/[username]/music-network-pop-us-uk.git
+git clone https://github.com/manhperas/music-network-pop-us-uk.git
 cd music-network-pop-us-uk
 ```
 

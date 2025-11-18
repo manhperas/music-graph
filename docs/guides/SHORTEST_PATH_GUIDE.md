@@ -1,70 +1,31 @@
-# Thuật Toán Tìm Đường Đi Ngắn Nhất Trong Đồ Thị Music Network
-
-Dự án này cung cấp các công cụ để tìm đường đi ngắn nhất giữa các node trong đồ thị music network được lưu trữ trong Neo4j.
+# Hướng Dẫn Sử Dụng Thuật Toán Tìm Đường Đi Ngắn Nhất
 
 ## 📋 Tổng Quan
 
-Hệ thống cho phép bạn tìm đường đi ngắn nhất giữa bất kỳ 2 node nào trong đồ thị music network, bao gồm:
-- **Nghệ sĩ** (Artist)
-- **Ban nhạc** (Band)
-- **Album**
-- **Bài hát** (Song)
-- **Thể loại** (Genre)
-- **Giải thưởng** (Award)
-- **Hãng đĩa** (RecordLabel)
+Script này cho phép bạn tìm đường đi ngắn nhất giữa 2 node bất kỳ trong đồ thị Neo4j của dự án music-graph.
 
-## 🎯 Tính Năng Chính
+## 🚀 Cài Đặt và Yêu Cầu
 
-- ✅ Tìm đường đi ngắn nhất giữa 2 node bất kỳ
-- ✅ Tìm tất cả các đường đi ngắn nhất (không chỉ một)
-- ✅ Hỗ trợ tìm node theo tên hoặc ID
-- ✅ Lọc theo loại relationship cụ thể
-- ✅ Hiển thị chi tiết đường đi với các node và relationship
-- ✅ Liệt kê các node mẫu trong đồ thị
+1. **Neo4j đang chạy**: Đảm bảo Neo4j đã được khởi động và dữ liệu đã được import
+2. **Python dependencies**: Đã cài đặt các thư viện cần thiết (`neo4j`, `python-dotenv`)
 
-## 🚀 Cài Đặt
+## 📝 Cách Sử Dụng
 
-### Yêu Cầu
-
-- Python 3.10+
-- Neo4j đang chạy (local hoặc Docker)
-- Các thư viện Python: `neo4j`, `python-dotenv`
-
-### Cài Đặt Dependencies
-
-```bash
-pip install neo4j python-dotenv
-```
-
-### Cấu Hình Neo4j
-
-Tạo file `config/neo4j_config.json`:
-
-```json
-{
-  "uri": "bolt://localhost:7687",
-  "user": "neo4j",
-  "database": "neo4j"
-}
-```
-
-Tạo file `.env`:
-
-```bash
-NEO4J_PASS=your_password
-```
-
-## 📖 Cách Sử Dụng
-
-### 1. Demo Nhanh
+### 1. Demo Nhanh (Khuyến nghị cho lần đầu)
 
 Chạy script demo để xem cách hoạt động:
 
 ```bash
+cd /home/manhnguyen/Downloads/music-graph
 python scripts/analysis/demo_shortest_path.py
 ```
 
-### 2. Tìm Đường Đi Giữa 2 Node
+Script này sẽ:
+- Liệt kê một số nghệ sĩ mẫu trong đồ thị
+- Tự động tìm đường đi ngắn nhất giữa 2 nghệ sĩ đầu tiên
+- Hiển thị kết quả chi tiết
+
+### 2. Tìm Đường Đi Giữa 2 Node Cụ Thể
 
 #### Tìm theo tên:
 
@@ -94,6 +55,8 @@ python scripts/analysis/test_shortest_path.py \
 
 ### 3. Tìm Tất Cả Đường Đi Ngắn Nhất
 
+Để tìm tất cả các đường đi ngắn nhất (không chỉ một):
+
 ```bash
 python scripts/analysis/test_shortest_path.py \
   --node1 "Artist 1" \
@@ -122,18 +85,47 @@ python scripts/analysis/test_shortest_path.py \
 
 ### 5. Liệt Kê Các Node Mẫu
 
+Để xem các node có sẵn trong đồ thị:
+
 ```bash
 # Liệt kê nghệ sĩ
 python scripts/analysis/test_shortest_path.py --list-nodes Artist
 
 # Liệt kê album
 python scripts/analysis/test_shortest_path.py --list-nodes Album
+
+# Liệt kê band
+python scripts/analysis/test_shortest_path.py --list-nodes Band
 ```
 
-## 📊 Các Loại Relationship
+### 6. Tùy Chọn Nâng Cao
 
-Hệ thống hỗ trợ các loại relationship sau:
+```bash
+# Giới hạn độ sâu tìm kiếm
+python scripts/analysis/test_shortest_path.py \
+  --node1 "Artist 1" \
+  --node2 "Artist 2" \
+  --max-depth 5
 
+# Sử dụng config file khác
+python scripts/analysis/test_shortest_path.py \
+  --node1 "Artist 1" \
+  --node2 "Artist 2" \
+  --config /path/to/neo4j_config.json
+```
+
+## 📊 Các Loại Node và Relationship
+
+### Node Types:
+- **Artist**: Nghệ sĩ solo
+- **Band**: Ban nhạc
+- **Album**: Album
+- **Song**: Bài hát
+- **Genre**: Thể loại âm nhạc
+- **Award**: Giải thưởng
+- **RecordLabel**: Hãng đĩa
+
+### Relationship Types:
 - **COLLABORATES_WITH**: Nghệ sĩ hợp tác với nhau
 - **PERFORMS_ON**: Nghệ sĩ biểu diễn trên album/bài hát
 - **SIMILAR_GENRE**: Nghệ sĩ có thể loại tương tự
@@ -143,7 +135,7 @@ Hệ thống hỗ trợ các loại relationship sau:
 - **PART_OF**: Bài hát nằm trong album
 - **AWARD_NOMINATION**: Đề cử/giành giải thưởng
 
-## 💡 Ví Dụ Kết Quả
+## 💡 Ví Dụ Sử Dụng
 
 ### Ví dụ 1: Tìm đường đi giữa 2 nghệ sĩ
 
@@ -178,47 +170,26 @@ SHORTEST PATH: Taylor Swift → Ed Sheeran
     ID: artist_789
 ```
 
-## 🔧 Thuật Toán
-
-Script sử dụng Neo4j's built-in `shortestPath()` function để tìm đường đi ngắn nhất:
-
-```cypher
-MATCH path = shortestPath(
-  (start {id: $node1_id})-[*1..10]-(end {id: $node2_id})
-)
-RETURN path, length(path) AS path_length
-```
-
-Thuật toán này sử dụng **Breadth-First Search (BFS)** để tìm đường đi ngắn nhất trong đồ thị không có trọng số.
-
-## 📁 Cấu Trúc File
-
-```
-scripts/analysis/
-├── test_shortest_path.py      # Script chính với đầy đủ tính năng
-└── demo_shortest_path.py       # Script demo đơn giản
-
-docs/guides/
-└── SHORTEST_PATH_GUIDE.md      # Hướng dẫn chi tiết
-```
-
-## 🛠 Tùy Chọn Nâng Cao
+### Ví dụ 2: Tìm tất cả đường đi ngắn nhất
 
 ```bash
-# Giới hạn độ sâu tìm kiếm
 python scripts/analysis/test_shortest_path.py \
   --node1 "Artist 1" \
   --node2 "Artist 2" \
-  --max-depth 5
-
-# Sử dụng config file khác
-python scripts/analysis/test_shortest_path.py \
-  --node1 "Artist 1" \
-  --node2 "Artist 2" \
-  --config /path/to/neo4j_config.json
+  --all-paths \
+  --max-paths 3
 ```
 
-## 🔍 Xử Lý Lỗi
+### Ví dụ 3: Chỉ tìm qua collaboration
+
+```bash
+python scripts/analysis/test_shortest_path.py \
+  --node1 "Artist 1" \
+  --node2 "Artist 2" \
+  --relationships COLLABORATES_WITH
+```
+
+## 🔧 Xử Lý Lỗi
 
 ### Lỗi: "Node not found"
 - Kiểm tra tên node có đúng không (phân biệt chữ hoa/thường)
@@ -228,22 +199,23 @@ python scripts/analysis/test_shortest_path.py \
 ### Lỗi: "No path found"
 - Có thể 2 node nằm trong các thành phần liên thông khác nhau
 - Thử tăng `--max-depth` (mặc định là 10)
-- Thử không giới hạn loại relationship
+- Thử không giới hạn loại relationship (bỏ `--relationships`)
 
 ### Lỗi: "Connection failed"
-- Kiểm tra Neo4j đang chạy: `sudo systemctl status neo4j` hoặc `docker-compose ps`
+- Kiểm tra Neo4j đang chạy: `sudo systemctl status neo4j`
 - Kiểm tra password trong file `.env`
 - Kiểm tra config trong `config/neo4j_config.json`
 
-## 📚 Tài Liệu Tham Khảo
+## 📚 Tham Khảo
 
-- Hướng dẫn chi tiết: [docs/guides/SHORTEST_PATH_GUIDE.md](docs/guides/SHORTEST_PATH_GUIDE.md)
-- Graph schema: [docs/technical/GRAPH_RELATIONSHIPS.md](docs/technical/GRAPH_RELATIONSHIPS.md)
+- File chính: `scripts/analysis/test_shortest_path.py`
+- Script demo: `scripts/analysis/demo_shortest_path.py`
+- Tài liệu graph schema: `docs/technical/GRAPH_RELATIONSHIPS.md`
 
-## 👤 Tác Giả
+## 🎯 Use Cases
 
-Manh Nguyen - Graph Network Analysis Project
+1. **Tìm mối liên hệ giữa nghệ sĩ**: Xem các nghệ sĩ có liên kết với nhau như thế nào
+2. **Phân tích collaboration network**: Hiểu cách các nghệ sĩ hợp tác với nhau
+3. **Khám phá genre connections**: Tìm đường đi qua các thể loại âm nhạc
+4. **Phân tích độ trung tâm**: Tìm các node quan trọng trong mạng lưới
 
-## 📝 License
-
-Dự án này được phát triển cho mục đích giáo dục và nghiên cứu.

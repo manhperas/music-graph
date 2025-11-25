@@ -65,4 +65,9 @@ figures/
 # Ignore docs directory
 docs/
 
+# Scripts and queries
+scripts/
+*.cypher
+*.sh
+
 

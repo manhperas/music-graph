@@ -58,4 +58,11 @@ neo4j_data/
 *.png
 figures/
 
+# Documentation - ignore all markdown files except README.md
+*.md
+!README.md
+
+# Ignore docs directory
+docs/
+
 

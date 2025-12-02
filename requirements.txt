@@ -9,4 +9,26 @@ matplotlib>=3.7.0
 requests>=2.31.0
 scipy>=1.11.0
 
+# GraphRAG dependencies
+transformers>=4.46.0
+torch>=2.0.0
+spacy>=3.7.0
+sentence-transformers>=2.2.0
+
+# Qwen3 + LoRA fine-tuning dependencies
+peft>=0.12.0
+trl>=0.9.0
+accelerate>=0.25.0
+bitsandbytes>=0.41.0
+datasets>=2.15.0
+
+# Evaluation dependencies
+tqdm>=4.65.0
+
+# API & UI dependencies
+fastapi>=0.104.0
+uvicorn>=0.24.0
+gradio>=4.0.0
+pydantic>=2.0.0
+
 

@@ -1,0 +1,227 @@
+{
+  "node_counts": {
+    "Artist": 1564,
+    "Album": 268
+  },
+  "edge_counts": {
+    "SIMILAR_GENRE": 3553,
+    "COLLABORATES_WITH": 604,
+    "PERFORMS_ON": 593
+  },
+  "degree_stats": {
+    "avg_degree": 18.25204918032788,
+    "max_degree": 95,
+    "min_degree": 1,
+    "median_degree": 6.0
+  },
+  "top_connected": [
+    {
+      "name": "Christina Grimmie",
+      "degree": 95
+    },
+    {
+      "name": "Natasha Hamilton",
+      "degree": 94
+    },
+    {
+      "name": "Jason Derulo",
+      "degree": 91
+    },
+    {
+      "name": "Jordin Sparks",
+      "degree": 89
+    },
+    {
+      "name": "Victoria Beckham",
+      "degree": 89
+    },
+    {
+      "name": "I Am... Yours: An Intimate Performance at Wynn Las Vegas",
+      "degree": 89
+    },
+    {
+      "name": "The Smeezingtons",
+      "degree": 89
+    },
+    {
+      "name": "AJ McLean",
+      "degree": 88
+    },
+    {
+      "name": "James Ingram",
+      "degree": 85
+    },
+    {
+      "name": "Fantasia Barrino",
+      "degree": 85
+    }
+  ],
+  "top_collaborators": [
+    {
+      "name": "Should've Said No",
+      "collaborations": 25,
+      "total_shared_albums": 32.0
+    },
+    {
+      "name": "Don't Cry for Me Argentina",
+      "collaborations": 21,
+      "total_shared_albums": 23.0
+    },
+    {
+      "name": "Meteora",
+      "collaborations": 19,
+      "total_shared_albums": 24.0
+    },
+    {
+      "name": "Linkin Park",
+      "collaborations": 19,
+      "total_shared_albums": 23.0
+    },
+    {
+      "name": "Give Peace a Chance",
+      "collaborations": 18,
+      "total_shared_albums": 19.0
+    },
+    {
+      "name": "Too Young",
+      "collaborations": 17,
+      "total_shared_albums": 19.0
+    },
+    {
+      "name": "Don't Let Me Down",
+      "collaborations": 17,
+      "total_shared_albums": 18.0
+    },
+    {
+      "name": "Tears in Heaven",
+      "collaborations": 15,
+      "total_shared_albums": 18.0
+    },
+    {
+      "name": "I'm Glad",
+      "collaborations": 15,
+      "total_shared_albums": 17.0
+    },
+    {
+      "name": "John Frusciante",
+      "collaborations": 14,
+      "total_shared_albums": 18.0
+    }
+  ],
+  "strongest_collaborations": [
+    {
+      "artist1": "Cardigan (bài hát)",
+      "artist2": "Search Me",
+      "shared_albums": 5.0
+    },
+    {
+      "artist1": "Search Me",
+      "artist2": "Pound the Alarm",
+      "shared_albums": 4.0
+    },
+    {
+      "artist1": "Henry Purcell",
+      "artist2": "John Frusciante",
+      "shared_albums": 4.0
+    },
+    {
+      "artist1": "Michael Jackson's This Is It",
+      "artist2": "Marry the Night",
+      "shared_albums": 4.0
+    },
+    {
+      "artist1": "Tidal",
+      "artist2": "Jessie J",
+      "shared_albums": 4.0
+    },
+    {
+      "artist1": "Cardigan (bài hát)",
+      "artist2": "Pound the Alarm",
+      "shared_albums": 4.0
+    },
+    {
+      "artist1": "John Stamos",
+      "artist2": "I'm Every Woman",
+      "shared_albums": 3.0
+    },
+    {
+      "artist1": "Anything Could Happen",
+      "artist2": "Benny Goodman",
+      "shared_albums": 3.0
+    },
+    {
+      "artist1": "Meteora",
+      "artist2": "Speed of Sound",
+      "shared_albums": 3.0
+    },
+    {
+      "artist1": "Phi Nhung",
+      "artist2": "From the Bottom of My Broken Heart",
+      "shared_albums": 3.0
+    }
+  ],
+  "genre_distribution": {
+    "Pop": 27,
+    "R&B": 10,
+    "Country pop": 5,
+    "Pop; R&B": 5,
+    "Dance-pop": 3,
+    "Pop rock; piano rock": 2,
+    "Rock; pop": 2,
+    "R&B; pop; hip hop": 2,
+    "Synthpop": 2,
+    "Soul": 2,
+    "Pop punk": 2,
+    "R&B; pop; soul": 2,
+    "* electropop; }}": 2,
+    "pop": 2,
+    "Latin pop": 2,
+    "*Hip hop; *Soul; *R&B; *funk-pop; }}": 1,
+    "NaN": 1,
+    "NaN": 1,
+    "NaN": 1,
+    "NaN": 1
+  },
+  "top_pagerank": [
+    {
+      "name": "Danh sách buổi biểu diễn trực tiếp của Katy Perry",
+      "pagerank": 0.005371689985947246
+    },
+    {
+      "name": "John Frusciante",
+      "pagerank": 0.0037075374698773526
+    },
+    {
+      "name": "American Life",
+      "pagerank": 0.003644480203186621
+    },
+    {
+      "name": "Give Peace a Chance",
+      "pagerank": 0.003583522649829174
+    },
+    {
+      "name": "Christina Grimmie",
+      "pagerank": 0.003564221831990223
+    },
+    {
+      "name": "Too Young",
+      "pagerank": 0.0034909618603255676
+    },
+    {
+      "name": "Natasha Hamilton",
+      "pagerank": 0.003314001405413055
+    },
+    {
+      "name": "Meteora",
+      "pagerank": 0.003196812335046648
+    },
+    {
+      "name": "Don't Cry for Me Argentina",
+      "pagerank": 0.0030121659527553254
+    },
+    {
+      "name": "Henry Purcell",
+      "pagerank": 0.0029703975118885876
+    }
+  ]
+}

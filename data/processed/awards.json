@@ -1,0 +1,76 @@
+{
+  "Shawn Mendes": [
+    {
+      "ceremony": "MTV Video Music Awards",
+      "category": "hạng mục Best Pop Video với ca khúc \"Treat You Better\" vào năm",
+      "year": 2015,
+      "status": "won",
+      "raw_text": "Trong suốt sự nghiệp ca hát của mình, Shawn Mendes đã nhận được khá nhiều các giải thưởng và đề cử, bao gồm 8 giải MTV Europe Music Awards, 4 giải iHeartRadio Much Music Video Awards, 1 giải American "
+    }
+  ],
+  "Sam Smith": [
+    {
+      "ceremony": "Brit Awards",
+      "category": "rowspan=\"2\"",
+      "year": 2014,
+      "status": "nominated",
+      "raw_text": "| rowspan=\"2\" |BRIT Awards"
+    },
+    {
+      "ceremony": "MTV Video Music Awards",
+      "category": "rowspan=\"2\"",
+      "year": 2014,
+      "status": "nominated",
+      "raw_text": "| rowspan=\"2\" |MTV Video Music Awards"
+    },
+    {
+      "ceremony": "American Music Awards",
+      "category": "rowspan=\"2\"",
+      "year": 2014,
+      "status": "nominated",
+      "raw_text": "| rowspan=\"2\" |American Music Awards"
+    },
+    {
+      "ceremony": "Grammy Awards",
+      "category": "Album của năm]]",
+      "year": 2015,
+      "status": "nominated",
+      "raw_text": "|[[Giải Grammy cho Album của năm|Album của năm]]"
+    },
+    {
+      "ceremony": "Grammy Awards",
+      "category": "Album giọng pop xuất sắc nhất]]",
+      "year": 2015,
+      "status": "nominated",
+      "raw_text": "|[[Giải Grammy cho Album giọng pop xuất sắc nhất|Album giọng pop xuất sắc nhất]]"
+    },
+    {
+      "ceremony": "Grammy Awards",
+      "category": "Thu âm của năm]]",
+      "year": 2015,
+      "status": "nominated",
+      "raw_text": "|[[Giải Grammy cho Thu âm của năm|Thu âm của năm]]"
+    },
+    {
+      "ceremony": "Grammy Awards",
+      "category": "Bài hát của năm]]",
+      "year": 2015,
+      "status": "nominated",
+      "raw_text": "|[[Giải Grammy cho Bài hát của năm|Bài hát của năm]]"
+    },
+    {
+      "ceremony": "Grammy Awards",
+      "category": "Trình diễn solo giọng pop xuất sắc nhất]]",
+      "year": 2015,
+      "status": "nominated",
+      "raw_text": "|[[Giải Grammy cho Trình diễn solo giọng pop xuất sắc nhất|Trình diễn solo giọng pop xuất sắc nhất]]"
+    },
+    {
+      "ceremony": "Grammy Awards",
+      "category": "Nghệ sĩ mới xuất sắc nhất]]",
+      "year": 2015,
+      "status": "nominated",
+      "raw_text": "|[[Giải Grammy cho Nghệ sĩ mới xuất sắc nhất|Nghệ sĩ mới xuất sắc nhất]]"
+    }
+  ]
+}

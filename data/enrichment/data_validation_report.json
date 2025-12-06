@@ -1,0 +1,84 @@
+{
+  "timestamp": 1764552249.6227832,
+  "files_validated": [
+    {
+      "file": "data/enrichment/wikipedia_raw_corpus.json",
+      "is_valid": true,
+      "total_articles": 10,
+      "valid_articles": 10,
+      "invalid_articles": 0,
+      "issues": [],
+      "quality_metrics": {
+        "avg_word_count": 10983.7,
+        "max_word_count": 18478,
+        "min_word_count": 5837,
+        "articles_over_500_words": 10,
+        "articles_over_1000_words": 10
+      }
+    },
+    {
+      "file": "data/enrichment/wikipedia_cleaned_corpus.json",
+      "is_valid": true,
+      "total_articles": 10,
+      "valid_articles": 10,
+      "invalid_articles": 0,
+      "issues": [],
+      "quality_metrics": {
+        "avg_word_count": 10983.7,
+        "max_word_count": 18478,
+        "min_word_count": 5837,
+        "articles_over_500_words": 10,
+        "articles_over_1000_words": 10
+      }
+    },
+    {
+      "file": "data/enrichment/musicbrainz_artist_data.json",
+      "is_valid": true,
+      "total_artists": 3,
+      "valid_artists": 3,
+      "invalid_artists": 0,
+      "issues": [],
+      "quality_metrics": {
+        "quality_distribution": {
+          "high": 3
+        },
+        "avg_releases_per_artist": 10.0,
+        "avg_works_per_artist": 50.0,
+        "artists_with_releases": 3,
+        "artists_with_works": 3
+      }
+    },
+    {
+      "file": "data/enrichment/spotify_artist_data.json",
+      "is_valid": true,
+      "total_artists": 0,
+      "valid_artists": 0,
+      "invalid_artists": 0,
+      "issues": [],
+      "quality_metrics": {}
+    },
+    {
+      "file": "data/enrichment/unified_artist_profiles.json",
+      "is_valid": true,
+      "total_profiles": 5,
+      "valid_profiles": 5,
+      "invalid_profiles": 0,
+      "issues": [],
+      "quality_metrics": {
+        "avg_quality_score": 3.8,
+        "max_quality_score": 5.0,
+        "min_quality_score": 2.0,
+        "avg_data_sources": 1.6,
+        "profiles_with_multiple_sources": 3,
+        "high_quality_profiles": 0
+      }
+    }
+  ],
+  "overall_status": "valid",
+  "summary": {
+    "total_files_checked": 5,
+    "valid_files": 5,
+    "invalid_files": 0,
+    "overall_valid": true
+  }
+}

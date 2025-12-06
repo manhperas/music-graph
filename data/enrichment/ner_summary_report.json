@@ -1,0 +1,38 @@
+{
+  "task": "1.2 NER Model",
+  "method": "SpaCy Rule-Based",
+  "timestamp": "2025-12-01",
+  "statistics": {
+    "total_articles": 99,
+    "total_entities": 2152,
+    "avg_entities_per_article": 21.737373737373737,
+    "entity_distribution": {
+      "GENRE": 1489,
+      "ARTIST": 208,
+      "SONG": 9,
+      "ALBUM": 27,
+      "AWARD": 419
+    },
+    "top_genres": {
+      "pop": 464,
+      "Country": 266,
+      "country": 241,
+      "rock": 234,
+      "Pop": 161
+    },
+    "top_artists": {
+      "Ed Sheeran": 114,
+      "Taylor Swift": 94
+    },
+    "language_breakdown": {
+      "en": {
+        "articles": 49,
+        "entities": 1531
+      },
+      "vi": {
+        "articles": 50,
+        "entities": 621
+      }
+    }
+  }
+}

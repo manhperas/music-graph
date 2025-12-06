@@ -1,0 +1,15 @@
+{
+  "total_questions": 2000,
+  "by_question_type": {
+    "2-hop": 1000,
+    "1-hop": 600,
+    "3-hop": 400
+  },
+  "by_answer_type": {
+    "factual": 1997,
+    "yes_no": 3
+  },
+  "augmented_count": 249,
+  "generated_at": "2025-12-02T07:39:39.059497",
+  "source": "augmented"
+}

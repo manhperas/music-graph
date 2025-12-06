@@ -1,0 +1,719 @@
+id,name
+genre_0,pop
+genre_1,Folk Pop
+genre_2,Soul
+genre_3,Blue Eyed Soul
+genre_4,r&b
+genre_5,Funk
+genre_6,Hip Hop
+genre_7,Trap
+genre_8,Cloud Rap
+genre_9,Rap Rock
+genre_10,Funk Pop
+genre_11,Nhạc Dance Điện Tử
+genre_12,Electro House
+genre_13,Progressive House
+genre_14,Nhạc Trap
+genre_15,Future Bass
+genre_16,Pop Rockpoprock
+genre_17,Pop Rock
+genre_18,Blues Rock
+genre_19,Acoustic Rock
+genre_20,Alternative Rock
+genre_21,Anti-folk
+genre_22,Rock
+genre_23,Blues
+genre_24,Folk
+genre_25,Hard Rock
+genre_26,Heavy Metal
+genre_27,Mandopop
+genre_28,J-pop
+genre_29,Electropop
+genre_30,Miranda Cosgrove
+genre_31,Allmusic
+genre_32,Delta Blues
+genre_33,Đồng Quê
+genre_34,Rock And Roll
+genre_35,Gospel
+genre_36,Rockabilly
+genre_37,Barbershop Music
+genre_38,Traditional Pop
+genre_39,Doo Wop
+genre_40,Art Rock
+genre_41,Power Pop
+genre_42,Nhạc Đại Chúng
+genre_43,Schlager Music
+genre_44,Theatre Music
+genre_45,Nhạc Nền Phim
+genre_46,Dance
+genre_47,Salsa
+genre_48,Freestyle
+genre_49,Kellman
+genre_50,Andy
+genre_51,Artist Biography
+genre_52,New Jack Swing
+genre_53,Dance-rock
+genre_54,Dance Pop
+genre_55,Country Pop
+genre_56,Nhạc Pop Latinh
+genre_57,Hip Pop
+genre_58,Trào Phúng
+genre_59,Hài Kịch
+genre_60,Khoa Học
+genre_61,K-pop
+genre_62,Ballad
+genre_63,Indie Rock
+genre_64,Matt
+genre_65,Collar
+genre_66,Jon Bellion Allmusic
+genre_67,May 12
+genre_68,Big Band
+genre_69,Country
+genre_70,Easy Listening
+genre_71,Swing
+genre_72,Vocal Jazz
+genre_73,Soft Rock
+genre_74,Folk Rock
+genre_75,Adult Contemporary
+genre_76,Observational Comedy
+genre_77,Musical Comedy
+genre_78,Sketch Comedy
+genre_79,Surreal Humor
+genre_80,Sarcasm
+genre_81,Satire
+genre_82,Urban Pop
+genre_83,Nhạc Dân Gian
+genre_84,Pop Truyền Thống
+genre_85,Jazz
+genre_86,Thanh Nhạc
+genre_87,Disco
+genre_88,Rock Đồng Quê
+genre_89,Indie Folk
+genre_90,Baroque Pop
+genre_91,Indie Pop
+genre_92,Psychedelic Folk
+genre_93,Electronica
+genre_94,The Irish Times
+genre_95,Murphy
+genre_96,Teen Pop
+genre_97,New Wave
+genre_98,Electronic-pop
+genre_99,Memphis Blues
+genre_100,Electric Blues
+genre_101,Soul Blues
+genre_102,Jazz Blues
+genre_103,Nhạc Điện Tử
+genre_104,Alternative Dance
+genre_105,Alternative Hip Hop
+genre_106,World
+genre_107,Grime
+genre_108,Indietronica
+genre_109,Cabaret
+genre_110,Music Hall
+genre_111,Nhạc Pop Pháp
+genre_112,Nhạc Jazz Pháp
+genre_113,Garage Rock
+genre_114,Punk Blues
+genre_115,Instrumental Rock
+genre_116,Psychedelic Soul
+genre_117,Noz
+genre_118,Andrew
+genre_119,Npr
+genre_120,Fennessey
+genre_121,Sean
+genre_122,Nhạc Dễ Nghe
+genre_123,Jazz Hát
+genre_124,Rhythm And Blues
+genre_125,Psychedelic Rock
+genre_126,Lubbock Sound
+genre_127,Motown
+genre_128,Rock Trữ Tình
+genre_129,Sendra
+genre_130,Tim
+genre_131,Reviews
+genre_132,Credits
+genre_133,Awards
+genre_134,R&b/pop/soul
+genre_135,Alternative Metal
+genre_136,Nu Metal
+genre_137,Electronic Rock
+genre_138,Post-grunge
+genre_139,Alternative R&B
+genre_140,Victoria Monét Songs
+genre_141,Albums
+genre_142,Bio & More
+genre_143,Piano Rock
+genre_144,Phúc Âm
+genre_145,Popnhạc Đồng Quêhip Hop
+genre_146,Hardcore Punk
+genre_147,Imagine Dragons
+genre_148,Sputnikmusic
+genre_149,Funk Rock
+genre_150,Progressive Rock
+genre_151,Beat
+genre_152,Classical Crossover
+genre_153,Smooth Soul
+genre_154,Heartland Rock
+genre_155,Roots Rock
+genre_156,Kim Wilde &#124
+genre_157,Biography
+genre_158,Pbr&b
+genre_159,Acapella
+genre_160,Alternative
+genre_161,Skiffle
+genre_162,Nhạc Kitô Giáo
+genre_163,Bhangra
+genre_164,Electronic
+genre_165,Alternative Pop
+genre_166,Future Garage
+genre_167,Dubstep
+genre_168,2-step
+genre_169,Ambient
+genre_170,Ambient House
+genre_171,Doo-wop
+genre_172,Rock & Roll
+genre_173,Nhạc Đồng Quê
+genre_174,Khiêu Vũ
+genre_175,Nashville Sound
+genre_176,Đồng Quê Pop
+genre_177,Bluegrass
+genre_178,New-age
+genre_179,Pop/rock
+genre_180,You Were Meant To Be] Allmusic.com.
+genre_181,Disco House
+genre_182,Eurodance
+genre_183,Grunge
+genre_184,Chris Cornell Tickets In Boston Massachusetts
+genre_185,Dallas Texas
+genre_186,Nashville Tennessee
+genre_187,Chicago Illinois
+genre_188,Denver Colorad]o
+genre_189,Techno
+genre_190,Adult Alternative
+genre_191,Neo Soul
+genre_192,Synth-pop
+genre_193,Pop Rap
+genre_194,Rock (with The First Edition)
+genre_195,Jazz (with The Bobby Doyle Trio)
+genre_196,edm
+genre_197,Rock 'n' Roll
+genre_198,Acoustic
+genre_199,Synthpop
+genre_200,O'brien
+genre_201,John
+genre_202,Natalia Kills
+genre_203,Villagomez
+genre_204,Electro-disco
+genre_205,Ditzian
+genre_206,Eric
+genre_207,January 26
+genre_208,Experimental Rock
+genre_209,Protopunk
+genre_210,Noise Rock
+genre_211,Đọc Hát
+genre_212,Avant-garde
+genre_213,Experimental
+genre_214,Drone
+genre_215,Drone Metal
+genre_216,Post-rock
+genre_217,Doom Metal
+genre_218,Stoner Rock
+genre_219,Nhạc Tối Giản
+genre_220,Farce
+genre_221,Parody
+genre_222,Emo
+genre_223,Hip Hop Soul
+genre_224,Post-punk Revival
+genre_225,The 10 Best Paul Mccartney & Wings Songs
+genre_226,Dave Lewis18
+genre_227,June 2020
+genre_228,Classic Rock Magazine
+genre_229,Loud And Quiet
+genre_230,Operatic Pop
+genre_231,Cổ Điển
+genre_232,Cổ Điển Giao Thoa
+genre_233,Powerviolence
+genre_234,Afrobeat
+genre_235,House
+genre_236,Nesbitt
+genre_237,William
+genre_238,Popmatters
+genre_239,Mariah Carey
+genre_240,Rollingstone
+genre_241,December 15
+genre_242,November 25
+genre_243,February 1
+genre_244,Live
+genre_245,Lo-fi
+genre_246,Nhạc Nhảy
+genre_247,Billboard's Number One Albums Of The Rock Era
+genre_248,Pt. 1 (1956–1995)
+genre_249,Rate Your Music
+genre_250,Pop Đồng Quê
+genre_251,Grindcore
+genre_252,Pop-punk
+genre_253,Orchestral Pop
+genre_254,Nme
+genre_255,Levine
+genre_256,Nick
+genre_257,December 8
+genre_258,Samul Nori
+genre_259,Kim
+genre_260,Eun Ae
+genre_261,Punk Rock
+genre_262,Torch Song
+genre_263,Giáng Sinh
+genre_264,Ngày Lễ
+genre_265,Nhạc Phúc Âm
+genre_266,On 'daytona' And 'ye'
+genre_267,Klinkenberg
+genre_268,Brendan
+genre_269,Space Rock
+genre_270,Neo-psychedelia
+genre_271,Dân Ca Ireland
+genre_272,Eurodisco
+genre_273,Electroclash
+genre_274,Hài Kịch Phác Họa
+genre_275,Hài Kịch Tình Huống
+genre_276,Hài Hip Hop
+genre_277,Funk Metal
+genre_278,Vlog
+genre_279,Christmas
+genre_280,Americana
+genre_281,Southern Rock
+genre_282,Experimental Pop
+genre_283,Psychedelic Pop
+genre_284,Freak Folk
+genre_285,Noise Pop
+genre_286,Npr Music
+genre_287,Cairns
+genre_288,August 24
+genre_289,Aggressive
+genre_290,Mathy Rock
+genre_291,African Pop
+genre_292,Disco-pop
+genre_293,Yacht Rock
+genre_294,"""rosen"">"
+genre_295,British Pop
+genre_296,Bruce
+genre_297,Handy
+genre_298,Vanity Fair
+genre_299,Caution – Mariah Carey
+genre_300,November 15
+genre_301,November 16
+genre_302,November 17
+genre_303,Big Room House
+genre_304,Nu Metalrapcorehip Hopelectronica
+genre_305,Lizzo – Cuz I Love You
+genre_306,Diy
+genre_307,Finn
+genre_308,Rachel
+genre_309,Dream Pop
+genre_310,Shoegazing
+genre_311,Soul Rock
+genre_312,Deep House
+genre_313,Trip-hop
+genre_314,Pop Punk
+genre_315,Reggae Pop
+genre_316,Hertsgaard
+genre_317,Rock Music
+genre_318,Jason
+genre_319,Lipshutz
+genre_320,Billboard
+genre_321,Glam Rock
+genre_322,West Coast Hip Hop
+genre_323,Nhạc Cổ Điển
+genre_324,Trip Hop
+genre_325,Website=the Georgia Straight
+genre_326,Language=en
+genre_327,Art Pop
+genre_328,Eurohouse
+genre_329,Petridis
+genre_330,Alexis
+genre_331,The Guardian
+genre_332,Cool Jazz
+genre_333,Post-bop
+genre_334,Latin Pop
+genre_335,Synth Rock
+genre_336,Raga Rock
+genre_337,Country Rock
+genre_338,Jangle Pop
+genre_339,Post-hardcore
+genre_340,Art Punk
+genre_341,Comedy Hip Hop
+genre_342,Bebop
+genre_343,Hard Bop
+genre_344,Trữ Tình
+genre_345,Thánh Ca
+genre_346,Folk-pop
+genre_347,Bubblegum Pop
+genre_348,Midwest Hip-hop
+genre_349,Horrorcore
+genre_350,Hardcore Hip-hop
+genre_351,Swamp Pop
+genre_352,"Cheater By Michael Jackson (12"" Vinyl)"
+genre_353,Discogs
+genre_354,Cheater By Michael Jackson (europe Promo)
+genre_355,Arena Rock
+genre_356,Goth Rock
+genre_357,10 Biggest 'sellout' Albums In Rock
+genre_358,Whatculture
+genre_359,Cooley
+genre_360,Joshua
+genre_361,January 20
+genre_362,Chamber
+genre_363,Covers
+genre_364,Latin
+genre_365,Metalfest 2000
+genre_366,Mark Rudolph
+genre_367,Central Michigan Life
+genre_368,A Natural Disaster
+genre_369,Adrien Begrand
+genre_370,Indie Electronic
+genre_371,Electro-rock
+genre_372,Emo Rap
+genre_373,Euro Disco
+genre_374,Bossa Nova
+genre_375,Mpb
+genre_376,Indie
+genre_377,Worldbeat
+genre_378,Lounge
+genre_379,Modal Jazz
+genre_380,Third Stream
+genre_381,Western
+genre_382,Honky-tonk
+genre_383,Proto-rockabilly
+genre_384,Spencer
+genre_385,Neil
+genre_386,Uk Garage
+genre_387,Uk Funky
+genre_388,New Wave Music
+genre_389,April 2014
+genre_390,Rock En Español
+genre_391,Dân Gian
+genre_392,Urban
+genre_393,Jazz-funk
+genre_394,Metalcore
+genre_395,Christgau
+genre_396,Robert
+genre_397,Robert Christgau
+genre_398,May 20
+genre_399,Hipster Hop
+genre_400,Indie Hip Hop
+genre_401,Thrash Metal
+genre_402,Coco Jones Songs
+genre_403,Math Rock
+genre_404,Consequence Of Sound
+genre_405,Bray
+genre_406,Ryan
+genre_407,Hardcore Hip Hop
+genre_408,East Coast Hip Hop
+genre_409,Rap Metal
+genre_410,The Independent
+genre_411,Bbc
+genre_412,Mariachi
+genre_413,Breakbeat
+genre_414,Northern Soul
+genre_415,Post-punk
+genre_416,Reggaeton
+genre_417,Emo Pop
+genre_418,Dân Ca
+genre_419,Alex Turner
+genre_420,Leahey
+genre_421,Itunes
+genre_422,Music
+genre_423,Something To Remember > Review
+genre_424,Erlewine
+genre_425,Stephen Thomas
+genre_426,Stephen Thomas Erlewine
+genre_427,August 8
+genre_428,May 15
+genre_429,Teen Pop Music Genre Overview
+genre_430,July 20
+genre_431,August 5
+genre_432,Madonna > True Blue > Overview
+genre_433,December 29
+genre_434,June 30
+genre_435,Show Tunes
+genre_436,Soul...
+genre_437,Lang=french
+genre_438,Newspaper=la Presse
+genre_439,Page=d10
+genre_440,Access-date=december 20
+genre_441,Via=banq
+genre_442,Post-industrial
+genre_443,A Cappella
+genre_444,Robert Copsey
+genre_445,– Music Album Review&nbsp
+genre_446,– Digital Spy
+genre_447,Digital Spy
+genre_448,May 3
+genre_449,Jon O'brien
+genre_450,Melanie Blatt &#124
+genre_451,Biography & History
+genre_452,Punk Jazz
+genre_453,Free Jazz
+genre_454,Noise
+genre_455,Soundcloud Rap
+genre_456,En-us
+genre_457,Lil Pump Levels Up With Self-titled Debut Album
+genre_458,Xxl Mag
+genre_459,October 2017
+genre_460,Cmj
+genre_461,September 2007
+genre_462,Sarah
+genre_463,Wykes
+genre_464,Au Review
+genre_465,Rob
+genre_466,Sayce
+genre_467,Folktronica
+genre_468,Jazz Fusion
+genre_469,Lil' Mosey
+genre_470,The 15 Year-old Phenom From Seattle
+genre_471,The Don Wong
+genre_472,Rico
+genre_473,Don
+genre_474,January 13
+genre_475,No Wave
+genre_476,O'dair
+genre_477,Barbara
+genre_478,Social House Biography
+genre_479,Yeung
+genre_480,Symphonic Rock
+genre_481,Swing Musicbig Bandsweet Bands
+genre_482,Walser
+genre_483,Running With The Devil
+genre_484,Wesleyan University Press
+genre_485,S. 8
+genre_486,Rap
+genre_487,Broadway
+genre_488,Fusion
+genre_489,Electro
+genre_490,Classical
+genre_491,Gangsta Rap
+genre_492,Hip Hop Chính Trị
+genre_493,Oversung
+genre_494,Sam
+genre_495,Adams
+genre_496,The Philadelphia Inquirer
+genre_497,Nhạc Đương Đại
+genre_498,Urban Soul
+genre_499,Tlc's T-boz And Chilli Talk Kickstarter
+genre_500,Left Eye And Their Next And Final Album
+genre_501,Buxton
+genre_502,Stoner Metal
+genre_503,Progressive Pop
+genre_504,Hardy
+genre_505,Phil
+genre_506,Phil Hardy (journalist)
+genre_507,Electro Hop
+genre_508,Slowcore
+genre_509,Boogie
+genre_510,Âm Nhạc
+genre_511,Black Comedy
+genre_512,Physical Comedy
+genre_513,Southern Rap
+genre_514,Pub Rock
+genre_515,Nick Drake Review
+genre_516,Unterberger
+genre_517,Ritchie
+genre_518,Jazz Rock
+genre_519,David Guetta
+genre_520,Elliott
+genre_521,Paul
+genre_522,Every Song On Queen's Greatest Hits
+genre_523,Ranked From Worst To Best
+genre_524,Melodic Hardcore
+genre_525,Skate Punk
+genre_526,Farewell My Summer Love
+genre_527,Middle Eastern
+genre_528,Britpop
+genre_529,Nu Metalalternative Rock (hiện Nay)
+genre_530,Power Popalternative Rock
+genre_531,The Singles&nbsp
+genre_532,– Overview
+genre_533,Allmusic. Rovi Corporation
+genre_534,November 20
+genre_535,Album
+genre_536,R1672274
+genre_537,Yes
+genre_538,Rock 'n Roll
+genre_539,Johnny Hallyday
+genre_540,Huey
+genre_541,Steve
+genre_542,March 28
+genre_543,October 11
+genre_544,Moombahton
+genre_545,Dancehall
+genre_546,Gilliland
+genre_547,Show 39
+genre_548,Tracks 4-5
+genre_549,Avant-garde Jazz
+genre_550,Free Funk
+genre_551,Jazz-rock
+genre_552,Post-grungechú Thích Web
+genre_553,Title = The 10 Worst Post-grunge Bands
+genre_554,Work = La Weekly
+genre_555,Author = Steininger
+genre_556,College Rock
+genre_557,Chicano Rock
+genre_558,The Beatles [white Album&#93
+genre_559,Songs
+genre_560,Weingarten
+genre_561,Christopher
+genre_562,April 28
+genre_563,Christian Rock
+genre_564,Ccm
+genre_565,Nhạc Kịch
+genre_566,Alec Benjamin Biography & History
+genre_567,Donelson
+genre_568,Marcy
+genre_569,Electronic Music
+genre_570,Europop
+genre_571,Nhạc Phim
+genre_572,Công Nghiệp
+genre_573,Metal Công Nghiệp
+genre_574,Rock Thay Thế
+genre_575,Điện Tử
+genre_576,Reggae
+genre_577,Ska
+genre_578,Rocksteady
+genre_579,Scott
+genre_580,Nate
+genre_581,Usa Today
+genre_582,Gannett Company
+genre_583,Synth-pop Anthem.
+genre_584,Shelter
+genre_585,The 10 Most Underrated Michael Jackson Songs
+genre_586,Axs
+genre_587,March 23
+genre_588,The 30 Best '90s R&B Songs – 20. Swv
+genre_589,Comedy Rock
+genre_590,Power Metal
+genre_591,The White Stripes
+genre_592,Acoustic Blues
+genre_593,Pop Pop Rock
+genre_594,Henderson
+genre_595,Alex
+genre_596,Whenever You Need Somebody – Rick Astley
+genre_597,Pop-soul
+genre_598,Wete
+genre_599,Brad
+genre_600,Vibe
+genre_601,September 2008
+genre_602,Nhạc Cổ Điển Hiện Đại
+genre_603,Minimalism
+genre_604,Nhạc Hài
+genre_605,Avant-disco
+genre_606,Paper
+genre_607,D'souza
+genre_608,Shaad
+genre_609,August 12
+genre_610,August 18
+genre_611,Punk-funk
+genre_612,Post-britpop
+genre_613,Trance
+genre_614,Dixieland
+genre_615,Nhạc Swing
+genre_616,Nhạc Latinh
+genre_617,Tucker
+genre_618,Ken
+genre_619,Daydream (1995)
+genre_620,00.html
+genre_621,Entertainment Weekly
+genre_622,Ashe Making Mark On The Electro-pop Music Scene
+genre_623,Parsons
+genre_624,Afropop
+genre_625,Steely Dan Biography
+genre_626,Great Rock Bible
+genre_627,Blues-rock
+genre_628,Death Metal
+genre_629,Technical Death Metal
+genre_630,Progressive Metal
+genre_631,Ted
+genre_632,Greenwald
+genre_633,Musicians
+genre_634,And The Mania
+genre_635,Mallard Press
+genre_636,Molanphy
+genre_637,Chris
+genre_638,Tiểu Sử
+genre_639,Phi Hư Cấu
+genre_640,Dark Pop
+genre_641,Industrial Pop
+genre_642,Hài Quan Sát
+genre_643,Châm Biếm
+genre_644,Hài Siêu Thực
+genre_645,Anti-humor
+genre_646,Speed Metal
+genre_647,Glam Metal
+genre_648,Van Halen – Artist Biography
+genre_649,Allmusic. All Media Network
+genre_650,Pop Điện Tử
+genre_651,Performers Announced For 2008 Sc State Fair
+genre_652,James
+genre_653,Gilbert
+genre_654,Wltx
+genre_655,Internetarchivebot
+genre_656,Electro-pop
+genre_657,Amy
+genre_658,Davidson
+genre_659,Alt Pop
+genre_660,Bedroom Pop
+genre_661,Surf Punk
+genre_662,Wallows - Biography
+genre_663,Psychedelia
+genre_664,Ed Sheeran – ‘÷’ Review
+genre_665,Dirty Rap
+genre_666,Nhạc Cổ Điển Ấn Độ
+genre_667,Hài Kịch Xanh
+genre_668,Hài Đen
+genre_669,Châm Biếm Chính Trị
+genre_670,Hài Kịch Xúc Phạm
+genre_671,Phim Ca Nhạc
+genre_672,Diễn Viên Hài
+genre_673,Avant-pop
+genre_674,Devin
+genre_675,Mckinney
+genre_676,Harvard University Press
+genre_677,0-674-01202-x
+genre_678,Winn
+genre_679,Alternative Rock (ca Sĩ) Pop Rock
+genre_680,R&B (nhà Sản Xuất)
+genre_681,Post-rockambientelectronicexperimental
+genre_682,idm
+genre_683,Hành Động Phiêu Lưu Mmorpg
+genre_684,Cấp Tiến
+genre_685,Thế Giới
+genre_686,Nhạc Giáng Sinh
+genre_687,Singer/songwriter
+genre_688,Eurotechno
+genre_689,Mariah Carey – Rainbow
+genre_690,Dara Cook
+genre_691,Mtv Networks Asia Pacific
+genre_692,October 31
+genre_693,March 1
+genre_694,Guardian Media Group
+genre_695,Caroline
+genre_696,Sullivan
+genre_697,Surf Rock
+genre_698,Smooth Criminal - Michael Jackson &#124
+genre_699,Song Info
+genre_700,April 20
+genre_701,February 13
+genre_702,30 Seconds To Mars - This Is War
+genre_703,December
+genre_704,Ponton
+genre_705,30 Seconds To Mars - This Is War Album Review
+genre_706,Ariana Grande Biography
+genre_707,Stephen
+genre_708,Thomas Erlewine
+genre_709,Film Score
+genre_710,Soundtrack
+genre_711,Futurepop
+genre_712,Country Music
+genre_713,Get To Know Benson Boone
+genre_714,April 11
+genre_715,April 9
+genre_716,Tứ Tấu Dây
+genre_717,Latin Trap

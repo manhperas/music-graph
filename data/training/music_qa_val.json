@@ -1,0 +1,4304 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- LeAnn Rimes is associated with the pop genre.\n\nQuestion: Does LeAnn Rimes perform pop music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, LeAnn Rimes performs pop music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "LeAnn Rimes",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the solo album Blackout.\n- The album Blackout is in the Psychedelia genre.\n\nQuestion: What genre of music does Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da perform on their solo work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da performs Psychedelia music on their solo album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout",
+        "Psychedelia"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Boyz II Men is signed to Umg.\n- Other artists on Umg include: Frankie Valli.\n\nQuestion: Which artists are signed to the same label as Boyz II Men?"
+      },
+      {
+        "role": "assistant",
+        "content": "Boyz II Men is signed to Umg, along with Frankie Valli."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Boyz II Men",
+        "Umg",
+        "Frankie Valli"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Fetish (bài hát) performs Electronica music.\n- Other Electronica artists include: Natasha Hamilton, 1 of the Girls (nhóm nhạc), The A Team (bài hát).\n\nQuestion: Which artists share the same genre as Fetish (bài hát)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Electronica genre with Fetish (bài hát) include Natasha Hamilton, 1 of the Girls (nhóm nhạc), The A Team (bài hát)."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Fetish (bài hát)",
+        "Electronica",
+        "Natasha Hamilton",
+        "1 of the Girls (nhóm nhạc)",
+        "The A Team (bài hát)"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whenever You Need Somebody released the album Blackout.\n- The album Blackout is in the pop genre.\n\nQuestion: What genre is the album Blackout by Whenever You Need Somebody?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Whenever You Need Somebody is in the pop genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whenever You Need Somebody",
+        "Blackout",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Haim (ban nhạc) is signed to Polydor.\n- Other artists on Polydor include: The Kelly Family, An Introduction to Ellie Goulding, Sophie Ellis-Bextor.\n\nQuestion: Which artists are signed to the same label as Haim (ban nhạc)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Haim (ban nhạc) is signed to Polydor, along with The Kelly Family, An Introduction to Ellie Goulding, Sophie Ellis-Bextor."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Haim (ban nhạc)",
+        "Polydor",
+        "The Kelly Family",
+        "An Introduction to Ellie Goulding",
+        "Sophie Ellis-Bextor"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Slowdive is a member of Slowdive.\n- Slowdive released the album The Ultimate Collection.\n\nQuestion: What albums did Slowdive from Slowdive release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Slowdive from Slowdive released the album The Ultimate Collection."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Slowdive",
+        "Slowdive",
+        "The Ultimate Collection"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da released the album Blackout.\n- The album Blackout is in the Psychedelia genre.\n\nQuestion: What genre is the album Blackout by Ob-La-Di, Ob-La-Da?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Ob-La-Di, Ob-La-Da is in the Psychedelia genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout",
+        "Psychedelia"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Duran Duran performed on albums: Fearless, Fearless, Fearless.\n\nQuestion: What albums did Duran Duran release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duran Duran released albums including Fearless, Fearless, Fearless."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Duran Duran",
+        "Fearless",
+        "Fearless",
+        "Fearless"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- George Michael performs r&b music.\n- Other r&b artists include: Porter Robinson, Scott McKenzie, The 1985.\n\nQuestion: Which artists share the same genre as George Michael?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the r&b genre with George Michael include Porter Robinson, Scott McKenzie, The 1985."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "George Michael",
+        "r&b",
+        "Porter Robinson",
+        "Scott McKenzie",
+        "The 1985"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Just Whitney released the album Roman Reloaded.\n- The song Hell Yeah is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Jazz genre.\n\nQuestion: What genre is the song Hell Yeah by Just Whitney?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song Hell Yeah by Just Whitney is Jazz, as it appears on the Jazz album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Just Whitney",
+        "Roman Reloaded",
+        "Hell Yeah",
+        "Jazz"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Blondie (ban nhạc) has members: Blondie (ban nhạc), Blondie (ban nhạc).\n\nQuestion: Who are the members of Blondie (ban nhạc)?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Blondie (ban nhạc) include Blondie (ban nhạc), Blondie (ban nhạc)."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Blondie (ban nhạc)",
+        "Blondie (ban nhạc)",
+        "Blondie (ban nhạc)"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Liam Gallagher is signed to Big Brother.\n- Other artists on Big Brother include: Noel Gallagher.\n\nQuestion: Which artists are signed to the same label as Liam Gallagher?"
+      },
+      {
+        "role": "assistant",
+        "content": "Liam Gallagher is signed to Big Brother, along with Noel Gallagher."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Liam Gallagher",
+        "Big Brother",
+        "Noel Gallagher"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- All for You (album) performs r&b music.\n- Other r&b artists include: Porter Robinson, Scott McKenzie, The 1985.\n\nQuestion: Which artists share the same genre as All for You (album)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the r&b genre with All for You (album) include Porter Robinson, Scott McKenzie, The 1985."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "All for You (album)",
+        "r&b",
+        "Porter Robinson",
+        "Scott McKenzie",
+        "The 1985"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Animal Collective has members: Animal Collective, Animal Collective.\n\nQuestion: Who are the members of Animal Collective?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Animal Collective include Animal Collective, Animal Collective."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Animal Collective",
+        "Animal Collective",
+        "Animal Collective"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Deafheaven has members: Deafheaven, Deafheaven.\n\nQuestion: Who are the members of Deafheaven?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Deafheaven include Deafheaven, Deafheaven."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Deafheaven",
+        "Deafheaven",
+        "Deafheaven"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- DNCE has members: DNCE, DNCE.\n\nQuestion: Who are the members of DNCE?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of DNCE include DNCE, DNCE."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "DNCE",
+        "DNCE",
+        "DNCE"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tilt Ya Head Back is associated with the Eurodance genre.\n\nQuestion: What genre does Tilt Ya Head Back perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tilt Ya Head Back performs Eurodance."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Tilt Ya Head Back",
+        "Eurodance"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Cleanin' Out My Closet has members: Cleanin' Out My Closet, Cleanin' Out My Closet.\n\nQuestion: Who are the members of Cleanin' Out My Closet?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Cleanin' Out My Closet include Cleanin' Out My Closet, Cleanin' Out My Closet."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Cleanin' Out My Closet",
+        "Cleanin' Out My Closet",
+        "Cleanin' Out My Closet"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Howie Dorough is associated with the pop genre.\n\nQuestion: Does Howie Dorough perform pop music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Howie Dorough performs pop music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Howie Dorough",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Otis Redding is associated with the Soul genre.\n\nQuestion: Does Otis Redding perform Soul music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Otis Redding performs Soul music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Otis Redding",
+        "Soul"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Only Difference Between Martyrdom and Suicide Is Press Coverage is a member of The Only Difference Between Martyrdom and Suicide Is Press Coverage.\n- The Only Difference Between Martyrdom and Suicide Is Press Coverage released the album Tom and Travis Show (The Enema Strikes Back!)]]''.\n\nQuestion: What albums did The Only Difference Between Martyrdom and Suicide Is Press Coverage from The Only Difference Between Martyrdom and Suicide Is Press Coverage release?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Only Difference Between Martyrdom and Suicide Is Press Coverage from The Only Difference Between Martyrdom and Suicide Is Press Coverage released the album Tom and Travis Show (The Enema Strikes Back!)]]''."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The Only Difference Between Martyrdom and Suicide Is Press Coverage",
+        "The Only Difference Between Martyrdom and Suicide Is Press Coverage",
+        "Tom and Travis Show (The Enema Strikes Back!)]]''"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Black Is King is associated with the r&b genre.\n\nQuestion: Does Black Is King perform r&b music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Black Is King performs r&b music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Black Is King",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Just Whitney released the album Roman Reloaded.\n- The song Marilyn Monroe is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Jazz genre.\n\nQuestion: What genre is the song Marilyn Monroe by Just Whitney?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song Marilyn Monroe by Just Whitney is Jazz, as it appears on the Jazz album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Just Whitney",
+        "Roman Reloaded",
+        "Marilyn Monroe",
+        "Jazz"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- I'll Never Love Again released the album The Fabulous Baker Boys.\n- The album The Fabulous Baker Boys is in the Folktronica genre.\n\nQuestion: What genre is the album The Fabulous Baker Boys by I'll Never Love Again?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album The Fabulous Baker Boys by I'll Never Love Again is in the Folktronica genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "I'll Never Love Again",
+        "The Fabulous Baker Boys",
+        "Folktronica"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- La Bamba (bài hát) released the album Thriller 25.\n- The album Thriller 25 is in the pop genre.\n\nQuestion: What genre is the album Thriller 25 by La Bamba (bài hát)?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Thriller 25 by La Bamba (bài hát) is in the pop genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "La Bamba (bài hát)",
+        "Thriller 25",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- London Grammar is signed to Ministry Of Sound.\n- Other artists on Ministry Of Sound include: Porter Robinson.\n\nQuestion: Which artists are signed to the same label as London Grammar?"
+      },
+      {
+        "role": "assistant",
+        "content": "London Grammar is signed to Ministry Of Sound, along with Porter Robinson."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "London Grammar",
+        "Ministry Of Sound",
+        "Porter Robinson"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Just Whitney released the album Roman Reloaded.\n- The song *Safaree Samuels}} is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Soul genre.\n\nQuestion: What genre is the song *Safaree Samuels}} by Just Whitney?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song *Safaree Samuels}} by Just Whitney is Soul, as it appears on the Soul album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Just Whitney",
+        "Roman Reloaded",
+        "*Safaree Samuels}}",
+        "Soul"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Henry Purcell released the album Kaleidoscope Heart.\n- The song Gonna Get Over You is on the album Kaleidoscope Heart.\n- The album Kaleidoscope Heart is in the Pop Rockpoprock genre.\n\nQuestion: What genre is the song Gonna Get Over You by Henry Purcell?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song Gonna Get Over You by Henry Purcell is Pop Rockpoprock, as it appears on the Pop Rockpoprock album Kaleidoscope Heart."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Henry Purcell",
+        "Kaleidoscope Heart",
+        "Gonna Get Over You",
+        "Pop Rockpoprock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Fun (ban nhạc) is associated with the Trap genre.\n\nQuestion: Does Fun (ban nhạc) perform Trap music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Fun (ban nhạc) performs Trap music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Fun (ban nhạc)",
+        "Trap"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Prince (nhạc sĩ) is signed to Universal.\n- Other artists on Universal include: Somethin' Special, The Kelly Family, Tamar Braxton.\n\nQuestion: Which artists are signed to the same label as Prince (nhạc sĩ)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Prince (nhạc sĩ) is signed to Universal, along with Somethin' Special, The Kelly Family, Tamar Braxton."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Prince (nhạc sĩ)",
+        "Universal",
+        "Somethin' Special",
+        "The Kelly Family",
+        "Tamar Braxton"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Boy George is signed to Epic.\n- Other artists on Epic include: Como Ama una Mujer, Liam Gallagher, Michael Jackson's Vision.\n\nQuestion: Which artists are signed to the same label as Boy George?"
+      },
+      {
+        "role": "assistant",
+        "content": "Boy George is signed to Epic, along with Como Ama una Mujer, Liam Gallagher, Michael Jackson's Vision."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Boy George",
+        "Epic",
+        "Como Ama una Mujer",
+        "Liam Gallagher",
+        "Michael Jackson's Vision"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tyga released the album Thriller 25.\n- The album Thriller 25 is in the r&b genre.\n\nQuestion: What genre is the album Thriller 25 by Tyga?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Thriller 25 by Tyga is in the r&b genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Tyga",
+        "Thriller 25",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Shirley Temple is associated with the Heartland Rock genre.\n\nQuestion: Does Shirley Temple perform Heartland Rock music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Shirley Temple performs Heartland Rock music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Shirley Temple",
+        "Heartland Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- B.B. King performs Jazz music.\n- Other Jazz artists include: Bobby Valentino, Ebony and Ivory, Mine Again.\n\nQuestion: Which artists share the same genre as B.B. King?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Jazz genre with B.B. King include Bobby Valentino, Ebony and Ivory, Mine Again."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "B.B. King",
+        "Jazz",
+        "Bobby Valentino",
+        "Ebony and Ivory",
+        "Mine Again"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- TLC (ban nhạc) is a member of TLC (ban nhạc).\n- TLC (ban nhạc) released the album Crazy Tour.\n\nQuestion: What albums did TLC (ban nhạc) from TLC (ban nhạc) release?"
+      },
+      {
+        "role": "assistant",
+        "content": "TLC (ban nhạc) from TLC (ban nhạc) released the album Crazy Tour."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "TLC (ban nhạc)",
+        "TLC (ban nhạc)",
+        "Crazy Tour"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- LeAnn Rimes is associated with the pop genre.\n\nQuestion: What genre does LeAnn Rimes perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "LeAnn Rimes performs pop."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "LeAnn Rimes",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- I Want You Back is a member of I Want You Back.\n- I Want You Back released the album Humphrey.\n\nQuestion: What albums did I Want You Back from I Want You Back release?"
+      },
+      {
+        "role": "assistant",
+        "content": "I Want You Back from I Want You Back released the album Humphrey."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "I Want You Back",
+        "I Want You Back",
+        "Humphrey"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Flora Cash is a member of Flora Cash.\n- Flora Cash released the album Dangerous.\n\nQuestion: What albums did Flora Cash from Flora Cash release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Flora Cash from Flora Cash released the album Dangerous."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Flora Cash",
+        "Flora Cash",
+        "Dangerous"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Katy Perry Live: Witness World Wide performs Pop Rock music.\n- Other Pop Rock artists include: Aaron Copland, Scott McKenzie, Benny Goodman.\n\nQuestion: Which artists share the same genre as Katy Perry Live: Witness World Wide?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Pop Rock genre with Katy Perry Live: Witness World Wide include Aaron Copland, Scott McKenzie, Benny Goodman."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Katy Perry Live: Witness World Wide",
+        "Pop Rock",
+        "Aaron Copland",
+        "Scott McKenzie",
+        "Benny Goodman"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the solo album Blackout.\n- The album Blackout is in the pop genre.\n\nQuestion: What genre of music does Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da perform on their solo work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da performs pop music on their solo album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Hollaback Girl is associated with the pop genre.\n\nQuestion: What genre does Hollaback Girl perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Hollaback Girl performs pop."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Hollaback Girl",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- La Bamba (bài hát) released the album Thriller 25.\n- The album Thriller 25 is in the Soul genre.\n\nQuestion: What genre is the album Thriller 25 by La Bamba (bài hát)?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Thriller 25 by La Bamba (bài hát) is in the Soul genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "La Bamba (bài hát)",
+        "Thriller 25",
+        "Soul"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Don't Stop 'til You Get Enough released the album Blackout.\n- The album Blackout is in the pop genre.\n\nQuestion: What genre is the album Blackout by Don't Stop 'til You Get Enough?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Don't Stop 'til You Get Enough is in the pop genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Don't Stop 'til You Get Enough",
+        "Blackout",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- 4th Time Around performed on albums: World Tour, World Tour, World Tour.\n\nQuestion: What albums did 4th Time Around release?"
+      },
+      {
+        "role": "assistant",
+        "content": "4th Time Around released albums including World Tour, World Tour, World Tour."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "4th Time Around",
+        "World Tour",
+        "World Tour",
+        "World Tour"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Writing's on the Wall is associated with the Indie Rock genre.\n\nQuestion: What genre does The Writing's on the Wall perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Writing's on the Wall performs Indie Rock."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "The Writing's on the Wall",
+        "Indie Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Strawberry Fields is a member of Strawberry Fields.\n- Strawberry Fields released the album It's About Time.\n\nQuestion: What albums did Strawberry Fields from Strawberry Fields release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Strawberry Fields from Strawberry Fields released the album It's About Time."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Strawberry Fields",
+        "Strawberry Fields",
+        "It's About Time"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Paloma Faith is signed to Epic.\n- Other artists on Epic include: Como Ama una Mujer, Liam Gallagher, Michael Jackson's Vision.\n\nQuestion: Which artists are signed to the same label as Paloma Faith?"
+      },
+      {
+        "role": "assistant",
+        "content": "Paloma Faith is signed to Epic, along with Como Ama una Mujer, Liam Gallagher, Michael Jackson's Vision."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Paloma Faith",
+        "Epic",
+        "Como Ama una Mujer",
+        "Liam Gallagher",
+        "Michael Jackson's Vision"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Como Ama una Mujer performs Pop Truyền Thống music.\n- Other Pop Truyền Thống artists include: Kara DioGuardi, Rebbie Jackson.\n\nQuestion: Which artists share the same genre as Como Ama una Mujer?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Pop Truyền Thống genre with Como Ama una Mujer include Kara DioGuardi, Rebbie Jackson."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Como Ama una Mujer",
+        "Pop Truyền Thống",
+        "Kara DioGuardi",
+        "Rebbie Jackson"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Space Oddity is associated with the pop genre.\n\nQuestion: What genre does Space Oddity perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Space Oddity performs pop."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Space Oddity",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Just Whitney released the album Roman Reloaded.\n- The song *Alex Papaconstantinou is on the album Roman Reloaded.\n- The album Roman Reloaded is in the pop genre.\n\nQuestion: What genre is the song *Alex Papaconstantinou by Just Whitney?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song *Alex Papaconstantinou by Just Whitney is pop, as it appears on the pop album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Just Whitney",
+        "Roman Reloaded",
+        "*Alex Papaconstantinou",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Nothin' on You performed on albums: Christopher, Christopher, Christopher.\n\nQuestion: What albums did Nothin' on You release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Nothin' on You released albums including Christopher, Christopher, Christopher."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Nothin' on You",
+        "Christopher",
+        "Christopher",
+        "Christopher"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Chloe x Halle is associated with the Pop Punk genre.\n\nQuestion: What genre does Chloe x Halle perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Chloe x Halle performs Pop Punk."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Chloe x Halle",
+        "Pop Punk"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Pink Friday: Roman Reloaded – The Re-Up is signed to Republic.\n- Other artists on Republic include: Christmas in the Sand, Jessie J, Sofia Carson.\n\nQuestion: Which artists are signed to the same label as Pink Friday: Roman Reloaded – The Re-Up?"
+      },
+      {
+        "role": "assistant",
+        "content": "Pink Friday: Roman Reloaded – The Re-Up is signed to Republic, along with Christmas in the Sand, Jessie J, Sofia Carson."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Pink Friday: Roman Reloaded – The Re-Up",
+        "Republic",
+        "Christmas in the Sand",
+        "Jessie J",
+        "Sofia Carson"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tyga released the album The Essential Michael Jackson.\n- The album The Essential Michael Jackson is in the Southern Rock genre.\n\nQuestion: What genre is the album The Essential Michael Jackson by Tyga?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album The Essential Michael Jackson by Tyga is in the Southern Rock genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Tyga",
+        "The Essential Michael Jackson",
+        "Southern Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- What Do I Know? released the album Roman Reloaded.\n- The song 30% is on the album Roman Reloaded.\n- The album Roman Reloaded is in the pop genre.\n\nQuestion: What genre is the song 30% by What Do I Know??"
+      },
+      {
+        "role": "assistant",
+        "content": "The song 30% by What Do I Know? is pop, as it appears on the pop album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "What Do I Know?",
+        "Roman Reloaded",
+        "30%",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- What Do I Know? released the album Roman Reloaded.\n- The song *Kelly&nbsp;Sheehan is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Dance Pop genre.\n\nQuestion: What genre is the song *Kelly&nbsp;Sheehan by What Do I Know??"
+      },
+      {
+        "role": "assistant",
+        "content": "The song *Kelly&nbsp;Sheehan by What Do I Know? is Dance Pop, as it appears on the Dance Pop album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "What Do I Know?",
+        "Roman Reloaded",
+        "*Kelly&nbsp;Sheehan",
+        "Dance Pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- 1 of the Girls (nhóm nhạc) is a member of 1 of the Girls (nhóm nhạc).\n- 1 of the Girls (nhóm nhạc) released the album The Ultimate Collection.\n\nQuestion: What albums did 1 of the Girls (nhóm nhạc) from 1 of the Girls (nhóm nhạc) release?"
+      },
+      {
+        "role": "assistant",
+        "content": "1 of the Girls (nhóm nhạc) from 1 of the Girls (nhóm nhạc) released the album The Ultimate Collection."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "1 of the Girls (nhóm nhạc)",
+        "1 of the Girls (nhóm nhạc)",
+        "The Ultimate Collection"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whole Lotta Love is a member of Whole Lotta Love.\n- Whole Lotta Love released the album The Greatest Hits.\n\nQuestion: What albums did Whole Lotta Love from Whole Lotta Love release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Whole Lotta Love from Whole Lotta Love released the album The Greatest Hits."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whole Lotta Love",
+        "Whole Lotta Love",
+        "The Greatest Hits"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Lil Peep is associated with the Art Rock genre.\n\nQuestion: Does Lil Peep perform Art Rock music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Lil Peep performs Art Rock music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Lil Peep",
+        "Art Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Cuz I Love You performed on albums: Liberation, Liberation, Liberation.\n\nQuestion: What albums did Cuz I Love You release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Cuz I Love You released albums including Liberation, Liberation, Liberation."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Cuz I Love You",
+        "Liberation",
+        "Liberation",
+        "Liberation"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Just Whitney released the album Roman Reloaded.\n- The song *D. Johnson is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Soul genre.\n\nQuestion: What genre is the song *D. Johnson by Just Whitney?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song *D. Johnson by Just Whitney is Soul, as it appears on the Soul album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Just Whitney",
+        "Roman Reloaded",
+        "*D. Johnson",
+        "Soul"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whole Lotta Love is a member of Whole Lotta Love.\n- Whole Lotta Love released the album The Best of Whitney Houston.\n\nQuestion: What albums did Whole Lotta Love from Whole Lotta Love release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Whole Lotta Love from Whole Lotta Love released the album The Best of Whitney Houston."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whole Lotta Love",
+        "Whole Lotta Love",
+        "The Best of Whitney Houston"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- La Bamba (bài hát) released the album Thriller 25.\n- The album Thriller 25 is in the r&b genre.\n\nQuestion: What genre is the album Thriller 25 by La Bamba (bài hát)?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Thriller 25 by La Bamba (bài hát) is in the r&b genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "La Bamba (bài hát)",
+        "Thriller 25",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Shawn Mendes is associated with the country genre.\n\nQuestion: What genre does Shawn Mendes perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Shawn Mendes performs country."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Shawn Mendes",
+        "country"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Hypnotico performed on albums: Dangerous, Dangerous, Dangerous.\n\nQuestion: What albums did Hypnotico release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Hypnotico released albums including Dangerous, Dangerous, Dangerous."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Hypnotico",
+        "Dangerous",
+        "Dangerous",
+        "Dangerous"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Album 'Safe Trip Home' includes songs: Never Want to Say It's Love, Northern Skies, The Day Before the Day, Đĩa bổ sung trong phiên bản đặc biệt, D. Armstrong, Clarence Greenwood.\n\nQuestion: What songs are on the album Safe Trip Home?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Safe Trip Home contains songs including Never Want to Say It's Love, Northern Skies, The Day Before the Day, Đĩa bổ sung trong phiên bản đặc biệt, D. Armstrong, Clarence Greenwood."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Safe Trip Home",
+        "Never Want to Say It's Love",
+        "Northern Skies",
+        "The Day Before the Day",
+        "Đĩa bổ sung trong phiên bản đặc biệt",
+        "D. Armstrong, Clarence Greenwood"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Reel Me is signed to Epic.\n- Other artists on Epic include: Como Ama una Mujer, Liam Gallagher, Michael Jackson's Vision.\n\nQuestion: Which artists are signed to the same label as The Reel Me?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Reel Me is signed to Epic, along with Como Ama una Mujer, Liam Gallagher, Michael Jackson's Vision."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The Reel Me",
+        "Epic",
+        "Como Ama una Mujer",
+        "Liam Gallagher",
+        "Michael Jackson's Vision"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Spike Dawbarn has members: Spike Dawbarn, Spike Dawbarn.\n\nQuestion: Who are the members of Spike Dawbarn?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Spike Dawbarn include Spike Dawbarn, Spike Dawbarn."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Spike Dawbarn",
+        "Spike Dawbarn",
+        "Spike Dawbarn"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Guts (album) performs r&b music.\n- Other r&b artists include: Porter Robinson, Scott McKenzie, The 1985.\n\nQuestion: Which artists share the same genre as Guts (album)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the r&b genre with Guts (album) include Porter Robinson, Scott McKenzie, The 1985."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Guts (album)",
+        "r&b",
+        "Porter Robinson",
+        "Scott McKenzie",
+        "The 1985"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Anne-Marie performs pop music.\n- Other pop artists include: Ed Sheeran, Maroon 5, Lizzo.\n\nQuestion: Which artists share the same genre as Anne-Marie?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the pop genre with Anne-Marie include Ed Sheeran, Maroon 5, Lizzo."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Anne-Marie",
+        "pop",
+        "Ed Sheeran",
+        "Maroon 5",
+        "Lizzo"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Porter Robinson is associated with the r&b genre.\n\nQuestion: Does Porter Robinson perform r&b music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Porter Robinson performs r&b music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Porter Robinson",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Don't Let Me Down has members: Don't Let Me Down, Don't Let Me Down.\n\nQuestion: Who are the members of Don't Let Me Down?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Don't Let Me Down include Don't Let Me Down, Don't Let Me Down."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Don't Let Me Down",
+        "Don't Let Me Down",
+        "Don't Let Me Down"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- No Tears Left to Cry released the album The Essential Michael Jackson.\n- The album The Essential Michael Jackson is in the Roots Rock genre.\n\nQuestion: What genre is the album The Essential Michael Jackson by No Tears Left to Cry?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album The Essential Michael Jackson by No Tears Left to Cry is in the Roots Rock genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "No Tears Left to Cry",
+        "The Essential Michael Jackson",
+        "Roots Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the solo album Blackout.\n- The album Blackout is in the pop genre.\n\nQuestion: What genre of music does Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da perform on their solo work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da performs pop music on their solo album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Danh sách đĩa nhạc của Josh Groban performed on albums: Chromatica, Chromatica, Chromatica.\n\nQuestion: What albums did Danh sách đĩa nhạc của Josh Groban release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Danh sách đĩa nhạc của Josh Groban released albums including Chromatica, Chromatica, Chromatica."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Danh sách đĩa nhạc của Josh Groban",
+        "Chromatica",
+        "Chromatica",
+        "Chromatica"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the album Blackout.\n\nQuestion: What albums did Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da released the album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Break Free (bài hát) is associated with the Pop-punk genre.\n\nQuestion: Does Break Free (bài hát) perform Pop-punk music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Break Free (bài hát) performs Pop-punk music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Break Free (bài hát)",
+        "Pop-punk"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Don't Stop 'til You Get Enough released the album Blackout.\n- The album Blackout is in the Psychedelia genre.\n\nQuestion: What genre is the album Blackout by Don't Stop 'til You Get Enough?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Don't Stop 'til You Get Enough is in the Psychedelia genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Don't Stop 'til You Get Enough",
+        "Blackout",
+        "Psychedelia"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whenever You Need Somebody released the album Blackout.\n- The album Blackout is in the Psychedelia genre.\n\nQuestion: What genre is the album Blackout by Whenever You Need Somebody?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Whenever You Need Somebody is in the Psychedelia genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whenever You Need Somebody",
+        "Blackout",
+        "Psychedelia"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Madonna performs Smooth Soul music.\n- Other Smooth Soul artists include: Davy Jones (nghệ sĩ).\n\nQuestion: Which artists share the same genre as Madonna?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Smooth Soul genre with Madonna include Davy Jones (nghệ sĩ)."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Madonna",
+        "Smooth Soul",
+        "Davy Jones (nghệ sĩ)"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whenever You Need Somebody released the album Blackout.\n- The album Blackout is in the Psychedelia genre.\n\nQuestion: What genre is the album Blackout by Whenever You Need Somebody?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Whenever You Need Somebody is in the Psychedelia genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whenever You Need Somebody",
+        "Blackout",
+        "Psychedelia"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tyga released the album The Essential Michael Jackson.\n- The album The Essential Michael Jackson is in the Blues Rock genre.\n\nQuestion: What genre is the album The Essential Michael Jackson by Tyga?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album The Essential Michael Jackson by Tyga is in the Blues Rock genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Tyga",
+        "The Essential Michael Jackson",
+        "Blues Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Together Again performed on albums: ''Let's Get Loud'', ''Let's Get Loud'', ''Let's Get Loud''.\n\nQuestion: What albums did Together Again release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Together Again released albums including ''Let's Get Loud'', ''Let's Get Loud'', ''Let's Get Loud''."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Together Again",
+        "''Let's Get Loud''",
+        "''Let's Get Loud''",
+        "''Let's Get Loud''"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- La Isla Bonita performs Dream Pop music.\n- Other Dream Pop artists include: Someone to Call My Lover, Barbie Tingz, 3-Way (The Golden Rule).\n\nQuestion: Which artists share the same genre as La Isla Bonita?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Dream Pop genre with La Isla Bonita include Someone to Call My Lover, Barbie Tingz, 3-Way (The Golden Rule)."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "La Isla Bonita",
+        "Dream Pop",
+        "Someone to Call My Lover",
+        "Barbie Tingz",
+        "3-Way (The Golden Rule)"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- No Tears Left to Cry released the album Thriller 25.\n- The album Thriller 25 is in the pop genre.\n\nQuestion: What genre is the album Thriller 25 by No Tears Left to Cry?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Thriller 25 by No Tears Left to Cry is in the pop genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "No Tears Left to Cry",
+        "Thriller 25",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- 24hrs (rapper) is signed to Rca.\n- Other artists on Rca include: The Shirelles, Paloma Faith, Kirstin Maldonado.\n\nQuestion: Which artists are signed to the same label as 24hrs (rapper)?"
+      },
+      {
+        "role": "assistant",
+        "content": "24hrs (rapper) is signed to Rca, along with The Shirelles, Paloma Faith, Kirstin Maldonado."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "24hrs (rapper)",
+        "Rca",
+        "The Shirelles",
+        "Paloma Faith",
+        "Kirstin Maldonado"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Cody Linley performed on albums: Back to Basics: Live and Down Under, Back to Basics: Live and Down Under, Back to Basics: Live and Down Under.\n\nQuestion: What albums did Cody Linley release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Cody Linley released albums including Back to Basics: Live and Down Under, Back to Basics: Live and Down Under, Back to Basics: Live and Down Under."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Cody Linley",
+        "Back to Basics: Live and Down Under",
+        "Back to Basics: Live and Down Under",
+        "Back to Basics: Live and Down Under"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Just Whitney released the album Roman Reloaded.\n- The song Kane Beatz is on the album Roman Reloaded.\n- The album Roman Reloaded is in the r&b genre.\n\nQuestion: What genre is the song Kane Beatz by Just Whitney?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song Kane Beatz by Just Whitney is r&b, as it appears on the r&b album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Just Whitney",
+        "Roman Reloaded",
+        "Kane Beatz",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Reel Me is a member of The Reel Me.\n- The Reel Me released the album Number Ones.\n\nQuestion: What albums did The Reel Me from The Reel Me release?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Reel Me from The Reel Me released the album Number Ones."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The Reel Me",
+        "The Reel Me",
+        "Number Ones"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- 1 of the Girls (nhóm nhạc) is a member of 1 of the Girls (nhóm nhạc).\n- 1 of the Girls (nhóm nhạc) released the album The Best of Whitney Houston.\n\nQuestion: What albums did 1 of the Girls (nhóm nhạc) from 1 of the Girls (nhóm nhạc) release?"
+      },
+      {
+        "role": "assistant",
+        "content": "1 of the Girls (nhóm nhạc) from 1 of the Girls (nhóm nhạc) released the album The Best of Whitney Houston."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "1 of the Girls (nhóm nhạc)",
+        "1 of the Girls (nhóm nhạc)",
+        "The Best of Whitney Houston"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Who'd Have Known is associated with the pop genre.\n\nQuestion: What genre does Who'd Have Known perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Who'd Have Known performs pop."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Who'd Have Known",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the solo album Blackout.\n- The album Blackout is in the r&b genre.\n\nQuestion: What genre of music does Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da perform on their solo work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da performs r&b music on their solo album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- What Do I Know? released the album Roman Reloaded.\n- The song *Matthew Hall is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Soul genre.\n\nQuestion: What genre is the song *Matthew Hall by What Do I Know??"
+      },
+      {
+        "role": "assistant",
+        "content": "The song *Matthew Hall by What Do I Know? is Soul, as it appears on the Soul album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "What Do I Know?",
+        "Roman Reloaded",
+        "*Matthew Hall",
+        "Soul"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The 20/20 Experience is signed to Rca.\n- Other artists on Rca include: The Shirelles, Paloma Faith, Kirstin Maldonado.\n\nQuestion: Which artists are signed to the same label as The 20/20 Experience?"
+      },
+      {
+        "role": "assistant",
+        "content": "The 20/20 Experience is signed to Rca, along with The Shirelles, Paloma Faith, Kirstin Maldonado."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The 20/20 Experience",
+        "Rca",
+        "The Shirelles",
+        "Paloma Faith",
+        "Kirstin Maldonado"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Untouchable Tour performed on albums: Off the Wall, Off the Wall, Off the Wall.\n\nQuestion: What albums did The Untouchable Tour release?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Untouchable Tour released albums including Off the Wall, Off the Wall, Off the Wall."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "The Untouchable Tour",
+        "Off the Wall",
+        "Off the Wall",
+        "Off the Wall"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Auld Lang Syne has members: Auld Lang Syne, Auld Lang Syne.\n\nQuestion: Who are the members of Auld Lang Syne?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Auld Lang Syne include Auld Lang Syne, Auld Lang Syne."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Auld Lang Syne",
+        "Auld Lang Syne",
+        "Auld Lang Syne"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Lou Reed performs Soul music.\n- Other Soul artists include: Sam Milby, Mine Again, Danielle Panabaker.\n\nQuestion: Which artists share the same genre as Lou Reed?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Soul genre with Lou Reed include Sam Milby, Mine Again, Danielle Panabaker."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Lou Reed",
+        "Soul",
+        "Sam Milby",
+        "Mine Again",
+        "Danielle Panabaker"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Chainsmokers is a member of The Chainsmokers.\n- The Chainsmokers released the album Folklore.\n\nQuestion: What albums did The Chainsmokers from The Chainsmokers release?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Chainsmokers from The Chainsmokers released the album Folklore."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The Chainsmokers",
+        "The Chainsmokers",
+        "Folklore"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whole Lotta Love is a member of Whole Lotta Love.\n- Whole Lotta Love released the album The Best of Whitney Houston.\n\nQuestion: What albums did Whole Lotta Love from Whole Lotta Love release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Whole Lotta Love from Whole Lotta Love released the album The Best of Whitney Houston."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whole Lotta Love",
+        "Whole Lotta Love",
+        "The Best of Whitney Houston"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Nick Fradiani is associated with the Country Pop genre.\n\nQuestion: Does Nick Fradiani perform Country Pop music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Nick Fradiani performs Country Pop music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Nick Fradiani",
+        "Country Pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Charmbracelet performs Soul music.\n- Other Soul artists include: Sam Milby, Mine Again, Danielle Panabaker.\n\nQuestion: Which artists share the same genre as Charmbracelet?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Soul genre with Charmbracelet include Sam Milby, Mine Again, Danielle Panabaker."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Charmbracelet",
+        "Soul",
+        "Sam Milby",
+        "Mine Again",
+        "Danielle Panabaker"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- AVĪCI (01) performs Doo-wop music.\n- Other Doo-wop artists include: Danh sách video của Taylor Swift, Nobody Wants to Be Lonely, Make Me... (bài hát).\n\nQuestion: Which artists share the same genre as AVĪCI (01)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Doo-wop genre with AVĪCI (01) include Danh sách video của Taylor Swift, Nobody Wants to Be Lonely, Make Me... (bài hát)."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "AVĪCI (01)",
+        "Doo-wop",
+        "Danh sách video của Taylor Swift",
+        "Nobody Wants to Be Lonely",
+        "Make Me... (bài hát)"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Flora Cash is a member of Flora Cash.\n- Flora Cash released the album Dangerous.\n\nQuestion: What albums did Flora Cash from Flora Cash release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Flora Cash from Flora Cash released the album Dangerous."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Flora Cash",
+        "Flora Cash",
+        "Dangerous"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Album 'Back to Basics: Live and Down Under' includes songs: # I Got Trouble (video chuyển tiếp), # Dirrty (bản phối nhạc tạp kỷ), # Encore: Thank You (video chuyển tiếp), # Come on over Baby (All I Want Is You) (bản phối nhạc Jazz), # Fighter.\n\nQuestion: What songs are on the album Back to Basics: Live and Down Under?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Back to Basics: Live and Down Under contains songs including # I Got Trouble (video chuyển tiếp), # Dirrty (bản phối nhạc tạp kỷ), # Encore: Thank You (video chuyển tiếp), # Come on over Baby (All I Want Is You) (bản phối nhạc Jazz), # Fighter."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Back to Basics: Live and Down Under",
+        "# I Got Trouble (video chuyển tiếp)",
+        "# Dirrty (bản phối nhạc tạp kỷ)",
+        "# Encore: Thank You (video chuyển tiếp)",
+        "# Come on over Baby (All I Want Is You) (bản phối nhạc Jazz)",
+        "# Fighter"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- What Do I Know? released the album Roman Reloaded.\n- The song *M. Jordan is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Jazz genre.\n\nQuestion: What genre is the song *M. Jordan by What Do I Know??"
+      },
+      {
+        "role": "assistant",
+        "content": "The song *M. Jordan by What Do I Know? is Jazz, as it appears on the Jazz album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "What Do I Know?",
+        "Roman Reloaded",
+        "*M. Jordan",
+        "Jazz"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Flora Cash is a member of Flora Cash.\n- Flora Cash released the album Dangerous.\n\nQuestion: What albums did Flora Cash from Flora Cash release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Flora Cash from Flora Cash released the album Dangerous."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Flora Cash",
+        "Flora Cash",
+        "Dangerous"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Sunny (ca sĩ) performs Ballad music.\n- Other Ballad artists include: All for Nothing (bài hát), Eric Nam.\n\nQuestion: Which artists share the same genre as Sunny (ca sĩ)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Ballad genre with Sunny (ca sĩ) include All for Nothing (bài hát), Eric Nam."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Sunny (ca sĩ)",
+        "Ballad",
+        "All for Nothing (bài hát)",
+        "Eric Nam"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Blondie (ban nhạc) is a member of Blondie (ban nhạc).\n- Blondie (ban nhạc) released the album Folklore.\n\nQuestion: What albums did Blondie (ban nhạc) from Blondie (ban nhạc) release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Blondie (ban nhạc) from Blondie (ban nhạc) released the album Folklore."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Blondie (ban nhạc)",
+        "Blondie (ban nhạc)",
+        "Folklore"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whenever You Need Somebody released the album Blackout.\n- The album Blackout is in the r&b genre.\n\nQuestion: What genre is the album Blackout by Whenever You Need Somebody?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Whenever You Need Somebody is in the r&b genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whenever You Need Somebody",
+        "Blackout",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Temptations is signed to Atlantic.\n- Other artists on Atlantic include: Why Don't We, Peter Gabriel, Chic.\n\nQuestion: Which artists are signed to the same label as The Temptations?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Temptations is signed to Atlantic, along with Why Don't We, Peter Gabriel, Chic."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The Temptations",
+        "Atlantic",
+        "Why Don't We",
+        "Peter Gabriel",
+        "Chic"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tamar Braxton is signed to Epic.\n- Other artists on Epic include: Como Ama una Mujer, Liam Gallagher, Michael Jackson's Vision.\n\nQuestion: Which artists are signed to the same label as Tamar Braxton?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tamar Braxton is signed to Epic, along with Como Ama una Mujer, Liam Gallagher, Michael Jackson's Vision."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Tamar Braxton",
+        "Epic",
+        "Como Ama una Mujer",
+        "Liam Gallagher",
+        "Michael Jackson's Vision"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Story of Us (bài hát) performs Dance Pop music.\n- Other Dance Pop artists include: Mall (phim), Kirstin Maldonado, Danh sách đĩa nhạc của John Lennon.\n\nQuestion: Which artists share the same genre as The Story of Us (bài hát)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Dance Pop genre with The Story of Us (bài hát) include Mall (phim), Kirstin Maldonado, Danh sách đĩa nhạc của John Lennon."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The Story of Us (bài hát)",
+        "Dance Pop",
+        "Mall (phim)",
+        "Kirstin Maldonado",
+        "Danh sách đĩa nhạc của John Lennon"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Dev performs Funk music.\n- Other Funk artists include: Prince (nhạc sĩ), John Barry (nhà soạn nhạc), Love Yourself.\n\nQuestion: Which artists share the same genre as Dev?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Funk genre with Dev include Prince (nhạc sĩ), John Barry (nhà soạn nhạc), Love Yourself."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Dev",
+        "Funk",
+        "Prince (nhạc sĩ)",
+        "John Barry (nhà soạn nhạc)",
+        "Love Yourself"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Hayden Panettiere is associated with the Allmusic genre.\n\nQuestion: What genre does Hayden Panettiere perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Hayden Panettiere performs Allmusic."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Hayden Panettiere",
+        "Allmusic"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Electric Light Orchestra is associated with the Jazz genre.\n\nQuestion: Does Electric Light Orchestra perform Jazz music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Electric Light Orchestra performs Jazz music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Electric Light Orchestra",
+        "Jazz"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Burt Reynolds performs Pop Rock music.\n- Other Pop Rock artists include: Aaron Copland, Scott McKenzie, Benny Goodman.\n\nQuestion: Which artists share the same genre as Burt Reynolds?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Pop Rock genre with Burt Reynolds include Aaron Copland, Scott McKenzie, Benny Goodman."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Burt Reynolds",
+        "Pop Rock",
+        "Aaron Copland",
+        "Scott McKenzie",
+        "Benny Goodman"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ebony and Ivory has members: Ebony and Ivory, Ebony and Ivory.\n\nQuestion: Who are the members of Ebony and Ivory?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Ebony and Ivory include Ebony and Ivory, Ebony and Ivory."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Ebony and Ivory",
+        "Ebony and Ivory",
+        "Ebony and Ivory"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Chiến tranh giữa các vì sao: Sự trở lại của Jedi has members: Chiến tranh giữa các vì sao: Sự trở lại của Jedi, Chiến tranh giữa các vì sao: Sự trở lại của Jedi.\n\nQuestion: Who are the members of Chiến tranh giữa các vì sao: Sự trở lại của Jedi?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Chiến tranh giữa các vì sao: Sự trở lại của Jedi include Chiến tranh giữa các vì sao: Sự trở lại của Jedi, Chiến tranh giữa các vì sao: Sự trở lại của Jedi."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Chiến tranh giữa các vì sao: Sự trở lại của Jedi",
+        "Chiến tranh giữa các vì sao: Sự trở lại của Jedi",
+        "Chiến tranh giữa các vì sao: Sự trở lại của Jedi"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- No Tears Left to Cry released the album The Essential Michael Jackson.\n- The album The Essential Michael Jackson is in the Rock And Roll genre.\n\nQuestion: What genre is the album The Essential Michael Jackson by No Tears Left to Cry?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album The Essential Michael Jackson by No Tears Left to Cry is in the Rock And Roll genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "No Tears Left to Cry",
+        "The Essential Michael Jackson",
+        "Rock And Roll"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Kelly Family is signed to Ariola.\n- Other artists on Ariola include: Ramones.\n\nQuestion: Which artists are signed to the same label as The Kelly Family?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Kelly Family is signed to Ariola, along with Ramones."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The Kelly Family",
+        "Ariola",
+        "Ramones"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Fix You has members: Fix You, Fix You.\n\nQuestion: Who are the members of Fix You?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Fix You include Fix You, Fix You."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Fix You",
+        "Fix You",
+        "Fix You"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- I Saw Her Standing There performs Hip Hop music.\n- Other Hip Hop artists include: Sam Smith, Scott McKenzie, Danh sách giải thưởng và đề cử của Amy Winehouse.\n\nQuestion: Which artists share the same genre as I Saw Her Standing There?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Hip Hop genre with I Saw Her Standing There include Sam Smith, Scott McKenzie, Danh sách giải thưởng và đề cử của Amy Winehouse."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "I Saw Her Standing There",
+        "Hip Hop",
+        "Sam Smith",
+        "Scott McKenzie",
+        "Danh sách giải thưởng và đề cử của Amy Winehouse"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tito Jackson performs r&b music.\n- Other r&b artists include: Porter Robinson, Scott McKenzie, The 1985.\n\nQuestion: Which artists share the same genre as Tito Jackson?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the r&b genre with Tito Jackson include Porter Robinson, Scott McKenzie, The 1985."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Tito Jackson",
+        "r&b",
+        "Porter Robinson",
+        "Scott McKenzie",
+        "The 1985"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Bruno Mars is associated with the r&b genre.\n\nQuestion: What genre does Bruno Mars perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Bruno Mars performs r&b."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Bruno Mars",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- La Bamba (bài hát) released the album Thriller 25.\n- The album Thriller 25 is in the Disco genre.\n\nQuestion: What genre is the album Thriller 25 by La Bamba (bài hát)?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Thriller 25 by La Bamba (bài hát) is in the Disco genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "La Bamba (bài hát)",
+        "Thriller 25",
+        "Disco"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- What Do I Know? released the album Roman Reloaded.\n- The album Roman Reloaded is in the Soul genre.\n\nQuestion: What genre is the album Roman Reloaded by What Do I Know??"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Roman Reloaded by What Do I Know? is in the Soul genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "What Do I Know?",
+        "Roman Reloaded",
+        "Soul"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Miss Jackson has members: Miss Jackson, Miss Jackson.\n\nQuestion: Who are the members of Miss Jackson?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Miss Jackson include Miss Jackson, Miss Jackson."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Miss Jackson",
+        "Miss Jackson",
+        "Miss Jackson"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Al Jarreau is signed to Rhino.\n- Other artists on Rhino include: The Monkees, RuPaul, Dionne Warwick.\n\nQuestion: Which artists are signed to the same label as Al Jarreau?"
+      },
+      {
+        "role": "assistant",
+        "content": "Al Jarreau is signed to Rhino, along with The Monkees, RuPaul, Dionne Warwick."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Al Jarreau",
+        "Rhino",
+        "The Monkees",
+        "RuPaul",
+        "Dionne Warwick"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tyga released the album The Essential Michael Jackson.\n- The album The Essential Michael Jackson is in the Southern Rock genre.\n\nQuestion: What genre is the album The Essential Michael Jackson by Tyga?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album The Essential Michael Jackson by Tyga is in the Southern Rock genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Tyga",
+        "The Essential Michael Jackson",
+        "Southern Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Just Whitney released the album Roman Reloaded.\n- The song *Levin is on the album Roman Reloaded.\n- The album Roman Reloaded is in the r&b genre.\n\nQuestion: What genre is the song *Levin by Just Whitney?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song *Levin by Just Whitney is r&b, as it appears on the r&b album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Just Whitney",
+        "Roman Reloaded",
+        "*Levin",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tyga released the album The Essential Michael Jackson.\n- The album The Essential Michael Jackson is in the Roots Rock genre.\n\nQuestion: What genre is the album The Essential Michael Jackson by Tyga?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album The Essential Michael Jackson by Tyga is in the Roots Rock genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Tyga",
+        "The Essential Michael Jackson",
+        "Roots Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Kid A is a member of Kid A.\n- Kid A released the album Thriller.\n\nQuestion: What albums did Kid A from Kid A release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Kid A from Kid A released the album Thriller."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Kid A",
+        "Kid A",
+        "Thriller"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Aaron Copland is associated with the Pop Rock genre.\n\nQuestion: Does Aaron Copland perform Pop Rock music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Aaron Copland performs Pop Rock music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Aaron Copland",
+        "Pop Rock"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Danh sách tập phim Jonas L.A. has members: Danh sách tập phim Jonas L.A., Danh sách tập phim Jonas L.A..\n\nQuestion: Who are the members of Danh sách tập phim Jonas L.A.?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Danh sách tập phim Jonas L.A. include Danh sách tập phim Jonas L.A., Danh sách tập phim Jonas L.A.."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Danh sách tập phim Jonas L.A.",
+        "Danh sách tập phim Jonas L.A.",
+        "Danh sách tập phim Jonas L.A."
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Album 'Oops!... I Did It Again' includes songs: Don't Go Knockin' on My Door, *Lunt, &nbsp;– Phiên bản quốc tế{{chú thích ghi chú album, Jack D. Elliot Radio Mix, Walk On By.\n\nQuestion: What songs are on the album Oops!... I Did It Again?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Oops!... I Did It Again contains songs including Don't Go Knockin' on My Door, *Lunt, &nbsp;– Phiên bản quốc tế{{chú thích ghi chú album, Jack D. Elliot Radio Mix, Walk On By."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Oops!... I Did It Again",
+        "Don't Go Knockin' on My Door",
+        "*Lunt",
+        "&nbsp;– Phiên bản quốc tế{{chú thích ghi chú album",
+        "Jack D. Elliot Radio Mix",
+        "Walk On By"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- What Do I Know? released the album Roman Reloaded.\n- The song * Hajji is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Dance Pop genre.\n\nQuestion: What genre is the song * Hajji by What Do I Know??"
+      },
+      {
+        "role": "assistant",
+        "content": "The song * Hajji by What Do I Know? is Dance Pop, as it appears on the Dance Pop album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "What Do I Know?",
+        "Roman Reloaded",
+        "* Hajji",
+        "Dance Pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Album 'Blackout' includes songs: *Hills, *Marcella Araica, * Garrett, Everybody, *Paul Oakenfold.\n\nQuestion: What songs are on the album Blackout?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout contains songs including *Hills, *Marcella Araica, * Garrett, Everybody, *Paul Oakenfold."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Blackout",
+        "*Hills",
+        "*Marcella Araica",
+        "* Garrett",
+        "Everybody",
+        "*Paul Oakenfold"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Blondie (ban nhạc) is a member of Blondie (ban nhạc).\n- Blondie (ban nhạc) released the album Do Not Open.\n\nQuestion: What albums did Blondie (ban nhạc) from Blondie (ban nhạc) release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Blondie (ban nhạc) from Blondie (ban nhạc) released the album Do Not Open."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Blondie (ban nhạc)",
+        "Blondie (ban nhạc)",
+        "Do Not Open"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- War Pigs has members: War Pigs, War Pigs.\n\nQuestion: Who are the members of War Pigs?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of War Pigs include War Pigs, War Pigs."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "War Pigs",
+        "War Pigs",
+        "War Pigs"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Gustav Holst performs Pop Rock music.\n- Other Pop Rock artists include: Aaron Copland, Scott McKenzie, Benny Goodman.\n\nQuestion: Which artists share the same genre as Gustav Holst?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Pop Rock genre with Gustav Holst include Aaron Copland, Scott McKenzie, Benny Goodman."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Gustav Holst",
+        "Pop Rock",
+        "Aaron Copland",
+        "Scott McKenzie",
+        "Benny Goodman"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Jeff Lynne is associated with the r&b genre.\n\nQuestion: What genre does Jeff Lynne perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "Jeff Lynne performs r&b."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Jeff Lynne",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- DNCE is signed to Republic.\n- Other artists on Republic include: Christmas in the Sand, Jessie J, Sofia Carson.\n\nQuestion: Which artists are signed to the same label as DNCE?"
+      },
+      {
+        "role": "assistant",
+        "content": "DNCE is signed to Republic, along with Christmas in the Sand, Jessie J, Sofia Carson."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "DNCE",
+        "Republic",
+        "Christmas in the Sand",
+        "Jessie J",
+        "Sofia Carson"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Pinball Wizard performs Nhạc Đồng Quê music.\n- Other Nhạc Đồng Quê artists include: Amor Prohibido, Charles Manson, Danh sách bài hát thu âm bởi Taylor Swift.\n\nQuestion: Which artists share the same genre as Pinball Wizard?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Nhạc Đồng Quê genre with Pinball Wizard include Amor Prohibido, Charles Manson, Danh sách bài hát thu âm bởi Taylor Swift."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Pinball Wizard",
+        "Nhạc Đồng Quê",
+        "Amor Prohibido",
+        "Charles Manson",
+        "Danh sách bài hát thu âm bởi Taylor Swift"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- The Only Difference Between Martyrdom and Suicide Is Press Coverage is a member of The Only Difference Between Martyrdom and Suicide Is Press Coverage.\n- The Only Difference Between Martyrdom and Suicide Is Press Coverage released the album Tom and Travis Show (The Enema Strikes Back!)]]''.\n\nQuestion: What albums did The Only Difference Between Martyrdom and Suicide Is Press Coverage from The Only Difference Between Martyrdom and Suicide Is Press Coverage release?"
+      },
+      {
+        "role": "assistant",
+        "content": "The Only Difference Between Martyrdom and Suicide Is Press Coverage from The Only Difference Between Martyrdom and Suicide Is Press Coverage released the album Tom and Travis Show (The Enema Strikes Back!)]]''."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "The Only Difference Between Martyrdom and Suicide Is Press Coverage",
+        "The Only Difference Between Martyrdom and Suicide Is Press Coverage",
+        "Tom and Travis Show (The Enema Strikes Back!)]]''"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Crispin Glover is associated with the r&b genre.\n\nQuestion: Does Crispin Glover perform r&b music?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Crispin Glover performs r&b music."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Crispin Glover",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whenever You Need Somebody released the album Blackout.\n- The album Blackout is in the pop genre.\n\nQuestion: What genre is the album Blackout by Whenever You Need Somebody?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Whenever You Need Somebody is in the pop genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whenever You Need Somebody",
+        "Blackout",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Who You Love has members: Who You Love, Who You Love.\n\nQuestion: Who are the members of Who You Love?"
+      },
+      {
+        "role": "assistant",
+        "content": "The members of Who You Love include Who You Love, Who You Love."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Who You Love",
+        "Who You Love",
+        "Who You Love"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Rebecca Black performed on albums: Once Upon Another Time, Once Upon Another Time, Once Upon Another Time.\n\nQuestion: What albums did Rebecca Black release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Rebecca Black released albums including Once Upon Another Time, Once Upon Another Time, Once Upon Another Time."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Rebecca Black",
+        "Once Upon Another Time",
+        "Once Upon Another Time",
+        "Once Upon Another Time"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Album 'The Midsummer Station' includes songs: Young, Thiessen, Sam Hollander, Adam Young, Ca khúc tặng kèm ở Nhật, Adam Young, Brian Lee (add.), Josh Crosby, Campany, Wright.\n\nQuestion: What songs are on the album The Midsummer Station?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album The Midsummer Station contains songs including Young, Thiessen, Sam Hollander, Adam Young, Ca khúc tặng kèm ở Nhật, Adam Young, Brian Lee (add.), Josh Crosby, Campany, Wright."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "The Midsummer Station",
+        "Young, Thiessen, Sam Hollander",
+        "Adam Young",
+        "Ca khúc tặng kèm ở Nhật",
+        "Adam Young, Brian Lee (add.)",
+        "Josh Crosby, Campany, Wright"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- T-Pain is associated with the r&b genre.\n\nQuestion: What genre does T-Pain perform?"
+      },
+      {
+        "role": "assistant",
+        "content": "T-Pain performs r&b."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "T-Pain",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Star Wars: Niềm hi vọng mới is a member of Star Wars: Niềm hi vọng mới.\n- Star Wars: Niềm hi vọng mới released the album Unorthodox Jukebox.\n\nQuestion: What albums did Star Wars: Niềm hi vọng mới from Star Wars: Niềm hi vọng mới release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Star Wars: Niềm hi vọng mới from Star Wars: Niềm hi vọng mới released the album Unorthodox Jukebox."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Star Wars: Niềm hi vọng mới",
+        "Star Wars: Niềm hi vọng mới",
+        "Unorthodox Jukebox"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Duran Duran is a member of Duran Duran.\n- Duran Duran released the album Fearless.\n\nQuestion: What albums did Duran Duran from Duran Duran release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Duran Duran from Duran Duran released the album Fearless."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Duran Duran",
+        "Duran Duran",
+        "Fearless"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the solo album Blackout.\n- The album Blackout is in the pop genre.\n\nQuestion: What genre of music does Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da perform on their solo work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da performs pop music on their solo album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Danh sách đĩa nhạc của Dido performs Trap music.\n- Other Trap artists include: Gene Kelly, Jeff Hardy, London Grammar.\n\nQuestion: Which artists share the same genre as Danh sách đĩa nhạc của Dido?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Trap genre with Danh sách đĩa nhạc của Dido include Gene Kelly, Jeff Hardy, London Grammar."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Danh sách đĩa nhạc của Dido",
+        "Trap",
+        "Gene Kelly",
+        "Jeff Hardy",
+        "London Grammar"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Payphone is a member of Payphone.\n- Payphone released the album A Star Is Born.\n\nQuestion: What albums did Payphone from Payphone release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Payphone from Payphone released the album A Star Is Born."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Payphone",
+        "Payphone",
+        "A Star Is Born"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the solo album Blackout.\n- The album Blackout is in the pop genre.\n\nQuestion: What genre of music does Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da perform on their solo work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da performs pop music on their solo album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Karen Carpenter performed on albums: Symphonica, Symphonica, Patience.\n\nQuestion: What albums did Karen Carpenter release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Karen Carpenter released albums including Symphonica, Symphonica, Patience."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Karen Carpenter",
+        "Symphonica",
+        "Symphonica",
+        "Patience"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the solo album Blackout.\n- The album Blackout is in the r&b genre.\n\nQuestion: What genre of music does Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da perform on their solo work?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da performs r&b music on their solo album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout",
+        "r&b"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Audie Murphy performs Country Rock music.\n- Other Country Rock artists include: Beat It, Anathema, Cameron Mitchell.\n\nQuestion: Which artists share the same genre as Audie Murphy?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Country Rock genre with Audie Murphy include Beat It, Anathema, Cameron Mitchell."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Audie Murphy",
+        "Country Rock",
+        "Beat It",
+        "Anathema",
+        "Cameron Mitchell"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Whenever You Need Somebody released the album Blackout.\n- The album Blackout is in the Psychedelia genre.\n\nQuestion: What genre is the album Blackout by Whenever You Need Somebody?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Blackout by Whenever You Need Somebody is in the Psychedelia genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Whenever You Need Somebody",
+        "Blackout",
+        "Psychedelia"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Babyface (nhạc sĩ) is signed to Motown.\n- Other artists on Motown include: Jackie Jackson, Tito Jackson, Diana Ross.\n\nQuestion: Which artists are signed to the same label as Babyface (nhạc sĩ)?"
+      },
+      {
+        "role": "assistant",
+        "content": "Babyface (nhạc sĩ) is signed to Motown, along with Jackie Jackson, Tito Jackson, Diana Ross."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Babyface (nhạc sĩ)",
+        "Motown",
+        "Jackie Jackson",
+        "Tito Jackson",
+        "Diana Ross"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Patsy Cline performs Progressive Rock music.\n- Other Progressive Rock artists include: Father Figure (bài hát), Uptown Funk, Bobby Valentino.\n\nQuestion: Which artists share the same genre as Patsy Cline?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Progressive Rock genre with Patsy Cline include Father Figure (bài hát), Uptown Funk, Bobby Valentino."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Patsy Cline",
+        "Progressive Rock",
+        "Father Figure (bài hát)",
+        "Uptown Funk",
+        "Bobby Valentino"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Ob-La-Di, Ob-La-Da is a member of Ob-La-Di, Ob-La-Da.\n- Ob-La-Di, Ob-La-Da released the album Blackout.\n\nQuestion: What albums did Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Ob-La-Di, Ob-La-Da from Ob-La-Di, Ob-La-Da released the album Blackout."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Ob-La-Di, Ob-La-Da",
+        "Ob-La-Di, Ob-La-Da",
+        "Blackout"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Justin & Christina is signed to Rca.\n- Other artists on Rca include: The Shirelles, Paloma Faith, Kirstin Maldonado.\n\nQuestion: Which artists are signed to the same label as Justin & Christina?"
+      },
+      {
+        "role": "assistant",
+        "content": "Justin & Christina is signed to Rca, along with The Shirelles, Paloma Faith, Kirstin Maldonado."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Justin & Christina",
+        "Rca",
+        "The Shirelles",
+        "Paloma Faith",
+        "Kirstin Maldonado"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- La Bamba (bài hát) released the album Thriller 25.\n- The album Thriller 25 is in the pop genre.\n\nQuestion: What genre is the album Thriller 25 by La Bamba (bài hát)?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Thriller 25 by La Bamba (bài hát) is in the pop genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "La Bamba (bài hát)",
+        "Thriller 25",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Tyga released the album Thriller 25.\n- The album Thriller 25 is in the pop genre.\n\nQuestion: What genre is the album Thriller 25 by Tyga?"
+      },
+      {
+        "role": "assistant",
+        "content": "The album Thriller 25 by Tyga is in the pop genre."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Tyga",
+        "Thriller 25",
+        "pop"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Spike Dawbarn is a member of Spike Dawbarn.\n- Spike Dawbarn released the album Stripped.\n\nQuestion: What albums did Spike Dawbarn from Spike Dawbarn release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Spike Dawbarn from Spike Dawbarn released the album Stripped."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Spike Dawbarn",
+        "Spike Dawbarn",
+        "Stripped"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Star Wars: Jedi cuối cùng performs Country music.\n- Other Country artists include: the Weeknd, Ariana Grande, Como Ama una Mujer.\n\nQuestion: Which artists share the same genre as Star Wars: Jedi cuối cùng?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the Country genre with Star Wars: Jedi cuối cùng include the Weeknd, Ariana Grande, Como Ama una Mujer."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Star Wars: Jedi cuối cùng",
+        "Country",
+        "the Weeknd",
+        "Ariana Grande",
+        "Como Ama una Mujer"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Just Whitney released the album Roman Reloaded.\n- The song *Stephen Kozmeniuk is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Soul genre.\n\nQuestion: What genre is the song *Stephen Kozmeniuk by Just Whitney?"
+      },
+      {
+        "role": "assistant",
+        "content": "The song *Stephen Kozmeniuk by Just Whitney is Soul, as it appears on the Soul album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "Just Whitney",
+        "Roman Reloaded",
+        "*Stephen Kozmeniuk",
+        "Soul"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Lindsey Buckingham is signed to Mercury.\n- Other artists on Mercury include: Peter Gabriel, Robert \"Kool\" Bell, Babyface (nhạc sĩ).\n\nQuestion: Which artists are signed to the same label as Lindsey Buckingham?"
+      },
+      {
+        "role": "assistant",
+        "content": "Lindsey Buckingham is signed to Mercury, along with Peter Gabriel, Robert \"Kool\" Bell, Babyface (nhạc sĩ)."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Lindsey Buckingham",
+        "Mercury",
+        "Peter Gabriel",
+        "Robert \"Kool\" Bell",
+        "Babyface (nhạc sĩ)"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Vision of Love performs r&b music.\n- Other r&b artists include: Porter Robinson, Scott McKenzie, The 1985.\n\nQuestion: Which artists share the same genre as Vision of Love?"
+      },
+      {
+        "role": "assistant",
+        "content": "Artists who share the r&b genre with Vision of Love include Porter Robinson, Scott McKenzie, The 1985."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "Vision of Love",
+        "r&b",
+        "Porter Robinson",
+        "Scott McKenzie",
+        "The 1985"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- Like a Virgin (bài hát) performed on albums: Thank You, Thank You, Thank You.\n\nQuestion: What albums did Like a Virgin (bài hát) release?"
+      },
+      {
+        "role": "assistant",
+        "content": "Like a Virgin (bài hát) released albums including Thank You, Thank You, Thank You."
+      }
+    ],
+    "metadata": {
+      "question_type": "1-hop",
+      "entities": [
+        "Like a Virgin (bài hát)",
+        "Thank You",
+        "Thank You",
+        "Thank You"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- What Do I Know? released the album Roman Reloaded.\n- The song * Jimmy Joker is on the album Roman Reloaded.\n- The album Roman Reloaded is in the Soul genre.\n\nQuestion: What genre is the song * Jimmy Joker by What Do I Know??"
+      },
+      {
+        "role": "assistant",
+        "content": "The song * Jimmy Joker by What Do I Know? is Soul, as it appears on the Soul album Roman Reloaded."
+      }
+    ],
+    "metadata": {
+      "question_type": "3-hop",
+      "entities": [
+        "What Do I Know?",
+        "Roman Reloaded",
+        "* Jimmy Joker",
+        "Soul"
+      ]
+    }
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a music knowledge assistant. Answer questions about musicians, bands, albums, songs, genres, and awards based on the provided context. Be concise and accurate."
+      },
+      {
+        "role": "user",
+        "content": "Context:\n- I Want You Back is a member of I Want You Back.\n- I Want You Back released the album Humphrey.\n\nQuestion: What albums did I Want You Back from I Want You Back release?"
+      },
+      {
+        "role": "assistant",
+        "content": "I Want You Back from I Want You Back released the album Humphrey."
+      }
+    ],
+    "metadata": {
+      "question_type": "2-hop",
+      "entities": [
+        "I Want You Back",
+        "I Want You Back",
+        "Humphrey"
+      ]
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "rank": 1,
+    "name": "Michael Jackson's Vision",
+    "pagerank_score": 0.002522856772430994
+  },
+  {
+    "rank": 2,
+    "name": "The Monkees",
+    "pagerank_score": 0.0019033544405910635
+  },
+  {
+    "rank": 3,
+    "name": "All for You (album)",
+    "pagerank_score": 0.0017858988421962135
+  },
+  {
+    "rank": 4,
+    "name": "Somethin' Special",
+    "pagerank_score": 0.001643385569810175
+  },
+  {
+    "rank": 5,
+    "name": "Natasha Hamilton",
+    "pagerank_score": 0.0015423360584629134
+  },
+  {
+    "rank": 6,
+    "name": "Jessie J",
+    "pagerank_score": 0.0013331570212416607
+  },
+  {
+    "rank": 7,
+    "name": "Anastacia",
+    "pagerank_score": 0.0012032956207842609
+  },
+  {
+    "rank": 8,
+    "name": "Jason Orange",
+    "pagerank_score": 0.0011803020847872283
+  },
+  {
+    "rank": 9,
+    "name": "The Kelly Family",
+    "pagerank_score": 0.0010636672673484857
+  },
+  {
+    "rank": 10,
+    "name": "Emily Kinney",
+    "pagerank_score": 0.001012974325671729
+  }
+]

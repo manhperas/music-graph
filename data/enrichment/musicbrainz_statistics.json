@@ -1,0 +1,30 @@
+{
+  "collection_timestamp": 1764552327.9529045,
+  "total_artists": 20,
+  "data_quality_distribution": {
+    "high": 20
+  },
+  "artist_types": {
+    "Person": 18,
+    "Group": 2
+  },
+  "countries": {
+    "US": 11,
+    "GB": 6,
+    "CA": 3
+  },
+  "genres": {
+    "pop": 16,
+    "r&b": 9,
+    "dance-pop": 8,
+    "electropop": 6,
+    "contemporary r&b": 6,
+    "pop rock": 5,
+    "singer-songwriter": 5,
+    "pop soul": 5,
+    "synth-pop": 4,
+    "soul": 4
+  },
+  "avg_releases_per_artist": 10.0,
+  "avg_works_per_artist": 46.8
+}

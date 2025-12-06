@@ -1,0 +1,41 @@
+{
+  "collection_summary": {
+    "timestamp": 1764552346.482189,
+    "total_unified_artists": 50,
+    "data_sources": {
+      "wikipedia_raw_corpus.json": {
+        "count": 99,
+        "source_type": "wikipedia"
+      },
+      "wikipedia_cleaned_corpus.json": {
+        "count": 99,
+        "source_type": "wikipedia"
+      },
+      "musicbrainz_artist_data.json": {
+        "count": 20,
+        "source_type": "musicbrainz"
+      },
+      "spotify_artist_data.json": {
+        "count": 0,
+        "source_type": "spotify"
+      }
+    }
+  },
+  "quality_analysis": {
+    "avg_quality_score": 2.82,
+    "max_quality_score": 5.0,
+    "min_quality_score": 0.0,
+    "high_quality_artists": 0,
+    "medium_quality_artists": 18,
+    "low_quality_artists": 32
+  },
+  "content_statistics": {
+    "unique_genres": 63,
+    "total_genres_listed": 147,
+    "total_albums": 200,
+    "total_tracks": 0,
+    "wikipedia_languages": [
+      "vi"
+    ]
+  }
+}

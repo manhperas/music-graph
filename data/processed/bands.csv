@@ -1,0 +1,346 @@
+id,name,url,classification_confidence
+band_0,The Chainsmokers,https://vi.wikipedia.org/wiki/The_Chainsmokers,0.722
+band_1,Maroon 5,https://vi.wikipedia.org/wiki/Maroon_5,0.762
+band_2,The Chordettes,https://vi.wikipedia.org/wiki/The_Chordettes,0.882
+band_3,Boyz II Men,https://vi.wikipedia.org/wiki/Boyz_II_Men,0.737
+band_4,DNCE,https://vi.wikipedia.org/wiki/DNCE,0.867
+band_5,Girlicious,https://vi.wikipedia.org/wiki/Girlicious,0.833
+band_6,The Jackson 5,https://vi.wikipedia.org/wiki/The_Jackson_5,0.75
+band_7,New Kids on the Block,https://vi.wikipedia.org/wiki/New_Kids_on_the_Block,0.786
+band_8,Sonny & Cher,https://vi.wikipedia.org/wiki/Sonny_%26_Cher,0.632
+band_9,Destiny's Child,https://vi.wikipedia.org/wiki/Destiny%27s_Child,0.812
+band_10,The Velvet Underground,,0.654
+band_11,Chiến tranh giữa các vì sao: Tập I – Hiểm họa bóng ma,https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_tranh_gi%E1%BB%AFa_c%C3%A1c_v%C3%AC_sao:_T%E1%BA%ADp_I_%E2%80%93_Hi%E1%BB%83m_h%E1%BB%8Da_b%C3%B3ng_ma,0.5
+band_12,Earth (ban nhạc Mỹ),,0.846
+band_13,Pts.OF.Athrty,https://vi.wikipedia.org/wiki/Pts.OF.Athrty,0.857
+band_14,The National,,0.824
+band_15,One Thing,https://vi.wikipedia.org/wiki/One_Thing,0.6
+band_16,The One That Got Away,https://vi.wikipedia.org/wiki/The_One_That_Got_Away,0.6
+band_17,Wings (ban nhạc),https://vi.wikipedia.org/wiki/Wings_(ban_nh%E1%BA%A1c),0.619
+band_18,Fergalicious,https://vi.wikipedia.org/wiki/Fergalicious,0.5
+band_19,Absent Elk,https://vi.wikipedia.org/wiki/Absent_Elk,0.667
+band_20,Weekend Nachos,,0.818
+band_21,Vampire Weekend,https://vi.wikipedia.org/wiki/Vampire_Weekend,0.824
+band_22,Mall (phim),https://vi.wikipedia.org/wiki/Mall_(phim),0.8
+band_23,From the Fires,https://vi.wikipedia.org/wiki/From_the_Fires,0.5
+band_24,Guns N' Roses,https://vi.wikipedia.org/wiki/Guns_N%27_Roses,0.7
+band_25,X&Y,https://vi.wikipedia.org/wiki/X%26Y,0.625
+band_26,Take That,https://vi.wikipedia.org/wiki/Take_That,0.5
+band_27,How Can You Mend a Broken Heart,https://vi.wikipedia.org/wiki/How_Can_You_Mend_a_Broken_Heart,0.75
+band_28,Pallbearer (ban nhạc),,0.8
+band_29,Nizlopi,,0.8
+band_30,The Scientist,https://vi.wikipedia.org/wiki/The_Scientist,0.818
+band_31,Carrie & Lowell,,0.5
+band_32,Discordance Axis,,0.818
+band_33,The Smeezingtons,https://vi.wikipedia.org/wiki/The_Smeezingtons,0.714
+band_34,The Temptations,https://vi.wikipedia.org/wiki/The_Temptations,0.771
+band_35,Million Dollar Quartet,https://vi.wikipedia.org/wiki/Million_Dollar_Quartet,0.7
+band_36,Deafheaven,https://vi.wikipedia.org/wiki/Deafheaven,0.833
+band_37,The Midsummer Station,https://vi.wikipedia.org/wiki/The_Midsummer_Station,0.8
+band_38,Spiritualized,,0.889
+band_39,Odds & Ends,https://vi.wikipedia.org/wiki/Odds_%26_Ends,0.625
+band_40,The Catalyst,https://vi.wikipedia.org/wiki/The_Catalyst,0.75
+band_41,808s & Heartbreak,https://vi.wikipedia.org/wiki/808s_%26_Heartbreak,0.75
+band_42,Vi sitter i Ventrilo och spelar DotA,https://vi.wikipedia.org/wiki/Vi_sitter_i_Ventrilo_och_spelar_DotA,0.5
+band_43,Lily Allen and Friends,https://vi.wikipedia.org/wiki/Lily_Allen_and_Friends,0.857
+band_44,The Killers,,0.75
+band_45,Audioslave,,0.714
+band_46,Brighter Than the Sun,https://vi.wikipedia.org/wiki/Brighter_Than_the_Sun,0.571
+band_47,The Onyx Hotel Tour,https://vi.wikipedia.org/wiki/The_Onyx_Hotel_Tour,0.5
+band_48,4th Time Around,https://vi.wikipedia.org/wiki/4th_Time_Around,0.5
+band_49,"Que Sera, Sera (Whatever Will Be, Will Be)","https://vi.wikipedia.org/wiki/Que_Sera,_Sera_(Whatever_Will_Be,_Will_Be)",0.5
+band_50,The Prismatic World Tour Live,https://vi.wikipedia.org/wiki/The_Prismatic_World_Tour_Live,0.5
+band_51,Animal Collective,https://vi.wikipedia.org/wiki/Animal_Collective,0.778
+band_52,War Pigs,https://vi.wikipedia.org/wiki/War_Pigs,0.5
+band_53,Thirty Seconds to Mars,,0.609
+band_54,Dàn nhạc Giao hưởng New York,https://vi.wikipedia.org/wiki/D%C3%A0n_nh%E1%BA%A1c_Giao_h%C6%B0%E1%BB%9Fng_New_York,0.75
+band_55,Baby I Love U!,https://vi.wikipedia.org/wiki/Baby_I_Love_U!,0.5
+band_56,Fun (ban nhạc),https://vi.wikipedia.org/wiki/Fun_(ban_nh%E1%BA%A1c),0.75
+band_57,The Remix Suite,https://vi.wikipedia.org/wiki/The_Remix_Suite,0.6
+band_58,The Christmas Song,https://vi.wikipedia.org/wiki/The_Christmas_Song,0.667
+band_59,Don't Cry for Me Argentina,https://vi.wikipedia.org/wiki/Don%27t_Cry_for_Me_Argentina,0.5
+band_60,Out of the Woods,https://vi.wikipedia.org/wiki/Out_of_the_Woods,0.556
+band_61,Burning in the Skies,https://vi.wikipedia.org/wiki/Burning_in_the_Skies,0.556
+band_62,Slowdive,https://vi.wikipedia.org/wiki/Slowdive,0.941
+band_63,OneRepublic,https://vi.wikipedia.org/wiki/OneRepublic,0.812
+band_64,Machine Shop co.,https://vi.wikipedia.org/wiki/Machine_Shop_co.,0.75
+band_65,Tượng Michael Jackson HIStory,https://vi.wikipedia.org/wiki/T%C6%B0%E1%BB%A3ng_Michael_Jackson_HIStory,0.5
+band_66,The Band,,0.69
+band_67,Enema of the State,https://vi.wikipedia.org/wiki/Enema_of_the_State,0.8
+band_68,In My Life,,0.75
+band_69,The Shirelles,https://vi.wikipedia.org/wiki/The_Shirelles,0.733
+band_70,The Power of Good-Bye,https://vi.wikipedia.org/wiki/The_Power_of_Good-Bye,0.5
+band_71,"Peter, Paul and Mary",,0.769
+band_72,Pink Floyd,,0.792
+band_73,Violet Hill,https://vi.wikipedia.org/wiki/Violet_Hill,0.667
+band_74,54th Platoon,,0.824
+band_75,London Grammar,https://vi.wikipedia.org/wiki/London_Grammar,0.667
+band_76,Danh sách buổi biểu diễn trực tiếp của Lady Gaga,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_bu%E1%BB%95i_bi%E1%BB%83u_di%E1%BB%85n_tr%E1%BB%B1c_ti%E1%BA%BFp_c%E1%BB%A7a_Lady_Gaga,0.5
+band_77,The Malibu Sessions,https://vi.wikipedia.org/wiki/The_Malibu_Sessions,0.571
+band_78,Bark Psychosis,https://vi.wikipedia.org/wiki/Bark_Psychosis,0.714
+band_79,The Platters,https://vi.wikipedia.org/wiki/The_Platters,0.75
+band_80,Breaking the Habit (DVD),,0.556
+band_81,The Byrds,https://vi.wikipedia.org/wiki/The_Byrds,0.708
+band_82,Danh sách đĩa nhạc của The Beatles,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%C4%A9a_nh%E1%BA%A1c_c%E1%BB%A7a_The_Beatles,0.6
+band_83,Fugazi,,0.929
+band_84,Danh sách tác phẩm của Igor Stravinsky,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_t%C3%A1c_ph%E1%BA%A9m_c%E1%BB%A7a_Igor_Stravinsky,0.5
+band_85,The Bends,,0.714
+band_86,The Eminem Show,,0.667
+band_87,Hold You Down,https://vi.wikipedia.org/wiki/Hold_You_Down,0.5
+band_88,Permission to Dance,https://vi.wikipedia.org/wiki/Permission_to_Dance,0.833
+band_89,All About It,https://vi.wikipedia.org/wiki/All_About_It,0.5
+band_90,God Only Knows,https://vi.wikipedia.org/wiki/God_Only_Knows,0.75
+band_91,In the Heights: Giấc mơ New York,https://vi.wikipedia.org/wiki/In_the_Heights:_Gi%E1%BA%A5c_m%C6%A1_New_York,0.5
+band_92,Aly & AJ,https://vi.wikipedia.org/wiki/Aly_%26_AJ,0.833
+band_93,Harry Potter và Tù nhân Azkaban,https://vi.wikipedia.org/wiki/Harry_Potter_v%C3%A0_T%C3%B9_nh%C3%A2n_Azkaban,0.5
+band_94,ZZ Top,https://vi.wikipedia.org/wiki/ZZ_Top,0.765
+band_95,The Only Difference Between Martyrdom and Suicide Is Press Coverage,https://vi.wikipedia.org/wiki/The_Only_Difference_Between_Martyrdom_and_Suicide_Is_Press_Coverage,0.9
+band_96,The Fabelmans: Tuổi trẻ huy hoàng,https://vi.wikipedia.org/wiki/The_Fabelmans:_Tu%E1%BB%95i_tr%E1%BA%BB_huy_ho%C3%A0ng,0.75
+band_97,Ease on Down the Road,https://vi.wikipedia.org/wiki/Ease_on_Down_the_Road,0.5
+band_98,Chiến mã (phim),https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_m%C3%A3_(phim),0.5
+band_99,Neil Aspinall,https://vi.wikipedia.org/wiki/Neil_Aspinall,0.5
+band_100,Fall Out Boy,https://vi.wikipedia.org/wiki/Fall_Out_Boy,0.762
+band_101,New Divide,https://vi.wikipedia.org/wiki/New_Divide,0.5
+band_102,The Wiz (nhạc phim),https://vi.wikipedia.org/wiki/The_Wiz_(nh%E1%BA%A1c_phim),0.6
+band_103,The Marshall Mathers LP,,0.667
+band_104,Creedence Clearwater Revival,https://vi.wikipedia.org/wiki/Creedence_Clearwater_Revival,0.824
+band_105,The Decalogue (nhạc phim),,0.5
+band_106,Các tập của Jonas Brothers: Living the Dream,https://vi.wikipedia.org/wiki/C%C3%A1c_t%E1%BA%ADp_c%E1%BB%A7a_Jonas_Brothers:_Living_the_Dream,0.5
+band_107,Walk with You,https://vi.wikipedia.org/wiki/Walk_with_You,0.5
+band_108,Garbage,https://vi.wikipedia.org/wiki/Garbage,0.909
+band_109,Songs About Jane,https://vi.wikipedia.org/wiki/Songs_About_Jane,0.5
+band_110,Danh sách đĩa nhạc của Taylor Swift,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%C4%A9a_nh%E1%BA%A1c_c%E1%BB%A7a_Taylor_Swift,0.5
+band_111,A Moon Shaped Pool,,0.6
+band_112,The Black Eyed Peas,https://vi.wikipedia.org/wiki/The_Black_Eyed_Peas,0.737
+band_113,Anathema,https://vi.wikipedia.org/wiki/Anathema,0.765
+band_114,Somewhere I Belong,https://vi.wikipedia.org/wiki/Somewhere_I_Belong,0.75
+band_115,The xx,https://vi.wikipedia.org/wiki/The_xx,0.889
+band_116,My Chemical Romance,https://vi.wikipedia.org/wiki/My_Chemical_Romance,0.867
+band_117,Nổi tiếng hơn cả Chúa Giêsu,https://vi.wikipedia.org/wiki/N%E1%BB%95i_ti%E1%BA%BFng_h%C6%A1n_c%E1%BA%A3_Ch%C3%BAa_Gi%C3%AAsu,0.667
+band_118,Muse (ban nhạc),,0.826
+band_119,Pinball Wizard,https://vi.wikipedia.org/wiki/Pinball_Wizard,0.5
+band_120,Just Be Straight with Me,https://vi.wikipedia.org/wiki/Just_Be_Straight_with_Me,0.75
+band_121,Derek and the Dominos,,0.72
+band_122,Band of Susans,https://vi.wikipedia.org/wiki/Band_of_Susans,0.9
+band_123,60 Cycle,https://vi.wikipedia.org/wiki/60_Cycle,0.625
+band_124,Have Yourself a Merry Little Christmas,https://vi.wikipedia.org/wiki/Have_Yourself_a_Merry_Little_Christmas,0.5
+band_125,Why Don't We,https://vi.wikipedia.org/wiki/Why_Don%27t_We,0.778
+band_126,Nobody Told Me,,0.5
+band_127,Disclosure,https://vi.wikipedia.org/wiki/Disclosure,0.722
+band_128,Pigs Pigs Pigs Pigs Pigs Pigs,https://vi.wikipedia.org/wiki/Pigs_Pigs_Pigs_Pigs_Pigs_Pigs,0.818
+band_129,Duran Duran,https://vi.wikipedia.org/wiki/Duran_Duran,0.593
+band_130,Echo & the Bunnymen,https://vi.wikipedia.org/wiki/Echo_%26_the_Bunnymen,0.737
+band_131,Oh My Love,https://vi.wikipedia.org/wiki/Oh_My_Love,0.5
+band_132,Beats By Dre,https://vi.wikipedia.org/wiki/Beats_Electronics,0.75
+band_133,Evanescence,https://vi.wikipedia.org/wiki/Evanescence,0.562
+band_134,Converge (ban nhạc),,0.917
+band_135,Death Magnetic,,0.5
+band_136,Danh sách bài hát thu âm bởi Linkin Park,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_b%C3%A0i_h%C3%A1t_thu_%C3%A2m_b%E1%BB%9Fi_Linkin_Park,0.714
+band_137,5th Ward Boyz,,0.9
+band_138,Chloe x Halle,https://vi.wikipedia.org/wiki/Chloe_x_Halle,0.5
+band_139,If I Never See Your Face Again,https://vi.wikipedia.org/wiki/If_I_Never_See_Your_Face_Again,0.5
+band_140,Drive Like Jehu,,0.875
+band_141,The Edge of Glory,https://vi.wikipedia.org/wiki/The_Edge_of_Glory,0.556
+band_142,The Chameleons,,0.75
+band_143,Take Off Your Pants and Jacket,https://vi.wikipedia.org/wiki/Take_Off_Your_Pants_and_Jacket,0.875
+band_144,Gym Class Heroes,,0.842
+band_145,Panic! at the Disco,https://vi.wikipedia.org/wiki/Panic!_at_the_Disco,0.933
+band_146,Love You Like a Love Song,https://vi.wikipedia.org/wiki/Love_You_Like_a_Love_Song,0.75
+band_147,The Terminal,https://vi.wikipedia.org/wiki/The_Terminal,0.5
+band_148,Cleanin' Out My Closet,https://vi.wikipedia.org/wiki/Cleanin%27_Out_My_Closet,0.5
+band_149,Cater 2 U,https://vi.wikipedia.org/wiki/Cater_2_U,0.5
+band_150,Imagine Dragons,,0.8
+band_151,Kool & the Gang,https://vi.wikipedia.org/wiki/Kool_%26_the_Gang,0.632
+band_152,The Reel Me,https://vi.wikipedia.org/wiki/The_Reel_Me,0.571
+band_153,Eagles,,0.65
+band_154,Naked City (ban nhạc),,0.769
+band_155,The Many Ways,https://vi.wikipedia.org/wiki/The_Many_Ways,0.571
+band_156,Come On Over Baby (All I Want Is You),https://vi.wikipedia.org/wiki/Come_On_Over_Baby_(All_I_Want_Is_You),0.5
+band_157,"Love, Lust, Faith and Dreams",,0.857
+band_158,Leave Out All the Rest,https://vi.wikipedia.org/wiki/Leave_Out_All_the_Rest,0.75
+band_159,Rage Against the Machine,https://vi.wikipedia.org/wiki/Rage_Against_the_Machine,0.706
+band_160,Sonic Youth,,0.737
+band_161,Danh sách thành viên ban nhạc có thành viên của The Beatles,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_th%C3%A0nh_vi%C3%AAn_ban_nh%E1%BA%A1c_c%C3%B3_th%C3%A0nh_vi%C3%AAn_c%E1%BB%A7a_The_Beatles,0.889
+band_162,Social House,,0.667
+band_163,Auld Lang Syne,https://vi.wikipedia.org/wiki/Auld_Lang_Syne,0.5
+band_164,Baby I,https://vi.wikipedia.org/wiki/Baby_I,0.5
+band_165,Aerosmith,,0.864
+band_166,John Dunstaple,https://vi.wikipedia.org/wiki/John_Dunstaple,0.5
+band_167,Jonas Brothers,https://vi.wikipedia.org/wiki/Jonas_Brothers,0.8
+band_168,OK Computer,https://vi.wikipedia.org/wiki/OK_Computer,0.667
+band_169,The Writing's on the Wall,https://vi.wikipedia.org/wiki/The_Writing%27s_on_the_Wall,0.769
+band_170,If You Leave Me Now,https://vi.wikipedia.org/wiki/If_You_Leave_Me_Now,0.8
+band_171,TLC (ban nhạc),https://vi.wikipedia.org/wiki/TLC_(ban_nh%E1%BA%A1c),0.778
+band_172,Danh sách chuyến lưu diễn của Michael Jackson và the Jackson 5,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_chuy%E1%BA%BFn_l%C6%B0u_di%E1%BB%85n_c%E1%BB%A7a_Michael_Jackson_v%C3%A0_the_Jackson_5,0.625
+band_173,Sleep (ban nhạc),,0.909
+band_174,Electric Light Orchestra,https://vi.wikipedia.org/wiki/Electric_Light_Orchestra,0.75
+band_175,While My Guitar Gently Weeps,,0.667
+band_176,The Shadows,,0.84
+band_177,Britney and Kevin: Chaotic,https://vi.wikipedia.org/wiki/Britney_and_Kevin:_Chaotic,0.8
+band_178,I Saw Her Standing There,https://vi.wikipedia.org/wiki/I_Saw_Her_Standing_There,0.5
+band_179,Far East Movement,,0.944
+band_180,Give Peace a Chance,https://vi.wikipedia.org/wiki/Give_Peace_a_Chance,0.857
+band_181,Who You Love,https://vi.wikipedia.org/wiki/Who_You_Love,0.5
+band_182,Lowercase (ban nhạc),,0.923
+band_183,It's Better If You Don't Understand,https://vi.wikipedia.org/wiki/It%27s_Better_If_You_Don%27t_Understand,0.5
+band_184,Something Just Like This,https://vi.wikipedia.org/wiki/Something_Just_Like_This,0.7
+band_185,Meteora,,0.667
+band_186,Bleed It Out,https://vi.wikipedia.org/wiki/Bleed_It_Out,0.75
+band_187,8 Eyed Spy,,0.8
+band_188,The Blessed Unrest,https://vi.wikipedia.org/wiki/The_Blessed_Unrest,0.5
+band_189,All You Need Is Love,https://vi.wikipedia.org/wiki/All_You_Need_Is_Love,0.75
+band_190,Speed of Sound,https://vi.wikipedia.org/wiki/Speed_of_Sound,0.6
+band_191,She Loves You,https://vi.wikipedia.org/wiki/She_Loves_You,0.5
+band_192,"Blood, Sweat & Tears","https://vi.wikipedia.org/wiki/Blood,_Sweat_%26_Tears",0.81
+band_193,Kid A,https://vi.wikipedia.org/wiki/Kid_A,0.667
+band_194,2nd II None,,0.933
+band_195,Bad Religion,,0.8
+band_196,The Beyoncé Experience Live,https://vi.wikipedia.org/wiki/The_Beyonc%C3%A9_Experience_Live,0.545
+band_197,I Want You Back,https://vi.wikipedia.org/wiki/I_Want_You_Back,0.833
+band_198,Farewell My Summer Love,,0.5
+band_199,Hail to the Thief,,0.833
+band_200,19367 Pink Floyd,https://vi.wikipedia.org/wiki/19367_Pink_Floyd,0.667
+band_201,Danh sách tập phim Jonas L.A.,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_t%E1%BA%ADp_phim_Jonas_L.A.,0.5
+band_202,Chiến tranh giữa các vì sao: Tập III – Sự báo thù của người Sith,https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_tranh_gi%E1%BB%AFa_c%C3%A1c_v%C3%AC_sao:_T%E1%BA%ADp_III_%E2%80%93_S%E1%BB%B1_b%C3%A1o_th%C3%B9_c%E1%BB%A7a_ng%C6%B0%E1%BB%9Di_Sith,0.5
+band_203,Jonas L.A.,https://vi.wikipedia.org/wiki/Jonas_L.A.,0.667
+band_204,Adema,,0.882
+band_205,The Solids,https://vi.wikipedia.org/wiki/The_Solids,0.9
+band_206,Traveling Wilburys,,0.889
+band_207,Radiohead,,0.783
+band_208,The M+M's Tour,https://vi.wikipedia.org/wiki/The_M%2BM%27s_Tour,0.5
+band_209,Hard to Say I'm Sorry,https://vi.wikipedia.org/wiki/Hard_to_Say_I%27m_Sorry,0.778
+band_210,"Jumpin', Jumpin'","https://vi.wikipedia.org/wiki/Jumpin%27,_Jumpin%27",0.8
+band_211,I Want to Hold Your Hand,https://vi.wikipedia.org/wiki/I_Want_to_Hold_Your_Hand,0.75
+band_212,Rascal Flatts,https://vi.wikipedia.org/wiki/Rascal_Flatts,0.6
+band_213,Tomorrow Never Knows,,0.833
+band_214,Neffex,https://vi.wikipedia.org/wiki/Neffex,0.8
+band_215,The Little Things,https://vi.wikipedia.org/wiki/The_Little_Things,0.667
+band_216,I Don't Wanna Live Forever,https://vi.wikipedia.org/wiki/I_Don%27t_Wanna_Live_Forever,0.571
+band_217,3 Doors Down,,0.75
+band_218,R.E.M.,https://vi.wikipedia.org/wiki/R.E.M.,0.85
+band_219,Bức tường John Lennon,https://vi.wikipedia.org/wiki/B%E1%BB%A9c_t%C6%B0%E1%BB%9Dng_John_Lennon,0.714
+band_220,Rocky Raccoon,,0.5
+band_221,Studio Collection 2000–2012,https://vi.wikipedia.org/wiki/Studio_Collection_2000%E2%80%932012,0.667
+band_222,System of a Down,,0.905
+band_223,One Step Too Far,,0.5
+band_224,Every Teardrop Is a Waterfall,https://vi.wikipedia.org/wiki/Every_Teardrop_Is_a_Waterfall,0.8
+band_225,Camp Rock 2: The Final Jam,https://vi.wikipedia.org/wiki/Camp_Rock_2:_The_Final_Jam,0.75
+band_226,A.S.K. M.E.,https://vi.wikipedia.org/wiki/A.S.K._M.E.,0.875
+band_227,Sand in My Shoes,https://vi.wikipedia.org/wiki/Sand_in_My_Shoes,0.5
+band_228,"Ob-La-Di, Ob-La-Da","https://vi.wikipedia.org/wiki/Ob-La-Di,_Ob-La-Da",0.667
+band_229,Waiting for Tonight,https://vi.wikipedia.org/wiki/Waiting_for_Tonight,0.5
+band_230,A Star Is Born (nhạc phim 2018),https://vi.wikipedia.org/wiki/A_Star_Is_Born_(nh%E1%BA%A1c_phim_2018),0.556
+band_231,Harry Potter và Hòn đá Phù thủy (phim),https://vi.wikipedia.org/wiki/Harry_Potter_v%C3%A0_H%C3%B2n_%C4%91%C3%A1_Ph%C3%B9_th%E1%BB%A7y_(phim),0.5
+band_232,Adele at the BBC,https://vi.wikipedia.org/wiki/Adele_at_the_BBC,0.5
+band_233,Lose My Breath,https://vi.wikipedia.org/wiki/Lose_My_Breath,0.714
+band_234,Penny Lane,https://vi.wikipedia.org/wiki/Penny_Lane,0.5
+band_235,4148 McCartney,https://vi.wikipedia.org/wiki/4148_McCartney,0.667
+band_236,The Black Keys,,0.87
+band_237,Parachutes,https://vi.wikipedia.org/wiki/Parachutes,0.75
+band_238,Strawberry Fields,https://vi.wikipedia.org/wiki/Strawberry_Fields,0.667
+band_239,Star Wars: Niềm hi vọng mới,https://vi.wikipedia.org/wiki/Star_Wars:_Ni%E1%BB%81m_hi_v%E1%BB%8Dng_m%E1%BB%9Bi,0.5
+band_240,We Be Clubbin',https://vi.wikipedia.org/wiki/We_Be_Clubbin%27,0.5
+band_241,Queens of the Stone Age,,0.947
+band_242,3rd Edge,https://vi.wikipedia.org/wiki/3rd_Edge,0.55
+band_243,Minor Threat,,0.833
+band_244,A Light That Never Comes,https://vi.wikipedia.org/wiki/A_Light_That_Never_Comes,0.75
+band_245,The White Stripes,,0.708
+band_246,That's What Friends Are For,https://vi.wikipedia.org/wiki/That%27s_What_Friends_Are_For,0.75
+band_247,Back to Basics: Live and Down Under,https://vi.wikipedia.org/wiki/Back_to_Basics:_Live_and_Down_Under,0.667
+band_248,Master of Puppets,,0.75
+band_249,Layla,https://vi.wikipedia.org/wiki/Layla,0.571
+band_250,Payphone,https://vi.wikipedia.org/wiki/Payphone,0.667
+band_251,Can U Get Wit It,https://vi.wikipedia.org/wiki/Can_U_Get_Wit_It,0.5
+band_252,Sundara karma,https://vi.wikipedia.org/wiki/Sundara_karma,0.667
+band_253,Linkin Park,https://vi.wikipedia.org/wiki/Linkin_Park,0.647
+band_254,Fix You,https://vi.wikipedia.org/wiki/Fix_You,0.667
+band_255,The Marvelettes,https://vi.wikipedia.org/wiki/The_Marvelettes,0.571
+band_256,The Element of Freedom,https://vi.wikipedia.org/wiki/The_Element_of_Freedom,0.571
+band_257,Don't Leave Home,https://vi.wikipedia.org/wiki/Don%27t_Leave_Home,0.5
+band_258,Indiana Jones và chiếc rương thánh tích,https://vi.wikipedia.org/wiki/Indiana_Jones_v%C3%A0_chi%E1%BA%BFc_r%C6%B0%C6%A1ng_th%C3%A1nh_t%C3%ADch,0.5
+band_259,Blondie (ban nhạc),https://vi.wikipedia.org/wiki/Blondie_(ban_nh%E1%BA%A1c),0.636
+band_260,Plastic Ono Band,,0.765
+band_261,Lucy in the Sky with Diamonds,,0.75
+band_262,To Know Him Is to Love Him,https://vi.wikipedia.org/wiki/To_Know_Him_Is_to_Love_Him,0.833
+band_263,The Last Days of Disco Stick,https://vi.wikipedia.org/wiki/The_Last_Days_of_Disco_Stick,0.571
+band_264,The Girl Is Mine,https://vi.wikipedia.org/wiki/The_Girl_Is_Mine,0.667
+band_265,James Chance and the Contortions,,0.833
+band_266,Jon Lord,,0.6
+band_267,Clocks,https://vi.wikipedia.org/wiki/Clocks,0.667
+band_268,Chiến tranh giữa các vì sao: Sự trở lại của Jedi,https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_tranh_gi%E1%BB%AFa_c%C3%A1c_v%C3%AC_sao:_S%E1%BB%B1_tr%E1%BB%9F_l%E1%BA%A1i_c%E1%BB%A7a_Jedi,0.5
+band_269,Migos,,0.929
+band_270,The Mothers of Invention,,0.81
+band_271,The Next Episode,https://vi.wikipedia.org/wiki/The_Next_Episode,0.571
+band_272,Love Me Do,https://vi.wikipedia.org/wiki/Love_Me_Do,0.75
+band_273,Danh sách video của Michael Jackson,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_video_c%E1%BB%A7a_Michael_Jackson,0.538
+band_274,I Write Sins Not Tragedies,https://vi.wikipedia.org/wiki/I_Write_Sins_Not_Tragedies,0.75
+band_275,Karmin,https://vi.wikipedia.org/wiki/Karmin,0.846
+band_276,Ramones,https://vi.wikipedia.org/wiki/Ramones,0.583
+band_277,Gorillaz,https://vi.wikipedia.org/wiki/Gorillaz,0.579
+band_278,Vụ kiện lạm dụng tình dục trẻ em của Michael Jackson năm 1993,https://vi.wikipedia.org/wiki/V%E1%BB%A5_ki%E1%BB%87n_l%E1%BA%A1m_d%E1%BB%A5ng_t%C3%ACnh_d%E1%BB%A5c_tr%E1%BA%BB_em_c%E1%BB%A7a_Michael_Jackson_n%C4%83m_1993,0.75
+band_279,Spike Dawbarn,https://vi.wikipedia.org/wiki/Spike_Dawbarn,0.533
+band_280,Everything in Its Right Place,,0.75
+band_281,Tin đồn về cái chết của Paul McCartney,https://vi.wikipedia.org/wiki/Tin_%C4%91%E1%BB%93n_v%E1%BB%81_c%C3%A1i_ch%E1%BA%BFt_c%E1%BB%A7a_Paul_McCartney,0.833
+band_282,Bitch Magnet,,0.867
+band_283,Steely Dan,,0.85
+band_284,The Voice Within,https://vi.wikipedia.org/wiki/The_Voice_Within,0.8
+band_285,911 (nhóm nhạc Anh),https://vi.wikipedia.org/wiki/911_(nh%C3%B3m_nh%E1%BA%A1c_Anh),0.923
+band_286,Frat Party at the Pankake Festival,https://vi.wikipedia.org/wiki/Frat_Party_at_the_Pankake_Festival,0.8
+band_287,Death (ban nhạc),,0.929
+band_288,American Authors,,0.833
+band_289,1 of the Girls (nhóm nhạc),https://vi.wikipedia.org/wiki/1_of_the_Girls_(nh%C3%B3m_nh%E1%BA%A1c),0.667
+band_290,McFly,https://vi.wikipedia.org/wiki/McFly,0.929
+band_291,Sarah Jessica Parker,https://vi.wikipedia.org/wiki/Sarah_Jessica_Parker,0.5
+band_292,The Neighbourhood,https://vi.wikipedia.org/wiki/The_Neighbourhood,0.85
+band_293,What I've Done,https://vi.wikipedia.org/wiki/What_I%27ve_Done,0.8
+band_294,I'm Only Sleeping,https://vi.wikipedia.org/wiki/I%27m_Only_Sleeping,0.75
+band_295,Captain & Tennille,https://vi.wikipedia.org/wiki/Captain_%26_Tennille,0.643
+band_296,Between the Lines: Sara Bareilles Live at the Fillmore,https://vi.wikipedia.org/wiki/Between_the_Lines:_Sara_Bareilles_Live_at_the_Fillmore,0.5
+band_297,Got to Be There,https://vi.wikipedia.org/wiki/Got_to_Be_There,0.5
+band_298,Tool,,0.714
+band_299,Van Halen,,0.882
+band_300,Black Flag,https://vi.wikipedia.org/wiki/Black_Flag,0.636
+band_301,Viva la Vida,https://vi.wikipedia.org/wiki/Viva_la_Vida,0.833
+band_302,She Will Be Loved,https://vi.wikipedia.org/wiki/She_Will_Be_Loved,0.714
+band_303,12 Rounds,https://vi.wikipedia.org/wiki/12_Rounds,0.5
+band_304,Flora Cash,https://vi.wikipedia.org/wiki/Flora_Cash,0.625
+band_305,Wallows,https://vi.wikipedia.org/wiki/Wallows,0.846
+band_306,Ain't It Funny,https://vi.wikipedia.org/wiki/Ain%27t_It_Funny,0.5
+band_307,Jonas Brothers: Living the Dream,https://vi.wikipedia.org/wiki/Jonas_Brothers:_Living_the_Dream,0.75
+band_308,Born in the U.S.A.,https://vi.wikipedia.org/wiki/Born_in_the_U.S.A.,0.5
+band_309,Ebony and Ivory,https://vi.wikipedia.org/wiki/Ebony_and_Ivory,0.583
+band_310,John Barry (nhà soạn nhạc),https://vi.wikipedia.org/wiki/John_Barry_(nh%C3%A0_so%E1%BA%A1n_nh%E1%BA%A1c),0.5
+band_311,Video Greatest Hits – HIStory,https://vi.wikipedia.org/wiki/Video_Greatest_Hits_%E2%80%93_HIStory,0.5
+band_312,Princess Protection Program,https://vi.wikipedia.org/wiki/Princess_Protection_Program,0.5
+band_313,Chic,https://vi.wikipedia.org/wiki/Chic,0.9
+band_314,The Stripped Mixes,https://vi.wikipedia.org/wiki/The_Stripped_Mixes,0.5
+band_315,Helter Skelter,,0.5
+band_316,Bell Bottom Blues,https://vi.wikipedia.org/wiki/Bell_Bottom_Blues,0.75
+band_317,1 Mile North,,0.786
+band_318,Idioteque,,0.667
+band_319,8-Bit Rebellion!,,0.75
+band_320,Two Is Better Than One,https://vi.wikipedia.org/wiki/Two_Is_Better_Than_One,0.5
+band_321,Haim (ban nhạc),https://vi.wikipedia.org/wiki/Haim_(ban_nh%E1%BA%A1c),0.778
+band_322,Paranoid Android,https://vi.wikipedia.org/wiki/Paranoid_Android,0.5
+band_323,Don't Let Me Down,https://vi.wikipedia.org/wiki/Don%27t_Let_Me_Down,0.75
+band_324,If I Rise,https://vi.wikipedia.org/wiki/If_I_Rise,0.667
+band_325,Happiness Is a Warm Gun,,0.75
+band_326,Whole Lotta Love,https://vi.wikipedia.org/wiki/Whole_Lotta_Love,0.75
+band_327,The Original Soul of Michael Jackson,https://vi.wikipedia.org/wiki/The_Original_Soul_of_Michael_Jackson,0.5
+band_328,Miss Jackson,https://vi.wikipedia.org/wiki/Miss_Jackson,0.5
+band_329,Taylor Swift and Def Leppard,https://vi.wikipedia.org/wiki/Taylor_Swift_and_Def_Leppard,0.6
+band_330,Dire Straits,,0.786
+band_331,You Got It All,https://vi.wikipedia.org/wiki/You_Got_It_All,0.75
+band_332,No Doubt,https://vi.wikipedia.org/wiki/No_Doubt,0.667
+band_333,The 1985,https://vi.wikipedia.org/wiki/The_1985,0.933
+band_334,The Road to El Dorado,https://vi.wikipedia.org/wiki/The_Road_to_El_Dorado,0.8
+band_335,The Beach Boys,https://vi.wikipedia.org/wiki/The_Beach_Boys,0.8
+band_336,Queen,,0.5
+band_337,Jennifer Jason Leigh,https://vi.wikipedia.org/wiki/Jennifer_Jason_Leigh,0.5
+band_338,Danh sách đĩa nhạc của Take That,https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_%C4%91%C4%A9a_nh%E1%BA%A1c_c%E1%BB%A7a_Take_That,0.6
+band_339,This Is War,,0.75
+band_340,Metallica,,0.68
+band_341,The Monkees,https://vi.wikipedia.org/wiki/The_Monkees,0.75
+band_342,The Kelly Family,https://vi.wikipedia.org/wiki/The_Kelly_Family,0.88
+band_343,The Fame Ball Tour,https://vi.wikipedia.org/wiki/The_Fame_Ball_Tour,0.5
+band_344,Can't Help Falling in Love,https://vi.wikipedia.org/wiki/Can%27t_Help_Falling_in_Love,0.6

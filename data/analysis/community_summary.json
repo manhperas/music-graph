@@ -1,0 +1,130 @@
+{
+  "method": "louvain",
+  "num_communities": 187,
+  "modularity": 0.6559251206638885,
+  "top_communities": [
+    {
+      "id": 41,
+      "size": 759,
+      "node_types": {
+        "Album": 34,
+        "Artist": 327,
+        "Genre": 255,
+        "Band": 48,
+        "RecordLabel": 86,
+        "Award": 9
+      },
+      "artists": [
+        "B.B. King",
+        "Frank Ocean",
+        "Burt Reynolds",
+        "Dev",
+        "George Michael",
+        "Gwyneth Paltrow",
+        "Katie Price",
+        "Sean Combs",
+        "Laura Prepon",
+        "Castles Crumbling"
+      ],
+      "num_artists": 327
+    },
+    {
+      "id": 26,
+      "size": 418,
+      "node_types": {
+        "Artist": 11,
+        "Album": 15,
+        "Genre": 1,
+        "Band": 3,
+        "RecordLabel": 1,
+        "Song": 387
+      },
+      "artists": [
+        "Slowdive",
+        "Rebellion (bài hát)",
+        "Danh sách giải thưởng và đề cử của Ed Sheeran",
+        "John Dowland",
+        "1 of the Girls (nhóm nhạc)",
+        "Want Some?",
+        "Danh sách đĩa nhạc của George Michael",
+        "Whole Lotta Love",
+        "Katy Perry",
+        "Danh sách bài hát thu âm bởi Selena Gomez"
+      ],
+      "num_artists": 11
+    },
+    {
+      "id": 11,
+      "size": 396,
+      "node_types": {
+        "Album": 10,
+        "Artist": 153,
+        "Genre": 33,
+        "Band": 30,
+        "RecordLabel": 165,
+        "Song": 5
+      },
+      "artists": [
+        "Jackie Evancho",
+        "Karen Carpenter",
+        "John Philip Sousa",
+        "Tiffany Alvord",
+        "Frankie Valli",
+        "Billy Gilman",
+        "I'm Glad",
+        "Hypnotico",
+        "Spike Dawbarn",
+        "Frat Party at the Pankake Festival"
+      ],
+      "num_artists": 153
+    },
+    {
+      "id": 5,
+      "size": 375,
+      "node_types": {
+        "Artist": 160,
+        "Album": 14,
+        "Genre": 12,
+        "Band": 16,
+        "RecordLabel": 173
+      },
+      "artists": [
+        "Maia Reficco",
+        "Jason Derulo",
+        "Christina Aguilera",
+        "Kwabs",
+        "Eyes Open (bài hát)",
+        "Dangerous Woman",
+        "Danh sách đĩa nhạc của Bruno Mars",
+        "The Wiz (nhạc phim)",
+        "Khalid (ca sĩ)",
+        "Back to Basics (album)"
+      ],
+      "num_artists": 160
+    },
+    {
+      "id": 21,
+      "size": 334,
+      "node_types": {
+        "Artist": 10,
+        "Album": 14,
+        "Genre": 2,
+        "Band": 2,
+        "Song": 306
+      },
+      "artists": [
+        "Krystal Jung",
+        "Henry Purcell",
+        "Burning in the Skies",
+        "The Only Difference Between Martyrdom and Suicide Is Press Coverage",
+        "Danh sách buổi biểu diễn trực tiếp của Taylor Swift",
+        "Crawling (bài hát)",
+        "Norah Jones",
+        "Lose You to Love Me",
+        "Marshmello",
+        "Adam Young"
+      ],
+      "num_artists": 10
+    }
+  ]
+}

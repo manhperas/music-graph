@@ -1,0 +1,107 @@
+﻿id,question,pattern,description,cypher_query
+1,Nghệ sĩ Taylor Swift phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?,Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist,Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ,"
+MATCH (a1:Artist {name: 'Taylor Swift'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)
+WHERE a1 <> a2
+RETURN a1.name AS artist1, album.title AS album, a2.name AS artist2
+LIMIT 10
+"
+2,Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?,Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist,Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ,"
+MATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)
+WHERE a1 <> a2
+RETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2
+LIMIT 10
+"
+3,Nghệ sĩ Adele phát hành bài hát nào và bài hát đó nằm trong album nào?,Artist -[PERFORMS_ON]-> Song -[PART_OF]-> Album,Tìm các album chứa bài hát của một nghệ sĩ,"
+MATCH (a:Artist {name: 'Adele'})-[:PERFORMS_ON]->(s:Song)-[:PART_OF]->(album:Album)
+RETURN a.name AS artist, s.title AS song, album.title AS album
+LIMIT 10
+"
+4,Nghệ sĩ Bruno Mars phát hành album nào và album đó có bài hát nào?,Artist -[PERFORMS_ON]-> Album <-[PART_OF]- Song,Tìm các bài hát trong album của một nghệ sĩ,"
+MATCH (a:Artist {name: 'Bruno Mars'})-[:PERFORMS_ON]->(album:Album)<-[:PART_OF]-(s:Song)
+RETURN a.name AS artist, album.title AS album, s.title AS song
+LIMIT 10
+"
+5,Nghệ sĩ Justin Bieber phát hành album nào và album đó thuộc thể loại gì?,Artist -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre,Tìm thể loại của các album mà một nghệ sĩ phát hành,"
+MATCH (a:Artist {name: 'Justin Bieber'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)
+RETURN a.name AS artist, album.title AS album, g.name AS genre
+LIMIT 10
+"
+6,Nghệ sĩ Ariana Grande ký hợp đồng với hãng đĩa nào và hãng đĩa đó còn ký hợp đồng với nghệ sĩ nào khác?,Artist -[SIGNED_WITH]-> RecordLabel <-[SIGNED_WITH]- Artist,Tìm các nghệ sĩ cùng hãng đĩa với một nghệ sĩ,"
+MATCH (a1:Artist {name: 'Ariana Grande'})-[:SIGNED_WITH]->(rl:RecordLabel)<-[:SIGNED_WITH]-(a2:Artist)
+WHERE a1 <> a2
+RETURN a1.name AS artist1, rl.name AS record_label, a2.name AS artist2
+LIMIT 10
+"
+7,"Bài hát ""Summer"" nằm trong album nào và album đó được phát hành bởi nghệ sĩ nào?",Song -[PART_OF]-> Album <-[PERFORMS_ON]- Artist,Tìm nghệ sĩ phát hành album chứa một bài hát,"
+MATCH (s:Song {title: 'Summer'})-[:PART_OF]->(album:Album)<-[:PERFORMS_ON]-(a:Artist)
+RETURN s.title AS song, album.title AS album, a.name AS artist
+LIMIT 10
+"
+8,"Bài hát ""Paris"" nằm trong album nào và album đó thuộc thể loại gì?",Song -[PART_OF]-> Album -[HAS_GENRE]-> Genre,Tìm thể loại của album chứa một bài hát,"
+MATCH (s:Song {title: 'Paris'})-[:PART_OF]->(album:Album)-[:HAS_GENRE]->(g:Genre)
+RETURN s.title AS song, album.title AS album, g.name AS genre
+LIMIT 10
+"
+9,"Album ""A Fever You Can't Sweat Out"" thuộc thể loại gì và thể loại đó còn có album nào khác?",Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album,Tìm các album cùng thể loại với một album,"
+MATCH (a1:Album {title: 'A Fever You Can't Sweat Out'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Album)
+WHERE a1 <> a2
+RETURN a1.title AS album1, g.name AS genre, a2.title AS album2
+LIMIT 10
+"
+10,"Album ""A Rush of Blood to the Head"" được phát hành bởi nghệ sĩ nào và nghệ sĩ đó thuộc thể loại gì?",Album <-[PERFORMS_ON]- Artist -[HAS_GENRE]-> Genre,Tìm thể loại của nghệ sĩ phát hành một album,"
+MATCH (album:Album {title: 'A Rush of Blood to the Head'})<-[:PERFORMS_ON]-(a:Artist)-[:HAS_GENRE]->(g:Genre)
+RETURN album.title AS album, a.name AS artist, g.name AS genre
+LIMIT 10
+"
+11,"Album ""A Star Is Born"" có bài hát nào và bài hát đó được phát hành bởi nghệ sĩ nào?",Album <-[PART_OF]- Song <-[PERFORMS_ON]- Artist,Tìm nghệ sĩ phát hành các bài hát trong một album,"
+MATCH (album:Album {title: 'A Star Is Born'})<-[:PART_OF]-(s:Song)<-[:PERFORMS_ON]-(a:Artist)
+RETURN album.title AS album, s.title AS song, a.name AS artist
+LIMIT 10
+"
+12,Nghệ sĩ Billie Eilish là thành viên của ban nhạc nào và ban nhạc đó phát hành album nào?,Artist -[MEMBER_OF]-> Band -[PERFORMS_ON]-> Album,Tìm các album của ban nhạc mà một nghệ sĩ là thành viên,"
+MATCH (a:Artist {name: 'Billie Eilish'})-[:MEMBER_OF]->(b:Band)-[:PERFORMS_ON]->(album:Album)
+RETURN a.name AS artist, b.name AS band, album.title AS album
+LIMIT 10
+"
+13,Ban nhạc Maroon 5 có thành viên nào và thành viên đó phát hành bài hát nào?,Band <-[MEMBER_OF]- Artist -[PERFORMS_ON]-> Song,Tìm các bài hát của thành viên một ban nhạc,"
+MATCH (b:Band {name: 'Maroon 5'})<-[:MEMBER_OF]-(a:Artist)-[:PERFORMS_ON]->(s:Song)
+RETURN b.name AS band, a.name AS artist, s.title AS song
+LIMIT 10
+"
+14,"Hãng đĩa ""A&m/octone"" ký hợp đồng với nghệ sĩ nào và nghệ sĩ đó phát hành album nào?",RecordLabel <-[SIGNED_WITH]- Artist -[PERFORMS_ON]-> Album,Tìm các album của nghệ sĩ thuộc một hãng đĩa,"
+MATCH (rl:RecordLabel {name: 'A&m/octone'})<-[:SIGNED_WITH]-(a:Artist)-[:PERFORMS_ON]->(album:Album)
+RETURN rl.name AS record_label, a.name AS artist, album.title AS album
+LIMIT 10
+"
+15,Nghệ sĩ Harry Styles ký hợp đồng với hãng đĩa nào và hãng đĩa đó còn ký hợp đồng với ban nhạc nào?,Artist -[SIGNED_WITH]-> RecordLabel <-[SIGNED_WITH]- Band,Tìm các ban nhạc cùng hãng đĩa với một nghệ sĩ,"
+MATCH (a:Artist {name: 'Harry Styles'})-[:SIGNED_WITH]->(rl:RecordLabel)<-[:SIGNED_WITH]-(b:Band)
+RETURN a.name AS artist, rl.name AS record_label, b.name AS band
+LIMIT 10
+"
+16,Ban nhạc Boyz II Men phát hành album nào và album đó thuộc thể loại gì?,Band -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre,Tìm thể loại của các album mà ban nhạc phát hành,"
+MATCH (b:Band {name: 'Boyz II Men'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)
+RETURN b.name AS band, album.title AS album, g.name AS genre
+LIMIT 10
+"
+17,Ban nhạc DNCE phát hành bài hát nào và bài hát đó nằm trong album nào?,Band -[PERFORMS_ON]-> Song -[PART_OF]-> Album,Tìm các album chứa bài hát của ban nhạc,"
+MATCH (b:Band {name: 'DNCE'})-[:PERFORMS_ON]->(s:Song)-[:PART_OF]->(album:Album)
+RETURN b.name AS band, s.title AS song, album.title AS album
+LIMIT 10
+"
+18,Nghệ sĩ The Weeknd phát hành bài hát nào và bài hát đó còn được phát hành bởi nghệ sĩ nào khác?,Artist -[PERFORMS_ON]-> Song <-[PERFORMS_ON]- Artist,Tìm các nghệ sĩ cùng phát hành bài hát với một nghệ sĩ,"
+MATCH (a1:Artist {name: 'The Weeknd'})-[:PERFORMS_ON]->(s:Song)<-[:PERFORMS_ON]-(a2:Artist)
+WHERE a1 <> a2
+RETURN a1.name AS artist1, s.title AS song, a2.name AS artist2
+LIMIT 10
+"
+19,"Album ""Acoustic Hearts of Winter"" thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào?",Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist,Tìm các nghệ sĩ có cùng thể loại với một album,"
+MATCH (album:Album {title: 'Acoustic Hearts of Winter'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a:Artist)
+RETURN album.title AS album, g.name AS genre, a.name AS artist
+LIMIT 10
+"
+20,Nghệ sĩ Shawn Mendes phát hành album nào và album đó có bài hát của nghệ sĩ nào khác?,Artist -[PERFORMS_ON]-> Album <-[PART_OF]- Song <-[PERFORMS_ON]- Artist,Tìm các nghệ sĩ khác có bài hát trong album của một nghệ sĩ,"
+MATCH (a1:Artist {name: 'Shawn Mendes'})-[:PERFORMS_ON]->(album:Album)<-[:PART_OF]-(s:Song)<-[:PERFORMS_ON]-(a2:Artist)
+WHERE a1 <> a2
+RETURN a1.name AS artist1, album.title AS album, s.title AS song, a2.name AS artist2
+LIMIT 10
+"

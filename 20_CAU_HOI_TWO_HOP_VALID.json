@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "Nghệ sĩ Taylor Swift phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Taylor Swift'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Taylor Swift",
+      "artist2": "Dangerous Woman",
+      "album": "Midnights"
+    }
+  },
+  {
+    "id": 2,
+    "question": "Nghệ sĩ Ariana Grande phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ariana Grande'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ariana Grande",
+      "artist2": "Cher",
+      "album": "Yours Truly"
+    }
+  },
+  {
+    "id": 3,
+    "question": "Nghệ sĩ The Chainsmokers phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'The Chainsmokers'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "The Chainsmokers",
+      "artist2": "Blondie (ban nhạc)",
+      "album": "Do Not Open"
+    }
+  },
+  {
+    "id": 4,
+    "question": "Nghệ sĩ Maia Reficco phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Maia Reficco'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Maia Reficco",
+      "artist2": "Mine Again",
+      "album": "Katy Hudson"
+    }
+  },
+  {
+    "id": 5,
+    "question": "Nghệ sĩ Jacob Whitesides phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Jacob Whitesides'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Jacob Whitesides",
+      "artist2": "Jackie Evancho",
+      "album": "Evolution"
+    }
+  },
+  {
+    "id": 6,
+    "question": "Nghệ sĩ Jason Derulo phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Jason Derulo'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Jason Derulo",
+      "artist2": "Frank Ocean",
+      "album": "Last Action Hero"
+    }
+  },
+  {
+    "id": 7,
+    "question": "Nghệ sĩ B.B. King phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'B.B. King'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "B.B. King",
+      "artist2": "Tiffany Alvord",
+      "album": "Dangerous"
+    }
+  },
+  {
+    "id": 8,
+    "question": "Nghệ sĩ Brian Littrell phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Brian Littrell'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Brian Littrell",
+      "artist2": "Olivia Harrison",
+      "album": "Special Victims Unit"
+    }
+  },
+  {
+    "id": 9,
+    "question": "Nghệ sĩ Connie Francis phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Connie Francis'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Connie Francis",
+      "artist2": "Half of My Heart",
+      "album": "Invincible"
+    }
+  },
+  {
+    "id": 10,
+    "question": "Nghệ sĩ Aaron Carter phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Aaron Carter'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Aaron Carter",
+      "artist2": "Nguyễn Cao Kỳ Duyên (người dẫn chương trình)",
+      "album": "Miles from Memphis"
+    }
+  },
+  {
+    "id": 11,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Adele",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 12,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Bruno Mars",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 13,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Sam Smith",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 14,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Miranda Cosgrove",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 15,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Victoria Beckham",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 16,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Carrie Underwood",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 17,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Maia Reficco",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 18,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Scotty McCreery",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 19,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "Martin O'Malley",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 20,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "artist2": "OMFG",
+      "genre": "pop"
+    }
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 2,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 3,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 4,
+    "question": "Nghệ sĩ Ed Sheeran ký hợp đồng với hãng đĩa nào và hãng đĩa đó còn ký hợp đồng với nghệ sĩ nào khác?",
+    "pattern": "Artist -[SIGNED_WITH]-> RecordLabel <-[SIGNED_WITH]- Artist",
+    "description": "Tìm các nghệ sĩ cùng hãng đĩa với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:SIGNED_WITH]->(rl:RecordLabel)<-[:SIGNED_WITH]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, rl.name AS record_label, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 5,
+    "question": "Nghệ sĩ Ed Sheeran ký hợp đồng với hãng đĩa nào và hãng đĩa đó còn ký hợp đồng với nghệ sĩ nào khác?",
+    "pattern": "Artist -[SIGNED_WITH]-> RecordLabel <-[SIGNED_WITH]- Artist",
+    "description": "Tìm các nghệ sĩ cùng hãng đĩa với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:SIGNED_WITH]->(rl:RecordLabel)<-[:SIGNED_WITH]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, rl.name AS record_label, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 6,
+    "question": "Album \"All Things Bright and Beautiful\" thuộc thể loại gì và thể loại đó còn có album nào khác?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album",
+    "description": "Tìm các album cùng thể loại với một album",
+    "cypher_query": "\nMATCH (a1:Album {title: 'All Things Bright and Beautiful'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Album)\nWHERE a1 <> a2\nRETURN a1.title AS album1, g.name AS genre, a2.title AS album2\nLIMIT 10\n"
+  }
+]

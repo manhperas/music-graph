@@ -1,0 +1,162 @@
+[
+  {
+    "question_id": 1,
+    "question": "Nghệ sĩ Taylor Swift phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 2,
+    "question": "Nghệ sĩ Ed Sheeran là thành viên của ban nhạc nào và ban nhạc đó đã thắng giải thưởng gì?",
+    "pattern": "Artist -[MEMBER_OF]-> Band -[AWARD_NOMINATION]-> Award",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 3,
+    "question": "Bài hát \"Chú thích\" nằm trong album nào và album đó được phát hành bởi nghệ sĩ nào?",
+    "pattern": "Song -[PART_OF]-> Album <-[PERFORMS_ON]- Artist",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 4,
+    "question": "Nghệ sĩ Adele phát hành bài hát nào và bài hát đó nằm trong album nào?",
+    "pattern": "Artist -[PERFORMS_ON]-> Song -[PART_OF]-> Album",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 5,
+    "question": "Nghệ sĩ Bruno Mars ký hợp đồng với hãng đĩa nào và hãng đĩa đó còn ký hợp đồng với nghệ sĩ nào khác?",
+    "pattern": "Artist -[SIGNED_WITH]-> RecordLabel <-[SIGNED_WITH]- Artist",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 6,
+    "question": "Nghệ sĩ Justin Bieber phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 7,
+    "question": "Nghệ sĩ Ariana Grande thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 8,
+    "question": "Ban nhạc The Chainsmokers thắng giải thưởng nào và giải thưởng đó còn được trao cho ban nhạc nào khác?",
+    "pattern": "Band -[AWARD_NOMINATION]-> Award <-[AWARD_NOMINATION]- Band",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 9,
+    "question": "Album \"''Let's Get Loud''\" thuộc thể loại gì và thể loại đó còn có album nào khác?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 10,
+    "question": "Bài hát \"Summer\" nằm trong album nào và album đó thuộc thể loại gì?",
+    "pattern": "Song -[PART_OF]-> Album -[HAS_GENRE]-> Genre",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 11,
+    "question": "Nghệ sĩ Billie Eilish phát hành album nào và album đó có bài hát nào?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PART_OF]- Song",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 12,
+    "question": "Ban nhạc Maroon 5 có thành viên nào và thành viên đó phát hành album nào?",
+    "pattern": "Band <-[MEMBER_OF]- Artist -[PERFORMS_ON]-> Album",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 13,
+    "question": "Nghệ sĩ Dua Lipa thắng giải thưởng nào và giải thưởng đó thuộc lễ trao giải nào?",
+    "pattern": "Artist -[AWARD_NOMINATION]-> Award",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 14,
+    "question": "Album \"''[[HIStory on Film\" được phát hành bởi nghệ sĩ nào và nghệ sĩ đó thuộc thể loại gì?",
+    "pattern": "Album <-[PERFORMS_ON]- Artist -[HAS_GENRE]-> Genre",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 15,
+    "question": "Hãng đĩa \"' Is Disney Headed For A Cold Spell?\" ký hợp đồng với nghệ sĩ nào và nghệ sĩ đó phát hành album nào?",
+    "pattern": "RecordLabel <-[SIGNED_WITH]- Artist -[PERFORMS_ON]-> Album",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 16,
+    "question": "Nghệ sĩ Harry Styles phát hành bài hát nào và bài hát đó có nghệ sĩ featured nào?",
+    "pattern": "Artist -[PERFORMS_ON]-> Song (với featured_artists)",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 17,
+    "question": "Ban nhạc The Chordettes phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Band -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 18,
+    "question": "Nghệ sĩ The Weeknd ký hợp đồng với hãng đĩa nào và hãng đĩa đó còn ký hợp đồng với ban nhạc nào?",
+    "pattern": "Artist -[SIGNED_WITH]-> RecordLabel <-[SIGNED_WITH]- Band",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 19,
+    "question": "Album \"''[[The Mark\" có bài hát nào và bài hát đó được phát hành bởi nghệ sĩ nào?",
+    "pattern": "Album <-[PART_OF]- Song <-[PERFORMS_ON]- Artist",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  },
+  {
+    "question_id": 20,
+    "question": "Nghệ sĩ Taylor Swift là thành viên của ban nhạc nào và ban nhạc đó phát hành bài hát nào?",
+    "pattern": "Artist -[MEMBER_OF]-> Band -[PERFORMS_ON]-> Song",
+    "has_results": false,
+    "result_count": 0,
+    "sample_results": []
+  }
+]

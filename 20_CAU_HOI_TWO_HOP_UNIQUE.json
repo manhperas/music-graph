@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Nghệ sĩ Taylor Swift phát hành album nào và album đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành album với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Taylor Swift'})-[:PERFORMS_ON]->(album:Album)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 2,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 3,
+    "question": "Nghệ sĩ Adele phát hành bài hát nào và bài hát đó nằm trong album nào?",
+    "pattern": "Artist -[PERFORMS_ON]-> Song -[PART_OF]-> Album",
+    "description": "Tìm các album chứa bài hát của một nghệ sĩ",
+    "cypher_query": "\nMATCH (a:Artist {name: 'Adele'})-[:PERFORMS_ON]->(s:Song)-[:PART_OF]->(album:Album)\nRETURN a.name AS artist, s.title AS song, album.title AS album\nLIMIT 10\n"
+  },
+  {
+    "id": 4,
+    "question": "Nghệ sĩ Bruno Mars phát hành album nào và album đó có bài hát nào?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PART_OF]- Song",
+    "description": "Tìm các bài hát trong album của một nghệ sĩ",
+    "cypher_query": "\nMATCH (a:Artist {name: 'Bruno Mars'})-[:PERFORMS_ON]->(album:Album)<-[:PART_OF]-(s:Song)\nRETURN a.name AS artist, album.title AS album, s.title AS song\nLIMIT 10\n"
+  },
+  {
+    "id": 5,
+    "question": "Nghệ sĩ Justin Bieber phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của các album mà một nghệ sĩ phát hành",
+    "cypher_query": "\nMATCH (a:Artist {name: 'Justin Bieber'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)\nRETURN a.name AS artist, album.title AS album, g.name AS genre\nLIMIT 10\n"
+  },
+  {
+    "id": 6,
+    "question": "Nghệ sĩ Ariana Grande ký hợp đồng với hãng đĩa nào và hãng đĩa đó còn ký hợp đồng với nghệ sĩ nào khác?",
+    "pattern": "Artist -[SIGNED_WITH]-> RecordLabel <-[SIGNED_WITH]- Artist",
+    "description": "Tìm các nghệ sĩ cùng hãng đĩa với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ariana Grande'})-[:SIGNED_WITH]->(rl:RecordLabel)<-[:SIGNED_WITH]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, rl.name AS record_label, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 7,
+    "question": "Bài hát \"Summer\" nằm trong album nào và album đó được phát hành bởi nghệ sĩ nào?",
+    "pattern": "Song -[PART_OF]-> Album <-[PERFORMS_ON]- Artist",
+    "description": "Tìm nghệ sĩ phát hành album chứa một bài hát",
+    "cypher_query": "\nMATCH (s:Song {title: 'Summer'})-[:PART_OF]->(album:Album)<-[:PERFORMS_ON]-(a:Artist)\nRETURN s.title AS song, album.title AS album, a.name AS artist\nLIMIT 10\n"
+  },
+  {
+    "id": 8,
+    "question": "Bài hát \"Paris\" nằm trong album nào và album đó thuộc thể loại gì?",
+    "pattern": "Song -[PART_OF]-> Album -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của album chứa một bài hát",
+    "cypher_query": "\nMATCH (s:Song {title: 'Paris'})-[:PART_OF]->(album:Album)-[:HAS_GENRE]->(g:Genre)\nRETURN s.title AS song, album.title AS album, g.name AS genre\nLIMIT 10\n"
+  },
+  {
+    "id": 9,
+    "question": "Album \"A Fever You Can't Sweat Out\" thuộc thể loại gì và thể loại đó còn có album nào khác?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album",
+    "description": "Tìm các album cùng thể loại với một album",
+    "cypher_query": "\nMATCH (a1:Album {title: 'A Fever You Can't Sweat Out'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Album)\nWHERE a1 <> a2\nRETURN a1.title AS album1, g.name AS genre, a2.title AS album2\nLIMIT 10\n"
+  },
+  {
+    "id": 10,
+    "question": "Album \"A Rush of Blood to the Head\" được phát hành bởi nghệ sĩ nào và nghệ sĩ đó thuộc thể loại gì?",
+    "pattern": "Album <-[PERFORMS_ON]- Artist -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của nghệ sĩ phát hành một album",
+    "cypher_query": "\nMATCH (album:Album {title: 'A Rush of Blood to the Head'})<-[:PERFORMS_ON]-(a:Artist)-[:HAS_GENRE]->(g:Genre)\nRETURN album.title AS album, a.name AS artist, g.name AS genre\nLIMIT 10\n"
+  },
+  {
+    "id": 11,
+    "question": "Album \"A Star Is Born\" có bài hát nào và bài hát đó được phát hành bởi nghệ sĩ nào?",
+    "pattern": "Album <-[PART_OF]- Song <-[PERFORMS_ON]- Artist",
+    "description": "Tìm nghệ sĩ phát hành các bài hát trong một album",
+    "cypher_query": "\nMATCH (album:Album {title: 'A Star Is Born'})<-[:PART_OF]-(s:Song)<-[:PERFORMS_ON]-(a:Artist)\nRETURN album.title AS album, s.title AS song, a.name AS artist\nLIMIT 10\n"
+  },
+  {
+    "id": 12,
+    "question": "Nghệ sĩ Billie Eilish là thành viên của ban nhạc nào và ban nhạc đó phát hành album nào?",
+    "pattern": "Artist -[MEMBER_OF]-> Band -[PERFORMS_ON]-> Album",
+    "description": "Tìm các album của ban nhạc mà một nghệ sĩ là thành viên",
+    "cypher_query": "\nMATCH (a:Artist {name: 'Billie Eilish'})-[:MEMBER_OF]->(b:Band)-[:PERFORMS_ON]->(album:Album)\nRETURN a.name AS artist, b.name AS band, album.title AS album\nLIMIT 10\n"
+  },
+  {
+    "id": 13,
+    "question": "Ban nhạc Maroon 5 có thành viên nào và thành viên đó phát hành bài hát nào?",
+    "pattern": "Band <-[MEMBER_OF]- Artist -[PERFORMS_ON]-> Song",
+    "description": "Tìm các bài hát của thành viên một ban nhạc",
+    "cypher_query": "\nMATCH (b:Band {name: 'Maroon 5'})<-[:MEMBER_OF]-(a:Artist)-[:PERFORMS_ON]->(s:Song)\nRETURN b.name AS band, a.name AS artist, s.title AS song\nLIMIT 10\n"
+  },
+  {
+    "id": 14,
+    "question": "Hãng đĩa \"A&m/octone\" ký hợp đồng với nghệ sĩ nào và nghệ sĩ đó phát hành album nào?",
+    "pattern": "RecordLabel <-[SIGNED_WITH]- Artist -[PERFORMS_ON]-> Album",
+    "description": "Tìm các album của nghệ sĩ thuộc một hãng đĩa",
+    "cypher_query": "\nMATCH (rl:RecordLabel {name: 'A&m/octone'})<-[:SIGNED_WITH]-(a:Artist)-[:PERFORMS_ON]->(album:Album)\nRETURN rl.name AS record_label, a.name AS artist, album.title AS album\nLIMIT 10\n"
+  },
+  {
+    "id": 15,
+    "question": "Nghệ sĩ Harry Styles ký hợp đồng với hãng đĩa nào và hãng đĩa đó còn ký hợp đồng với ban nhạc nào?",
+    "pattern": "Artist -[SIGNED_WITH]-> RecordLabel <-[SIGNED_WITH]- Band",
+    "description": "Tìm các ban nhạc cùng hãng đĩa với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a:Artist {name: 'Harry Styles'})-[:SIGNED_WITH]->(rl:RecordLabel)<-[:SIGNED_WITH]-(b:Band)\nRETURN a.name AS artist, rl.name AS record_label, b.name AS band\nLIMIT 10\n"
+  },
+  {
+    "id": 16,
+    "question": "Ban nhạc Boyz II Men phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Band -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của các album mà ban nhạc phát hành",
+    "cypher_query": "\nMATCH (b:Band {name: 'Boyz II Men'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)\nRETURN b.name AS band, album.title AS album, g.name AS genre\nLIMIT 10\n"
+  },
+  {
+    "id": 17,
+    "question": "Ban nhạc DNCE phát hành bài hát nào và bài hát đó nằm trong album nào?",
+    "pattern": "Band -[PERFORMS_ON]-> Song -[PART_OF]-> Album",
+    "description": "Tìm các album chứa bài hát của ban nhạc",
+    "cypher_query": "\nMATCH (b:Band {name: 'DNCE'})-[:PERFORMS_ON]->(s:Song)-[:PART_OF]->(album:Album)\nRETURN b.name AS band, s.title AS song, album.title AS album\nLIMIT 10\n"
+  },
+  {
+    "id": 18,
+    "question": "Nghệ sĩ The Weeknd phát hành bài hát nào và bài hát đó còn được phát hành bởi nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Song <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ cùng phát hành bài hát với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'The Weeknd'})-[:PERFORMS_ON]->(s:Song)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, s.title AS song, a2.name AS artist2\nLIMIT 10\n"
+  },
+  {
+    "id": 19,
+    "question": "Album \"Acoustic Hearts of Winter\" thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ có cùng thể loại với một album",
+    "cypher_query": "\nMATCH (album:Album {title: 'Acoustic Hearts of Winter'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a:Artist)\nRETURN album.title AS album, g.name AS genre, a.name AS artist\nLIMIT 10\n"
+  },
+  {
+    "id": 20,
+    "question": "Nghệ sĩ Shawn Mendes phát hành album nào và album đó có bài hát của nghệ sĩ nào khác?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album <-[PART_OF]- Song <-[PERFORMS_ON]- Artist",
+    "description": "Tìm các nghệ sĩ khác có bài hát trong album của một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Shawn Mendes'})-[:PERFORMS_ON]->(album:Album)<-[:PART_OF]-(s:Song)<-[:PERFORMS_ON]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, album.title AS album, s.title AS song, a2.name AS artist2\nLIMIT 10\n"
+  }
+]

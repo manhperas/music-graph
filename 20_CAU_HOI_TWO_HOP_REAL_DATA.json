@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "question": "Nghệ sĩ Henry Purcell phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của các album mà một nghệ sĩ phát hành",
+    "cypher_query": "\nMATCH (a:Artist {name: 'Henry Purcell'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)\nRETURN a.name AS artist, album.title AS album, g.name AS genre\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "Henry Purcell",
+      "album": "Kaleidoscope Heart",
+      "genre": "Pop Rockpoprock"
+    }
+  },
+  {
+    "id": 2,
+    "question": "Nghệ sĩ What Do I Know? phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của các album mà một nghệ sĩ phát hành",
+    "cypher_query": "\nMATCH (a:Artist {name: 'What Do I Know?'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)\nRETURN a.name AS artist, album.title AS album, g.name AS genre\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "What Do I Know?",
+      "album": "Roman Reloaded",
+      "genre": "Disco"
+    }
+  },
+  {
+    "id": 3,
+    "question": "Nghệ sĩ What Do I Know? phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của các album mà một nghệ sĩ phát hành",
+    "cypher_query": "\nMATCH (a:Artist {name: 'What Do I Know?'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)\nRETURN a.name AS artist, album.title AS album, g.name AS genre\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "What Do I Know?",
+      "album": "Roman Reloaded",
+      "genre": "Jazz"
+    }
+  },
+  {
+    "id": 4,
+    "question": "Nghệ sĩ What Do I Know? phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của các album mà một nghệ sĩ phát hành",
+    "cypher_query": "\nMATCH (a:Artist {name: 'What Do I Know?'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)\nRETURN a.name AS artist, album.title AS album, g.name AS genre\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "What Do I Know?",
+      "album": "Roman Reloaded",
+      "genre": "Dance Pop"
+    }
+  },
+  {
+    "id": 5,
+    "question": "Nghệ sĩ What Do I Know? phát hành album nào và album đó thuộc thể loại gì?",
+    "pattern": "Artist -[PERFORMS_ON]-> Album -[HAS_GENRE]-> Genre",
+    "description": "Tìm thể loại của các album mà một nghệ sĩ phát hành",
+    "cypher_query": "\nMATCH (a:Artist {name: 'What Do I Know?'})-[:PERFORMS_ON]->(album:Album)-[:HAS_GENRE]->(g:Genre)\nRETURN a.name AS artist, album.title AS album, g.name AS genre\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "What Do I Know?",
+      "album": "Roman Reloaded",
+      "genre": "pop"
+    }
+  },
+  {
+    "id": 11,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "genre": "pop",
+      "artist2": "Adele"
+    }
+  },
+  {
+    "id": 12,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "genre": "pop",
+      "artist2": "Bruno Mars"
+    }
+  },
+  {
+    "id": 13,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "genre": "pop",
+      "artist2": "Sam Smith"
+    }
+  },
+  {
+    "id": 14,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "genre": "pop",
+      "artist2": "Miranda Cosgrove"
+    }
+  },
+  {
+    "id": 15,
+    "question": "Nghệ sĩ Ed Sheeran thuộc thể loại gì và thể loại đó còn có nghệ sĩ nào khác?",
+    "pattern": "Artist -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Artist",
+    "description": "Tìm các nghệ sĩ cùng thể loại với một nghệ sĩ",
+    "cypher_query": "\nMATCH (a1:Artist {name: 'Ed Sheeran'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Artist)\nWHERE a1 <> a2\nRETURN a1.name AS artist1, g.name AS genre, a2.name AS artist2\nLIMIT 10\n",
+    "expected_result": {
+      "artist1": "Ed Sheeran",
+      "genre": "pop",
+      "artist2": "Victoria Beckham"
+    }
+  },
+  {
+    "id": 16,
+    "question": "Album \"Roman Reloaded\" thuộc thể loại gì và thể loại đó còn có album nào khác?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album",
+    "description": "Tìm các album cùng thể loại với một album",
+    "cypher_query": "\nMATCH (a1:Album {title: 'Roman Reloaded'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Album)\nWHERE a1 <> a2\nRETURN a1.title AS album1, g.name AS genre, a2.title AS album2\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "What Do I Know?",
+      "album": "Roman Reloaded",
+      "genre": "Soul"
+    }
+  },
+  {
+    "id": 17,
+    "question": "Album \"Roman Reloaded\" thuộc thể loại gì và thể loại đó còn có album nào khác?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album",
+    "description": "Tìm các album cùng thể loại với một album",
+    "cypher_query": "\nMATCH (a1:Album {title: 'Roman Reloaded'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Album)\nWHERE a1 <> a2\nRETURN a1.title AS album1, g.name AS genre, a2.title AS album2\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "What Do I Know?",
+      "album": "Roman Reloaded",
+      "genre": "r&b"
+    }
+  },
+  {
+    "id": 18,
+    "question": "Album \"All Things Bright and Beautiful\" thuộc thể loại gì và thể loại đó còn có album nào khác?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album",
+    "description": "Tìm các album cùng thể loại với một album",
+    "cypher_query": "\nMATCH (a1:Album {title: 'All Things Bright and Beautiful'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Album)\nWHERE a1 <> a2\nRETURN a1.title AS album1, g.name AS genre, a2.title AS album2\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "Danh sách giải thưởng và đề cử của Ed Sheeran",
+      "album": "All Things Bright and Beautiful",
+      "genre": "r&b"
+    }
+  },
+  {
+    "id": 19,
+    "question": "Album \"All Things Bright and Beautiful\" thuộc thể loại gì và thể loại đó còn có album nào khác?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album",
+    "description": "Tìm các album cùng thể loại với một album",
+    "cypher_query": "\nMATCH (a1:Album {title: 'All Things Bright and Beautiful'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Album)\nWHERE a1 <> a2\nRETURN a1.title AS album1, g.name AS genre, a2.title AS album2\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "Danh sách giải thưởng và đề cử của Ed Sheeran",
+      "album": "All Things Bright and Beautiful",
+      "genre": "Hip Hop"
+    }
+  },
+  {
+    "id": 20,
+    "question": "Album \"All Things Bright and Beautiful\" thuộc thể loại gì và thể loại đó còn có album nào khác?",
+    "pattern": "Album -[HAS_GENRE]-> Genre <-[HAS_GENRE]- Album",
+    "description": "Tìm các album cùng thể loại với một album",
+    "cypher_query": "\nMATCH (a1:Album {title: 'All Things Bright and Beautiful'})-[:HAS_GENRE]->(g:Genre)<-[:HAS_GENRE]-(a2:Album)\nWHERE a1 <> a2\nRETURN a1.title AS album1, g.name AS genre, a2.title AS album2\nLIMIT 10\n",
+    "expected_result": {
+      "artist": "Danh sách giải thưởng và đề cử của Ed Sheeran",
+      "album": "All Things Bright and Beautiful",
+      "genre": "Alternative Rock"
+    }
+  }
+]

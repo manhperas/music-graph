@@ -25,11 +25,11 @@ venv/
 env/
 ENV/
 
-# Data files
-data/
-*.json
-*.csv
-*.graphml
+# Data files - only ignore large/temporary files
+# data/  # Uncomment this line if you want to ignore all data
+*.tmp
+*.temp
+*.log
 
 # Logs
 *.log
